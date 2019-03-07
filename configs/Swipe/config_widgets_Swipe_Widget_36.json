@@ -1,0 +1,31 @@
+{
+  "style": "vertical",
+  "layerState": {
+    "1fb449a45eb7404d93a358a3d2ec045b": {
+      "selected": false
+    },
+    "237edffcd15b4098b71740b93df13b53": {
+      "selected": false
+    },
+    "5e3b541ef3b344c793375d75251edf13": {
+      "selected": false
+    },
+    "6c3c5e85d2554be8be91aab9172689a4": {
+      "selected": true
+    },
+    "f8c0ecabb87d49a2baee71828eb656cd": {
+      "selected": true
+    },
+    "3289a57205634188b8482f28e88ddd50": {
+      "selected": false
+    }
+  },
+  "layer": "f8c0ecabb87d49a2baee71828eb656cd",
+  "isZoom": false,
+  "handleColor": "#dadada",
+  "layerMode": "mult",
+  "defaultLayers": [
+    "6c3c5e85d2554be8be91aab9172689a4"
+  ],
+  "invertPlacement": false
+}

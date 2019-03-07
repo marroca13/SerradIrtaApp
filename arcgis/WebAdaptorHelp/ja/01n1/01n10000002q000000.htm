@@ -1,0 +1,50 @@
+<html lang="ja" xml:lang="ja"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="Portal for ArcGIS の配置を更新して、別の ArcGIS Web Adaptor を使用する場合、最初にこれまでの ArcGIS Web Adaptor を登録解除してから、新しい ArcGIS Web Adaptor を Portal for ArcGIS に構成する必要があります。"><meta name="content-language" content="ja"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+Portal for ArcGIS からの ArcGIS Web Adaptor の登録解除</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-C289ECD2-4CE9-4244-8D25-035DAA351C7C]--><body><div id="content"><div class="header"><h1>
+Portal for ArcGIS からの ArcGIS Web Adaptor の登録解除</h1><div id="breadcrumb"></div></div>
+    <p id="GUID-BCA36992-BA07-47F6-B50F-F9013E05DB24">
+<span purpose="ph" translate="no" varid="PortalForArcGIS">Portal for ArcGIS</span> を変更して、別の ArcGIS Web Adaptor を使用する場合 (たとえば、ArcGIS Web Adaptor の名前または ArcGIS Web Adaptor をホストするコンピューターの名前を変更する場合)、はじめにポータルから ArcGIS Web Adaptor を登録解除する必要があります。</p>
+<p id="GUID-AB38BD00-B237-4538-8F9B-FBD8AD8DA042">ポータルから ArcGIS Web Adaptor を登録解除するには、ArcGIS Portal Directory を使用します。登録解除する方法は ArcGIS Portal Directory の使用以外にはありません。登録解除機能は、ArcGIS Web Adaptor の構成ページまたはポータル Web サイトからは使用できません。</p>
+<p id="GUID-F329B9B4-4086-495A-959F-B05715DF0761">ArcGIS Web Adaptor を登録解除するには、以下の手順を実行します。</p>
+    <div class="wfsteps" purpose="wfsteps"><h4></h4><div class="steps" id="ESRI_STEPS_38D706EC426C4C9E9FCE5DA61FC688DE"><div class="step_title">手順:</div><ol>
+        <li purpose="step" id="ESRI_STEP_DA4FB602D4E04527A64766231B11D76C">
+<span purpose="cmd" id="GUID-57ED9CDE-A582-4D4D-B80A-F5497458050E">ArcGIS Portal Directory を開いて、組織の管理者としてサイン インします。URL の形式は、<span class="usertext">https://portal.domain.com:7443/arcgis/portaladmin</span> です。</span>
+        </li>
+        <li purpose="step" id="ESRI_STEP_663E470AD8C44C889218856E7A4516D2">
+          <span purpose="cmd" id="GUID-7E17DCF5-3A2A-48A7-949A-9F0129A98D13">
+<span class="uicontrol">[System] <span class="greaterthan">→</span> [Web Adaptors]</span> の順にクリックします。</span>
+        </li>
+        <li purpose="step" id="ESRI_STEP_CA2D3FEF7337444082C45C03B2547A8E">
+<span purpose="cmd" id="GUID-4C9ED6D8-3349-4EFE-BA50-CB11473E0727"><span class="wintitle">[Web Adaptors]</span> ページで、ArcGIS Web Adaptor をホストするコンピューターの名前をクリックします。</span>
+        </li>
+        <li purpose="step" id="ESRI_STEP_14B071A7C365448B90B54EF03765ECDD">
+<span purpose="cmd" id="GUID-317AD781-D897-4797-9348-CA372EA9F5D0"><span class="wintitle">[Web Adaptor: &lt;コンピューター名&gt;]</span> ページで、<span class="uicontrol">[Unregister Web Adaptor]</span> をクリックします。</span>
+        </li>
+        <li purpose="step" id="ESRI_STEP_981D6698B4FF494D9622692C1745DFA6">
+<span purpose="cmd" id="GUID-CE6E1FB2-0EE2-4C09-996C-135E6D9FE6D4"><span class="wintitle">[Unregister Web Adaptor]</span> ページで、<span class="uicontrol">[Unregister Web Adaptor]</span> をクリックします。ArcGIS Web Adaptor がポータルから登録解除されます。</span>
+        </li>
+        <li purpose="step" id="ESRI_STEP_D40A87DAD73B4C63BF2A809737244EAB">
+<span purpose="cmd" id="GUID-C0EE4ABF-6668-4142-8A47-D4EF3BCFA91F">ポータルに新しい ArcGIS Web Adaptor を構成します。詳細については、「<a class="xref" rel="01n1/01n10000001p000000.htm" href="01n1/01n10000001p000000.htm">ArcGIS Web Adaptor の構成</a>」をご参照ください。</span>
+        </li>
+      </ol></div><div class="result" id="ESRI_RESULT_FA1398474E86400BB06EC0C563831410" purpose="result">
+        <div class="notes" id="GUID-7262CCC0-755A-424C-96A0-4590674B2D20"><div class="note"><img class="note_img" src="rsrc/note.png" alt="備考" title="注意"><span>注意:</span></div><div class="tipbody">
+<p id="GUID-F4CDBAE0-474F-4E21-A233-0C761D520C17">以前の ArcGIS Web Adaptor をポータルから完全に削除する場合は、上記の手順に従ってから ArcGIS Web Adaptor をアンインストールすることをお勧めします。アンインストールすると、ArcGIS Web Adaptor の構成の詳細がポータルからすべて削除され、メンバーとクライアントは、登録解除された ArcGIS Web Adaptor の URL を通じてポータルにアクセスできなくなります。手順の詳細については、「<a class="xref" rel="01n1/01n100000025000000.htm" href="01n1/01n100000025000000.htm">ArcGIS Web Adaptor のアンインストール</a>」をご参照ください。</p>
+        </div></div>
+      </div></div>
+  <div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

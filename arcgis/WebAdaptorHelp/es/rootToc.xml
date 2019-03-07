@@ -1,0 +1,126 @@
+<map title='Ayuda de ArcGIS Web Adaptor'>
+<topichead title='Introducción'>
+<topicref title='Introducción a ArcGIS Web Adaptor' path='01n1/01n10000001n000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Instalar y configurar ArcGIS Web Adaptor con ArcGIS Server'>
+<topicref title='Acerca de ArcGIS Web Adaptor' path='01n1/01n100000012000000.htm'>
+</topicref>
+<topicref title='Información general sobre cómo importar ArcGIS Web Adaptor con ArcGIS Server' path='01n1/01n10000000t000000.htm'>
+</topicref>
+<topichead title='Paso 1: Planificar la configuración del sitio de ArcGIS Server'>
+<topicref title='Dentro de un sitio de ArcGIS Server' path='01n1/01n10000000z000000.htm'>
+</topicref>
+<topicref title='Situaciones de implementación' path='01n1/01n10000000m000000.htm'>
+</topicref>
+<topichead title='Configuraciones de un sitio en un solo equipo'>
+<topicref title='Implementación en un solo equipo' path='01n1/01n10000002w000000.htm'>
+</topicref>
+<topicref title='Implementación en un solo equipo con un servidor proxy inverso' path='01n1/01n10000002r000000.htm'>
+</topicref>
+<topicref title='Implementación en un solo equipo de alta disponibilidad (activo-pasivo)' path='01n1/01n10000002s000000.htm'>
+</topicref>
+<topicref title='Implementación en un solo equipo de alta disponibilidad (activo-activo)' path='01n1/01n10000002z000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Configuraciones de un sitio en varios equipos'>
+<topicref title='Implementación de varias máquinas con ArcGIS Web Adaptor' path='01n1/01n10000002t000000.htm'>
+</topicref>
+<topicref title='Implementación en varios equipos con un balanceador de carga de terceros' path='01n1/01n100000030000000.htm'>
+</topicref>
+</topichead>
+</topichead>
+<topichead title='Paso 2: Instalar ArcGIS Web Adaptor'>
+<topicref title='Instalar ArcGIS Web Adaptor' path='01n1/01n100000008000000.htm'>
+</topicref>
+<topicref title='Instalar ArcGIS Web Adaptor de forma automática' path='01n1/01n10000000q000000.htm'>
+</topicref>
+<topicref title='Instalar varios ArcGIS Web Adaptors' path='01n1/01n100000016000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Paso 3: Configurar ArcGIS Web Adaptor'>
+<topicref title='Configurar ArcGIS Web Adaptor' path='01n1/01n100000017000000.htm'>
+</topicref>
+<topicref title='Dar de baja ArcGIS Web Adaptor con ArcGIS Server' path='01n1/01n100000038000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Desinstalar ArcGIS Web Adaptor'>
+<topicref title='Desinstalar ArcGIS Web Adaptor' path='01n1/01n10000000n000000.htm'>
+</topicref>
+</topichead>
+<topicref title='Configurar el nivel de confianza .NET en IIS' path='01n1/01n10000002p000000.htm'>
+</topicref>
+<topicref title='Deshabilitar la búsqueda de grupos de Active Directory de Windows en ArcGIS Web Adaptor (IIS)' path='01n1/01n100000031000000.htm'>
+</topicref>
+<topicref title='Configurar las opciones de la caché en RAM de ArcGIS Web Adaptor' path='01n1/01n100000035000000.htm'>
+</topicref>
+<topicref title='Configurar HTTPS en ArcGIS Server cuando se accede mediante ArcGIS Web Adaptor' path='01n1/01n10000000p000000.htm'>
+</topicref>
+<topicref title='Activar HTTPS en el servidor web' path='01n1/01n10000002m000000.htm'>
+</topicref>
+<topicref title='Proteger los servicios web con la Autenticación de Windows integrada' path='01n1/01n100000028000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Instalar y configurar ArcGIS Web Adaptor con Portal for ArcGIS'>
+<topicref title='Acerca de ArcGIS Web Adaptor' path='01n1/01n100000023000000.htm'>
+</topicref>
+<topicref title='Información general sobre cómo importar ArcGIS Web Adaptor con Portal for ArcGIS' path='01n1/01n100000021000000.htm'>
+</topicref>
+<topichead title='Paso 1: Planificar la configuración de Portal for ArcGIS'>
+<topicref title='Papel del portal en ArcGIS' path='01n1/01n10000001s000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Paso 2: Activar HTTPS en el servidor web'>
+<topicref title='Activar HTTPS en el servidor web' path='01n1/01n100000026000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Paso 3: Instalar ArcGIS Web Adaptor'>
+<topicref title='Instalar ArcGIS Web Adaptor' path='01n1/01n100000019000000.htm'>
+</topicref>
+<topicref title='Instalar ArcGIS Web Adaptor de forma automática' path='01n1/01n10000001v000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Paso 4: Configurar ArcGIS Web Adaptor'>
+<topicref title='Configurar ArcGIS Web Adaptor' path='01n1/01n10000001p000000.htm'>
+</topicref>
+<topicref title='Configurar varios ArcGIS Web Adaptors' path='01n1/01n100000037000000.htm'>
+</topicref>
+<topicref title='Dar de baja ArcGIS Web Adaptor con Portal for ArcGIS' path='01n1/01n10000002q000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Desinstalar ArcGIS Web Adaptor'>
+<topicref title='Desinstalar ArcGIS Web Adaptor' path='01n1/01n100000025000000.htm'>
+</topicref>
+</topichead>
+<topicref title='Configurar el nivel de confianza .NET en IIS' path='01n1/01n10000002n000000.htm'>
+</topicref>
+<topicref title='Usar la autenticación integrada de Windows con el portal' path='01n1/01n100000029000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Referencia'>
+<topicref title='Requisitos del sistema para ArcGIS Web Adaptor 10.6' path='01n1/01n100000034000000.htm'>
+</topicref>
+<topicref title='Utilizar un servidor proxy inverso con Portal for ArcGIS' path='01n1/01n100000036000000.htm'>
+</topicref>
+<topicref title='Acerca de los archivos de política de dominio cruzado' path='01n1/01n100000027000000.htm'>
+</topicref>
+<topicref title='Configurar el idioma de visualización para ArcGIS Web Adaptor' path='01n1/01n10000000s000000.htm'>
+</topicref>
+<topichead title='Activar IIS y los componentes de IIS obligatorios'>
+<topicref title='Habilitar automáticamente los componentes de IIS' path='01n1/01n100000015000000.htm'>
+</topicref>
+<topicref title='Habilitar IIS y los componentes obligatorios de IIS en Windows Server 2012/2012 R2' path='01n1/01n100000011000000.htm'>
+</topicref>
+<topicref title='Habilitar IIS y los componentes obligatorios de IIS en Windows Server 2008/2008 R2' path='01n1/01n10000000w000000.htm'>
+</topicref>
+<topicref title='Habilitar IIS y los componentes requeridos de IIS en Windows 8/8.1' path='01n1/01n100000010000000.htm'>
+</topicref>
+<topicref title='Habilitar IIS y los componentes obligatorios de IIS en Windows 7' path='01n1/01n100000013000000.htm'>
+</topicref>
+</topichead>
+<topicref title='Preguntas, comentarios e información' path='01n1/01n100000032000000.htm'>
+</topicref>
+<topicref title='Copyright information' path='01n1/01n100000033000000.htm'>
+</topicref>
+</topichead>
+</map>

@@ -1,0 +1,45 @@
+<html lang="ja" xml:lang="ja"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="Windows Server 2012/2012 R2 で ArcGIS Web Adaptor を使用するには、IIS と特定の IIS コンポーネントが有効化されている必要があります。"><meta name="content-language" content="ja"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - Windows Server 2012/2012 R2 での IIS および必要な IIS コンポーネントの有効化</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-B0BEA9C7-5D93-4E67-B22E-57449AB52F26]--><body><div id="content"><div class="header"><h1>Windows Server 2012/2012 R2 での IIS および必要な IIS コンポーネントの有効化</h1><div id="breadcrumb"></div></div>
+<p id="GUID-1FD43CF9-5CD5-4AD6-BF52-325FE27FEB51">Windows Server 2012/2012 R2 で <span purpose="ph" translate="no" varid="WebAdaptorforArcGIS">ArcGIS Web Adaptor</span> を使用するには、IIS と特定の IIS コンポーネントが有効化されている必要があります。IIS が検出されず、特定の IIS コンポーネントが有効になっていない場合、セットアップは続行されません。</p><p id="GUID-209E9945-5C1A-4968-849E-65FAAD54AAFA">IIS が有効になっていても、必要な IIS コンポーネントが不足している場合は、インストール時に特定の IIS コンポーネントが不足していることを通知するメッセージが表示されます。インストール時に自動的に必要な IIS コンポーネントを有効にすることもできます。下記に示すように、組織のセキュリティ ポリシーによっては、必要な IIS コンポーネントを手動で有効にする必要がある場合があります。</p><p id="GUID-2DB0CD5F-3D36-4D96-B068-786663B24C2E">Windows Server 2012/2012 R2 で IIS および必要な IIS コンポーネントを有効化する方法については、下記の手順をご参照ください。</p><ol purpose="ol" id="OL_C4E02EA065C64CBAA3F6014605C0C378"><li purpose="li" id="LI_647597BAD9574248B38072995F191E73"><span class="uicontrol">[サーバー マネージャー]</span> を開いて、<span class="uicontrol">[管理] <span class="greaterthan">→</span> [役割と機能の追加]</span> の順にクリックします。<span class="uicontrol">[次へ]</span> をクリックします。</li><li purpose="li" id="LI_26311478E13C44FEBEC9BB764FC55540"><span class="uicontrol">[役割ベースまたは機能ベースのインストール]</span> を選択し、<span class="uicontrol">[次へ]</span> をクリックします。</li><li purpose="li" id="LI_7EB55583428647D1948C9F9A35B0B6F7">適切なサーバーを選択します。デフォルトでは、ローカル サーバーが選択されます。<span class="uicontrol">[次へ]</span> をクリックします。</li><li purpose="li" id="LI_5FB4821D23744BA28C3C0308A3835D64"><span class="uicontrol">[Web サーバー (IIS)]</span> を有効にして、<span class="uicontrol">[次へ]</span> をクリックします。</li><li purpose="li" id="LI_51AAF5DA482741B9BE00BCB92F759FFB">ArcGIS Web Adaptor をインストールするのに、追加の機能は必要ないため、<span class="uicontrol">[次へ]</span> をクリックします。</li><li purpose="li" id="LI_5233D6E7E49344E79F6CD84D7B7568E9"><span class="uicontrol">[Web サーバーの役割 (IIS)]</span> ダイアログ ボックスで、<span class="uicontrol">[次へ]</span> をクリックします。</li><li purpose="li" id="LI_EBF8510F760740B0ACE3928309F2F897"><span class="uicontrol">[役割サービスの選択]</span> ダイアログ ボックスで、以下に挙げる Web サーバー コンポーネントが有効になっていることを確認します。<span class="uicontrol">[次へ]</span> をクリックします。</li><li purpose="li" id="LI_717C88949B5E4184A9784B068AE5EC12">設定が正しいか確認したら、<span class="uicontrol">[インストール]</span> をクリックします。</li><li purpose="li" id="LI_2C86B83341774136B73973CD259BC989">インストールが完了したら、<span class="uicontrol">[閉じる]</span> をクリックしてウィザードを終了します。</li></ol>
+<div class="section1" id="GUID-FCE5C4E8-C261-4920-9A26-DF5600164391" purpose="section1"><h2>
+必要な IIS コンポーネント</h2><p id="GUID-DDF58425-8EAB-43A1-9B95-F9A3FE41740A">  下記に示す IIS コンポーネントは、ArcGIS Web Adaptor が動作する最小要件を満たしています。これ以外の IIS コンポーネントが有効になっていても、そのコンポーネントを削除する必要はありません。</p><p id="GUID-DAEAD8BA-3833-4842-9A52-A033FEB89C63">
+<ul purpose="ul" id="UL_3C703A282BA2489F8AF61042374592F0">
+<li purpose="li" id="LI_2A43B6F6AD7D4B41BBB53EAC5BF3398D">Web サーバー<ul purpose="ul" id="UL_9D206995BF2041E8876297A5EDD204BC">
+<li purpose="li" id="LI_A56398DC5DC04E4F95813B49B9618AFB">HTTP 共通機能<ul purpose="ul" id="UL_8B10A4A65BAF48EEBC9FFE04464662D9">
+<li purpose="li" id="LI_A2D714601D3A45B3BE7C67C13528F521">既定のドキュメント</li><li purpose="li" id="LI_FE044A187DA94560B6094B0A17DB5C8A">静的コンテンツ</li>
+</ul></li>
+<li purpose="li" id="LI_43A4466C1BF84F00A7941AC344086961">セキュリティ<ul purpose="ul" id="UL_8B0157B0367A440994E38FBDB0E2CCA0">
+<li purpose="li" id="LI_44EE1C8CD2634756841344CC2427ECD0">要求フィルター</li><li purpose="li" id="LI_E56A5C47334B4D8F9201D63806E862BB">基本認証</li>
+<li purpose="li" id="LI_EABBBC1DBC0241B29048F7DA540FE3E4">Windows 認証</li>
+</ul></li><li purpose="li" id="LI_8ADD02162AB143518ADCCC0F88E23EF5">アプリケーション開発<ul purpose="ul" id="UL_15901D6FC0894F569EC706A0F8A65234">
+<li purpose="li" id="LI_D109DDE558324968911E50909E553250">.NET 拡張 4.5</li><li purpose="li" id="LI_17DD47991FA042948C30494081B23942">.NET 拡張</li><li purpose="li" id="LI_86E413DB524F4A388CB8205A6A609C4E">ASP.NET 4.5</li>
+<li purpose="li" id="LI_9DD7FB97D1A4414E888C08E01F17747C">ASP.NET</li><li purpose="li" id="LI_662695746C1D4D9DAC0A44F40AC57E8E">ISAPI 拡張機能</li>
+<li purpose="li" id="LI_DE4A67B3B1D442D8B5DF9E67994DC369">ISAPI フィルター</li>
+</ul></li>
+</ul></li>
+<li purpose="li" id="LI_93BEF98BF11341FFA00D2ED13C8294AF">管理ツール<ul purpose="ul" id="UL_C863E59842174E6A885A418C24FC0AA5">
+<li purpose="li" id="LI_4E4954CDDED54B4283CCE5BEF2EF8748">IIS 管理コンソール</li>
+<li purpose="li" id="LI_89D69391EEF24E49B5CC00932D08965B">IIS 6 と互換性のある管理<ul purpose="ul" id="UL_BC60FAD14D114928BE4619C970142E12">
+<li purpose="li" id="LI_9B257730E8494BBDA5A114480C227F71">IIS 6 メタベース互換</li>
+</ul></li><li purpose="li" id="LI_7184BD2F892048CB9E4F1422D8B48257">IIS 管理スクリプトおよびツール</li>
+<li purpose="li" id="LI_E5F0E67EEA5849D891135A73A1B987A8">管理サービス</li>
+</ul></li>
+</ul>
+</p></div>
+<div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

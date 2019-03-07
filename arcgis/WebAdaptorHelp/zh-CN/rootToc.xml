@@ -1,0 +1,126 @@
+<map title='ArcGIS Web Adaptor 帮助'>
+<topichead title='简介'>
+<topicref title='ArcGIS Web Adaptor 入门' path='01n1/01n10000001n000000.htm'>
+</topicref>
+</topichead>
+<topichead title='通过 ArcGIS Server 安装和配置 ArcGIS Web Adaptor'>
+<topicref title='关于 ArcGIS Web Adaptor' path='01n1/01n100000012000000.htm'>
+</topicref>
+<topicref title='使用 ArcGIS Web Adaptor 执行 ArcGIS Server 的概述' path='01n1/01n10000000t000000.htm'>
+</topicref>
+<topichead title='步骤 1: 规划 ArcGIS Server 站点配置'>
+<topicref title='ArcGIS Server 站点内部' path='01n1/01n10000000z000000.htm'>
+</topicref>
+<topicref title='部署方案' path='01n1/01n10000000m000000.htm'>
+</topicref>
+<topichead title='单机站点配置'>
+<topicref title='单机部署' path='01n1/01n10000002w000000.htm'>
+</topicref>
+<topicref title='使用反向代理服务器的单机部署' path='01n1/01n10000002r000000.htm'>
+</topicref>
+<topicref title='单机高可用性（主动 - 被动）部署' path='01n1/01n10000002s000000.htm'>
+</topicref>
+<topicref title='单机高可用性（主动 - 主动）部署' path='01n1/01n10000002z000000.htm'>
+</topicref>
+</topichead>
+<topichead title='多机站点配置'>
+<topicref title='通过 ArcGIS Web Adaptor 实现多机部署' path='01n1/01n10000002t000000.htm'>
+</topicref>
+<topicref title='具有第三方负载均衡器的多机部署' path='01n1/01n100000030000000.htm'>
+</topicref>
+</topichead>
+</topichead>
+<topichead title='步骤 2: 安装 ArcGIS Web Adaptor'>
+<topicref title='安装 ArcGIS Web Adaptor' path='01n1/01n100000008000000.htm'>
+</topicref>
+<topicref title='静默安装 ArcGIS Web Adaptor' path='01n1/01n10000000q000000.htm'>
+</topicref>
+<topicref title='安装多个 ArcGIS Web Adaptor' path='01n1/01n100000016000000.htm'>
+</topicref>
+</topichead>
+<topichead title='步骤 3: 配置 ArcGIS Web Adaptor'>
+<topicref title='配置 ArcGIS Web Adaptor' path='01n1/01n100000017000000.htm'>
+</topicref>
+<topicref title='使用 ArcGIS Server 注销 ArcGIS Web Adaptor' path='01n1/01n100000038000000.htm'>
+</topicref>
+</topichead>
+<topichead title='卸载 ArcGIS Web Adaptor'>
+<topicref title='卸载 ArcGIS Web Adaptor' path='01n1/01n10000000n000000.htm'>
+</topicref>
+</topichead>
+<topicref title='在 IIS 中配置 .NET 信任级别' path='01n1/01n10000002p000000.htm'>
+</topicref>
+<topicref title='禁用 ArcGIS Web Adaptor (IIS) 中的 Windows 活动目录组查找功能' path='01n1/01n100000031000000.htm'>
+</topicref>
+<topicref title='配置 ArcGIS Web Adaptor 内存缓存选项' path='01n1/01n100000035000000.htm'>
+</topicref>
+<topicref title='通过 ArcGIS Web Adaptor 访问时，在 ArcGIS Server 上配置 HTTPS' path='01n1/01n10000000p000000.htm'>
+</topicref>
+<topicref title='在 Web 服务器上启用 HTTPS' path='01n1/01n10000002m000000.htm'>
+</topicref>
+<topicref title='使用集成的 Windows 身份验证确保 Web 服务的安全性' path='01n1/01n100000028000000.htm'>
+</topicref>
+</topichead>
+<topichead title='通过 Portal for ArcGIS 安装和配置 ArcGIS Web Adaptor'>
+<topicref title='关于 ArcGIS Web Adaptor' path='01n1/01n100000023000000.htm'>
+</topicref>
+<topicref title='使用 Portal for ArcGIS 执行 ArcGIS Web Adaptor 的概述' path='01n1/01n100000021000000.htm'>
+</topicref>
+<topichead title='步骤 1: 规划 Portal for ArcGIS 配置'>
+<topicref title='ArcGIS 中的门户角色' path='01n1/01n10000001s000000.htm'>
+</topicref>
+</topichead>
+<topichead title='步骤 2：在 Web 服务器上启用 HTTPS'>
+<topicref title='在 Web 服务器上启用 HTTPS' path='01n1/01n100000026000000.htm'>
+</topicref>
+</topichead>
+<topichead title='步骤 3: 安装 ArcGIS Web Adaptor'>
+<topicref title='安装 ArcGIS Web Adaptor' path='01n1/01n100000019000000.htm'>
+</topicref>
+<topicref title='静默安装 ArcGIS Web Adaptor' path='01n1/01n10000001v000000.htm'>
+</topicref>
+</topichead>
+<topichead title='步骤 4: 配置 ArcGIS Web Adaptor'>
+<topicref title='配置 ArcGIS Web Adaptor' path='01n1/01n10000001p000000.htm'>
+</topicref>
+<topicref title='配置多个 ArcGIS Web Adaptor' path='01n1/01n100000037000000.htm'>
+</topicref>
+<topicref title='在 Portal for ArcGIS 上注销 ArcGIS Web Adaptor' path='01n1/01n10000002q000000.htm'>
+</topicref>
+</topichead>
+<topichead title='卸载 ArcGIS Web Adaptor'>
+<topicref title='卸载 ArcGIS Web Adaptor' path='01n1/01n100000025000000.htm'>
+</topicref>
+</topichead>
+<topicref title='在 IIS 中配置 .NET 信任级别' path='01n1/01n10000002n000000.htm'>
+</topicref>
+<topicref title='在门户中使用集成的 Windows 身份验证' path='01n1/01n100000029000000.htm'>
+</topicref>
+</topichead>
+<topichead title='参考'>
+<topicref title='ArcGIS Web Adaptor 10.6 系统要求' path='01n1/01n100000034000000.htm'>
+</topicref>
+<topicref title='将反向代理服务器与 Portal for ArcGIS 结合使用' path='01n1/01n100000036000000.htm'>
+</topicref>
+<topicref title='关于跨域策略文件' path='01n1/01n100000027000000.htm'>
+</topicref>
+<topicref title='配置 ArcGIS Web Adaptor 的显示语言' path='01n1/01n10000000s000000.htm'>
+</topicref>
+<topichead title='启用 IIS 及所需 IIS 组件'>
+<topicref title='自动启用 IIS 组件' path='01n1/01n100000015000000.htm'>
+</topicref>
+<topicref title='在 Windows Server 2012/2012 R2 中启用 IIS 及所需 IIS 组件' path='01n1/01n100000011000000.htm'>
+</topicref>
+<topicref title='在 Windows Server 2008/2008 R2 中启用 IIS 及所需 IIS 组件' path='01n1/01n10000000w000000.htm'>
+</topicref>
+<topicref title='在 Windows 8/8.1 中启用 IIS 及所需的 IIS 组件' path='01n1/01n100000010000000.htm'>
+</topicref>
+<topicref title='在 Windows 7 中启用 IIS 及所需 IIS 组件' path='01n1/01n100000013000000.htm'>
+</topicref>
+</topichead>
+<topicref title='问题、反馈和信息' path='01n1/01n100000032000000.htm'>
+</topicref>
+<topicref title='Copyright information' path='01n1/01n100000033000000.htm'>
+</topicref>
+</topichead>
+</map>

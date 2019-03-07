@@ -1,0 +1,126 @@
+<map title='ArcGIS Web Adaptor ヘルプ'>
+<topichead title='はじめに'>
+<topicref title='ArcGIS Web Adaptor の概要' path='01n1/01n10000001n000000.htm'>
+</topicref>
+</topichead>
+<topichead title='ArcGIS Server への ArcGIS Web Adaptor のインストールと構成'>
+<topicref title='ArcGIS Web Adaptor について' path='01n1/01n100000012000000.htm'>
+</topicref>
+<topicref title='ArcGIS Web Adaptor への ArcGIS Server の実装の概要' path='01n1/01n10000000t000000.htm'>
+</topicref>
+<topichead title='ステップ 1: ArcGIS Server のサイト構成の計画'>
+<topicref title='ArcGIS Server サイトの詳細' path='01n1/01n10000000z000000.htm'>
+</topicref>
+<topicref title='配置シナリオ' path='01n1/01n10000000m000000.htm'>
+</topicref>
+<topichead title='単一コンピューターのサイト構成'>
+<topicref title='単一コンピューターの配置' path='01n1/01n10000002w000000.htm'>
+</topicref>
+<topicref title='リバース プロキシ サーバーを使用した単一コンピューターの配置' path='01n1/01n10000002r000000.htm'>
+</topicref>
+<topicref title='単一コンピューターの高可用性配置 (アクティブ/パッシブ)' path='01n1/01n10000002s000000.htm'>
+</topicref>
+<topicref title='単一コンピューターの高可用性配置 (アクティブ/アクティブ)' path='01n1/01n10000002z000000.htm'>
+</topicref>
+</topichead>
+<topichead title='複数コンピューターのサイト構成'>
+<topicref title='ArcGIS Web Adaptor を使用した複数コンピューターの配置' path='01n1/01n10000002t000000.htm'>
+</topicref>
+<topicref title='サード パーティ製ロード バランサーを使用した複数コンピューターの配置' path='01n1/01n100000030000000.htm'>
+</topicref>
+</topichead>
+</topichead>
+<topichead title='ステップ 2: ArcGIS Web Adaptor のインストール'>
+<topicref title='ArcGIS Web Adaptor のインストール' path='01n1/01n100000008000000.htm'>
+</topicref>
+<topicref title='ArcGIS Web Adaptor のサイレント インストール' path='01n1/01n10000000q000000.htm'>
+</topicref>
+<topicref title='複数の ArcGIS Web Adaptor のインストール' path='01n1/01n100000016000000.htm'>
+</topicref>
+</topichead>
+<topichead title='ステップ 3: ArcGIS Web Adaptor の構成'>
+<topicref title='ArcGIS Web Adaptor の構成' path='01n1/01n100000017000000.htm'>
+</topicref>
+<topicref title='ArcGIS Server での ArcGIS Web Adaptor の登録解除' path='01n1/01n100000038000000.htm'>
+</topicref>
+</topichead>
+<topichead title='ArcGIS Web Adaptor のアンインストール'>
+<topicref title='ArcGIS Web Adaptor のアンインストール' path='01n1/01n10000000n000000.htm'>
+</topicref>
+</topichead>
+<topicref title='IIS での .NET 信頼レベルの構成' path='01n1/01n10000002p000000.htm'>
+</topicref>
+<topicref title='ArcGIS Web Adaptor (IIS) での Windows Active Directory グループのルックアップの無効化' path='01n1/01n100000031000000.htm'>
+</topicref>
+<topicref title='ArcGIS Web Adaptor のメモリ キャッシュ オプションの構成' path='01n1/01n100000035000000.htm'>
+</topicref>
+<topicref title='ArcGIS Web Adaptor を使用してアクセスしたときの ArcGIS Server での HTTPS の構成' path='01n1/01n10000000p000000.htm'>
+</topicref>
+<topicref title='Web サーバーで HTTPS を有効化' path='01n1/01n10000002m000000.htm'>
+</topicref>
+<topicref title='統合 Windows 認証による Web サービスのセキュリティ保護' path='01n1/01n100000028000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Portal for ArcGIS への ArcGIS Web Adaptor のインストールと構成'>
+<topicref title='ArcGIS Web Adaptor について' path='01n1/01n100000023000000.htm'>
+</topicref>
+<topicref title='Portal for ArcGIS への ArcGIS Web Adaptor の実装の概要' path='01n1/01n100000021000000.htm'>
+</topicref>
+<topichead title='ステップ 1: Portal for ArcGIS 構成の計画'>
+<topicref title='ArcGIS でのポータルの役割' path='01n1/01n10000001s000000.htm'>
+</topicref>
+</topichead>
+<topichead title='ステップ 2: Web サーバーで HTTPS を有効化'>
+<topicref title='Web サーバーで HTTPS を有効化' path='01n1/01n100000026000000.htm'>
+</topicref>
+</topichead>
+<topichead title='ステップ 3: ArcGIS Web Adaptor のインストール'>
+<topicref title='ArcGIS Web Adaptor のインストール' path='01n1/01n100000019000000.htm'>
+</topicref>
+<topicref title='ArcGIS Web Adaptor のサイレント インストール' path='01n1/01n10000001v000000.htm'>
+</topicref>
+</topichead>
+<topichead title='ステップ 4: ArcGIS Web Adaptor の構成'>
+<topicref title='ArcGIS Web Adaptor の構成' path='01n1/01n10000001p000000.htm'>
+</topicref>
+<topicref title='複数の ArcGIS Web Adaptor の構成' path='01n1/01n100000037000000.htm'>
+</topicref>
+<topicref title='Portal for ArcGIS からの ArcGIS Web Adaptor の登録解除' path='01n1/01n10000002q000000.htm'>
+</topicref>
+</topichead>
+<topichead title='ArcGIS Web Adaptor のアンインストール'>
+<topicref title='ArcGIS Web Adaptor のアンインストール' path='01n1/01n100000025000000.htm'>
+</topicref>
+</topichead>
+<topicref title='IIS での .NET 信頼レベルの構成' path='01n1/01n10000002n000000.htm'>
+</topicref>
+<topicref title='ポータルでの統合 Windows 認証の使用' path='01n1/01n100000029000000.htm'>
+</topicref>
+</topichead>
+<topichead title='参考情報'>
+<topicref title='ArcGIS Web Adaptor 10.6 のシステム要件' path='01n1/01n100000034000000.htm'>
+</topicref>
+<topicref title='Portal for ArcGIS でのリバース プロキシ サーバーの使用' path='01n1/01n100000036000000.htm'>
+</topicref>
+<topicref title='クロスドメイン ポリシー ファイルについて' path='01n1/01n100000027000000.htm'>
+</topicref>
+<topicref title='ArcGIS Web Adaptor の表示言語の設定' path='01n1/01n10000000s000000.htm'>
+</topicref>
+<topichead title='IIS および必要な IIS コンポーネントの有効化'>
+<topicref title='IIS コンポーネントの自動的な有効化' path='01n1/01n100000015000000.htm'>
+</topicref>
+<topicref title='Windows Server 2012/2012 R2 での IIS および必要な IIS コンポーネントの有効化' path='01n1/01n100000011000000.htm'>
+</topicref>
+<topicref title='Windows Server 2008/2008 R2 での IIS および必要な IIS コンポーネントの有効化' path='01n1/01n10000000w000000.htm'>
+</topicref>
+<topicref title='Windows 8/8.1 での IIS および必要な IIS コンポーネントの有効化' path='01n1/01n100000010000000.htm'>
+</topicref>
+<topicref title='Windows 7 での IIS および必要な IIS コンポーネントの有効化' path='01n1/01n100000013000000.htm'>
+</topicref>
+</topichead>
+<topicref title='ご質問、ご感想、および情報' path='01n1/01n100000032000000.htm'>
+</topicref>
+<topicref title='Copyright information' path='01n1/01n100000033000000.htm'>
+</topicref>
+</topichead>
+</map>

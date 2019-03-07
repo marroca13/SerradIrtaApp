@@ -1,0 +1,36 @@
+<html lang="ru" xml:lang="ru"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="Вы можете отключить поиск групп Active Directory в ArcGIS Web Adaptor (IIS)."><meta name="content-language" content="ru"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+Отключение поиска групп Windows Active Directory в ArcGIS Web Adaptor (IIS)</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-D86FDBFE-FAC2-49EF-8817-1250353CE428]--><body><div id="content"><div class="header"><h1>
+Отключение поиска групп Windows Active Directory в ArcGIS Web Adaptor (IIS)</h1><div id="breadcrumb"></div></div>
+<p id="GUID-E805D801-96F9-45EA-B989-F2C49194D2F2">При выполнении аутентификации на веб-уровне с помощью <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span>, Web Adaptor будет выполнять поиск групп Windows Active Directory для определения входа пользователя при каждой отправке запроса на сайт ArcGIS Server. В организациях с небольшим количеством групп, этот поиск не влияет на производительность. Однако если организация содержит сотни или тысячи групп, вы можете заметить снижение производительности, поскольку на поиск требуется дополнительное время.</p><p id="GUID-70673AA7-BE62-4125-B3EA-1FCA8674BF8A">Если вы заметили снижение производительности, можно отключить поиск групп Active Directory в <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span>. Отключение этой функции применимо только при соблюдении следующих условий:</p><ul purpose="ul" id="UL_6BE74C8DA348469D92237350E127668B"><li purpose="li" id="LI_E8ACEF4B1F4E46C9B5CD27B6FCF94E52">Настроена аутентификация на веб-уровне (Integrated Windows Authentication или PKI) в <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span>.</li><li purpose="li" id="LI_237F2053B35641CAB3E9C1B02DCC673C">В качестве группового хранилища вашего сайта используются встроенные группы ArcGIS Server. Если используются группы из Windows Active Directory, для их получения поиск должен выполняться.</li></ul><p id="GUID-2DA972F9-CBC1-4C82-AFEC-60792BFCFBE8">Чтобы отключить поиск групп Active Directory в <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span>, сделайте следующее:</p>
+<div class="wfsteps" purpose="wfsteps"><h4></h4><div class="steps" id="GUID-BD659D37-7EB3-4840-9690-EB0D96005C8F"><div class="step_title">Шаги:</div><ol>
+<li purpose="step" id="GUID-8C00F757-0470-4728-A040-5F386AE95775">
+<span purpose="cmd" id="GUID-47393521-0806-465A-884A-D0B0DAFEB936">
+На компьютере с установленным <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> найдите и откройте файл WebAdaptor.config. По умолчанию он расположен в папке IIS inetpub, например, <span class="usertext">C:\inetpub\wwwroot\&lt;web adaptor name&gt;\WebAdaptor.config</span>.</span>
+</li>
+<li purpose="step" id="ESRI_STEP_9A0ADD87F1A84D1CA12207F623CC4762"><span purpose="cmd" id="GUID-7A77332F-0259-4246-950C-3B6BD18691C5">Найдите параметр <span class="usertext">EnableGetRolesForUser</span> и измените его значение на
+false, например:</span><div class="info" purpose="info"><div class="codeblock" purpose="codeblock"><div class="highlight"><pre><code>&lt;EnableGetRolesForUser&gt;false&lt;/EnableGetRolesForUser&gt;
+</code></pre></div>
+</div></div></li><li purpose="step" id="ESRI_STEP_EF37A7669F894EE39A766C1154C20109"><span purpose="cmd" id="GUID-7F464DBF-6EBA-4250-B8F7-00B659CF4919">Сохраните и закройте файл.</span></li><li purpose="step" id="ESRI_STEP_A1F85D74C32747E99A22299978B66BC9"><span purpose="cmd" id="GUID-4185E65C-C7F2-444B-886F-EB6B79D121DF">Перезапустите IIS.</span></li><li purpose="step" id="ESRI_STEP_0EC72CC1151341A38A248389E906BD91"><span purpose="cmd" id="GUID-CCDF9213-E46A-4D4B-B73B-49BE4E759401">Повторите эти шаги на остальных Web Adaptors, настроенных на сайте.</span></li></ol></div></div>
+<div class="wfsummary" id="GUID-39D4CBFF-5E33-43C8-BF2F-FDE73DCFCA23" purpose="wfsummary">
+<p id="GUID-0DD6BD55-72BB-499C-AC15-271D4379EAC3">
+Вы можете в любой момент включить поиск групп, изменив
+<span class="usertext">EnableGetRolesForUser</span> свойство на <span class="usertext">true</span>.</p>
+</div>
+<div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

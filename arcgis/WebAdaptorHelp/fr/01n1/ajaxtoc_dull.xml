@@ -1,0 +1,126 @@
+<?xml version="1.0"?><map helpsystemtype="standalone" id="GUID-FA576B21-129F-49AC-8B56-379440982A68" maptitle="Aide sur ArcGIS Web Adaptor" product="web-adaptor" pubid="621" token="01n100000000000000" treeid="01n100000000000000" xml:lang="fr" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+<topichead esri_booktype="none" navtitle="Introduction" token="00000019v2sq000000" treeid="00000019v2sq000000">
+<topicref href="/fr/null/noop1046/01n10000001n000000.htm" hrefguid="GUID-E4F3348C-E33B-41FC-8DB4-FBEB26F6018D.xml" navtitle="Prise en main de ArcGIS Web Adaptor" pubid="621" toc="None" token="01n10000001n000000" tpcid="31" treeid="01n10000001n000000" version="9">
+</topicref>
+</topichead>
+<topichead esri_booktype="none" navtitle="Installer et configurer ArcGIS Web Adaptor avec ArcGIS Server" token="00000019v2sr000000" treeid="00000019v2sr000000">
+<topicref href="/fr/null/noop1046/01n100000012000000.htm" hrefguid="GUID-12ACFA31-D75D-40A2-ACFA-96A0631B2A77.xml" navtitle="A propos d'ArcGIS Web Adaptor" pubid="621" toc="None" token="01n100000012000000" tpcid="22" treeid="01n100000012000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000000t000000.htm" hrefguid="GUID-5F0B7493-2FBA-4BB5-BA6D-9837AD2462B4.xml" navtitle="Vue d'ensemble de l'implémentation d'ArcGIS Web Adaptor avec ArcGIS Server" pubid="621" toc="None" token="01n10000000t000000" tpcid="16" treeid="01n10000000t000000" version="9">
+</topicref>
+<topichead esri_booktype="none" navtitle="Etape 1 : Planification d'une configuration de site ArcGIS Server" token="00000019v2ss000000" treeid="00000019v2ss000000">
+<topicref href="/fr/null/noop1046/01n10000000z000000.htm" hrefguid="GUID-4400682E-CF2C-4731-AAE0-81B6E8B9F12A.xml" navtitle="Composants d'un site ArcGIS Server" pubid="621" toc="None" token="01n10000000z000000" tpcid="19" treeid="01n10000000z000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000000m000000.htm" hrefguid="GUID-C41CCAD5-63E0-4467-96DB-793D2593B887.xml" navtitle="Scénarios de déploiement" pubid="621" toc="None" token="01n10000000m000000" tpcid="10" treeid="01n10000000m000000" version="9">
+</topicref>
+<topichead esri_booktype="none" navtitle="Configurations d'un site à une seule machine" token="00000019v2st000000" treeid="00000019v2st000000">
+<topicref href="/fr/null/noop1046/01n10000002w000000.htm" hrefguid="GUID-66FD7706-2ABA-4314-BA7E-229F8CB015EA.xml" navtitle="Déploiement sur une seule machine" pubid="621" toc="None" token="01n10000002w000000" tpcid="58" treeid="01n10000002w000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000002r000000.htm" hrefguid="GUID-D32FA68C-96A1-47D7-BC5D-1812D88B121A.xml" navtitle="Déploiement sur une seule machine avec un serveur proxy inverse" pubid="621" toc="None" token="01n10000002r000000" tpcid="54" treeid="01n10000002r000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000002s000000.htm" hrefguid="GUID-5BAC2F6A-272F-46A1-B7C1-2051320339BA.xml" navtitle="Déploiement sur une seule machine haute disponibilité (actif-passif)" pubid="621" toc="None" token="01n10000002s000000" tpcid="55" treeid="01n10000002s000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000002z000000.htm" hrefguid="GUID-D05F2CE7-BB97-4B83-888E-8750E42C8234.xml" navtitle="Déploiement sur une seule machine haute disponibilité (actif-actif)" pubid="621" toc="None" token="01n10000002z000000" tpcid="59" treeid="01n10000002z000000" version="9">
+</topicref>
+</topichead>
+<topichead esri_booktype="none" navtitle="Configurations d'un site à plusieurs machines" token="00000019v2sv000000" treeid="00000019v2sv000000">
+<topicref href="/fr/null/noop1046/01n10000002t000000.htm" hrefguid="GUID-24EB1171-8DBB-4B71-8EB9-24D0AAE8D488.xml" navtitle="Déploiement sur plusieurs machines avec ArcGIS Web Adaptor" pubid="621" toc="None" token="01n10000002t000000" tpcid="56" treeid="01n10000002t000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000030000000.htm" hrefguid="GUID-08196164-3CAB-4F08-9C3E-C5BC43FF8C23.xml" navtitle="Déploiement sur plusieurs machines avec un système tiers d'équilibrage de la charge" pubid="621" toc="None" token="01n100000030000000" tpcid="60" treeid="01n100000030000000" version="9">
+</topicref>
+</topichead>
+</topichead>
+<topichead esri_booktype="none" navtitle="Etape 2 : Installation d'ArcGIS Web Adaptor" token="00000019v2sw000000" treeid="00000019v2sw000000">
+<topicref href="/fr/null/noop1046/01n100000008000000.htm" hrefguid="GUID-2FC60DED-1824-459F-8A6A-F3879C715A9E.xml" navtitle="Installation d'ArcGIS Web Adaptor" pubid="621" toc="None" token="01n100000008000000" tpcid="8" treeid="01n100000008000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000000q000000.htm" hrefguid="GUID-962CC883-4200-46E4-9963-91EEC97AB1E1.xml" navtitle="Installation d'ArcGIS Web Adaptor en mode silencieux" pubid="621" toc="None" token="01n10000000q000000" tpcid="13" treeid="01n10000000q000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000016000000.htm" hrefguid="GUID-0BB2FC0B-5BF3-41C5-9BC3-22B220483B3D.xml" navtitle="Installation de plusieurs instances d'ArcGIS Web Adaptor" pubid="621" toc="None" token="01n100000016000000" tpcid="26" treeid="01n100000016000000" version="9">
+</topicref>
+</topichead>
+<topichead esri_booktype="none" navtitle="Etape 3 : Configuration d'ArcGIS Web Adaptor (IIS)" token="00000019v2sz000000" treeid="00000019v2sz000000">
+<topicref href="/fr/null/noop1046/01n100000017000000.htm" hrefguid="GUID-C0DDCC11-5FFE-48BD-BFB8-C954161098D2.xml" navtitle="Configurer ArcGIS Web Adaptor" pubid="621" toc="None" token="01n100000017000000" tpcid="27" treeid="01n100000017000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000038000000.htm" hrefguid="GUID-E9CFDBB2-6413-460D-AE04-A86B84CE3659.xml" navtitle="Désinscrire ArcGIS Web Adaptor d'ArcGIS Server" pubid="621" toc="None" token="01n100000038000000" tpcid="68" treeid="01n100000038000000" version="9">
+</topicref>
+</topichead>
+<topichead esri_booktype="none" navtitle="Désinstaller ArcGIS Web Adaptor" token="00000019v2t0000000" treeid="00000019v2t0000000">
+<topicref href="/fr/null/noop1046/01n10000000n000000.htm" hrefguid="GUID-A5EF9A07-57C5-4634-AFF1-63B9B8D7373F.xml" navtitle="Désinstallation d'ArcGIS Web Adaptor" pubid="621" toc="None" token="01n10000000n000000" tpcid="11" treeid="01n10000000n000000" version="9">
+</topicref>
+</topichead>
+<topicref href="/fr/null/noop1046/01n10000002p000000.htm" hrefguid="GUID-AB58122A-B695-415C-9CEE-733E90BB2B18.xml" navtitle="Configuration du niveau de confiance .NET dans IIS" pubid="621" toc="None" token="01n10000002p000000" tpcid="52" treeid="01n10000002p000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000031000000.htm" hrefguid="GUID-D86FDBFE-FAC2-49EF-8817-1250353CE428.xml" navtitle="Désactivez la recherche de groupes Windows Active Directory dans ArcGIS Web Adaptor (IIS)" pubid="621" toc="None" token="01n100000031000000" tpcid="61" treeid="01n100000031000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000035000000.htm" hrefguid="GUID-070AFEC5-DE9F-49D1-9019-C5350B73D24F.xml" navtitle="Configurer les options du cache mémoire ArcGIS Web Adaptor" pubid="621" toc="None" token="01n100000035000000" tpcid="65" treeid="01n100000035000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000000p000000.htm" hrefguid="GUID-F4F2ACB0-C8DC-424D-A5F0-79D50118709A.xml" navtitle="Configurer HTTPS sur ArcGIS Server pour un accès via ArcGIS Web Adaptor" pubid="621" toc="None" token="01n10000000p000000" tpcid="12" treeid="01n10000000p000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000002m000000.htm" hrefguid="GUID-ACA8EEAB-293E-4892-8B7E-9397264A6014.xml" navtitle="Activer HTTPS sur votre serveur Web" pubid="621" toc="None" token="01n10000002m000000" tpcid="50" treeid="01n10000002m000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000028000000.htm" hrefguid="GUID-025915A8-1293-4EE4-91C0-8210BAE1406B.xml" navtitle="Sécurisation de services Web avec l'authentification Windows intégrée" pubid="621" toc="None" token="01n100000028000000" tpcid="48" treeid="01n100000028000000" version="9">
+</topicref>
+</topichead>
+<topichead esri_booktype="none" navtitle="Installer et configurer ArcGIS Web Adaptor avec Portal for ArcGIS" token="00000019v2t1000000" treeid="00000019v2t1000000">
+<topicref href="/fr/null/noop1046/01n100000023000000.htm" hrefguid="GUID-02E72F99-7B5A-47CA-9027-D1BE5CB0B645.xml" navtitle="A propos d'ArcGIS Web Adaptor" pubid="621" toc="None" token="01n100000023000000" tpcid="43" treeid="01n100000023000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000021000000.htm" hrefguid="GUID-7FB2595D-4DA7-4311-8D41-3E5B381B22D8.xml" navtitle="Vue d'ensemble de l'implémentation d'ArcGIS Web Adaptor avec Portal for ArcGIS" pubid="621" toc="None" token="01n100000021000000" tpcid="41" treeid="01n100000021000000" version="9">
+</topicref>
+<topichead esri_booktype="none" navtitle="Etape 1 : Planification d'une configuration Portal for ArcGIS" token="00000019v2t2000000" treeid="00000019v2t2000000">
+<topicref href="/fr/null/noop1046/01n10000001s000000.htm" hrefguid="GUID-E6CE62EC-13A5-4931-AEAC-FC513AF5F303.xml" navtitle="Rôle du portail dans ArcGIS" pubid="621" toc="None" token="01n10000001s000000" tpcid="35" treeid="01n10000001s000000" version="9">
+</topicref>
+</topichead>
+<topichead esri_booktype="none" navtitle="Etape 2 : Activation de HTTPS sur votre serveur Web" token="00000019v2t3000000" treeid="00000019v2t3000000">
+<topicref href="/fr/null/noop1046/01n100000026000000.htm" hrefguid="GUID-66793700-6334-4C7C-9BA6-5D0058C2F343.xml" navtitle="Activer HTTPS sur votre serveur Web" pubid="621" toc="None" token="01n100000026000000" tpcid="46" treeid="01n100000026000000" version="9">
+</topicref>
+</topichead>
+<topichead esri_booktype="none" navtitle="Etape 3 : Installation d'ArcGIS Web Adaptor" token="00000019v2t4000000" treeid="00000019v2t4000000">
+<topicref href="/fr/null/noop1046/01n100000019000000.htm" hrefguid="GUID-51DA348C-8E15-44F7-A153-F4786368A62D.xml" navtitle="Installer ArcGIS Web Adaptor" pubid="621" toc="None" token="01n100000019000000" tpcid="29" treeid="01n100000019000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000001v000000.htm" hrefguid="GUID-09744C76-9555-4B1C-BA9B-EB9BEC9D0195.xml" navtitle="Installation d'ArcGIS Web Adaptor en mode silencieux" pubid="621" toc="None" token="01n10000001v000000" tpcid="37" treeid="01n10000001v000000" version="9">
+</topicref>
+</topichead>
+<topichead esri_booktype="none" navtitle="Etape 4 : Configuration d'ArcGIS Web Adaptor (IIS)" token="00000019v2t5000000" treeid="00000019v2t5000000">
+<topicref href="/fr/null/noop1046/01n10000001p000000.htm" hrefguid="GUID-B6558183-719A-4D81-8DAC-C0596AA9DF52.xml" navtitle="Configurer ArcGIS Web Adaptor" pubid="621" toc="None" token="01n10000001p000000" tpcid="32" treeid="01n10000001p000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000037000000.htm" hrefguid="GUID-7026982B-45C5-4389-AE86-6F7373C4BF63.xml" navtitle="Configurer plusieurs instances d'ArcGIS Web Adaptor" pubid="621" toc="None" token="01n100000037000000" tpcid="67" treeid="01n100000037000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000002q000000.htm" hrefguid="GUID-C289ECD2-4CE9-4244-8D25-035DAA351C7C.xml" navtitle="Désinscription d'ArcGIS Web Adaptor de Portal for ArcGIS" pubid="621" toc="None" token="01n10000002q000000" tpcid="53" treeid="01n10000002q000000" version="9">
+</topicref>
+</topichead>
+<topichead esri_booktype="none" navtitle="Désinstaller ArcGIS Web Adaptor" token="00000019v2t6000000" treeid="00000019v2t6000000">
+<topicref href="/fr/null/noop1046/01n100000025000000.htm" hrefguid="GUID-4894B6C8-5E45-4DED-9364-7F6FA1C4464A.xml" navtitle="Désinstallation d'ArcGIS Web Adaptor" pubid="621" toc="None" token="01n100000025000000" tpcid="45" treeid="01n100000025000000" version="9">
+</topicref>
+</topichead>
+<topicref href="/fr/null/noop1046/01n10000002n000000.htm" hrefguid="GUID-173946BA-C7DD-4F9B-8170-B58276F998E3.xml" navtitle="Configuration du niveau de confiance .NET dans IIS" pubid="621" toc="None" token="01n10000002n000000" tpcid="51" treeid="01n10000002n000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000029000000.htm" hrefguid="GUID-4DF90B15-E22D-4B5C-B1C2-2E2AD7299576.xml" navtitle="Utiliser l'authentification Windows intégrée avec votre portail" pubid="621" toc="None" token="01n100000029000000" tpcid="49" treeid="01n100000029000000" version="9">
+</topicref>
+</topichead>
+<topichead esri_booktype="none" navtitle="Référence" token="00000019v2t7000000" treeid="00000019v2t7000000">
+<topicref href="/fr/null/noop1046/01n100000034000000.htm" hrefguid="GUID-E73CC136-506A-46CB-88C0-54942225FF50.xml" navtitle="Configuration système requise pour ArcGIS Web Adaptor 10.6" pubid="621" toc="None" token="01n100000034000000" tpcid="64" treeid="01n100000034000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000036000000.htm" hrefguid="GUID-E452FD74-CAA7-4871-BC78-990DC4D01E03.xml" navtitle="Utiliser un serveur proxy inverse avec Portal for ArcGIS" pubid="621" toc="None" token="01n100000036000000" tpcid="66" treeid="01n100000036000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000027000000.htm" hrefguid="GUID-726BEF3B-76D7-442A-8555-27A58CBC271C.xml" navtitle="A propos des fichiers de stratégie inter-domaines" pubid="621" toc="None" token="01n100000027000000" tpcid="47" treeid="01n100000027000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000000s000000.htm" hrefguid="GUID-19EE5862-F345-4B51-A5D2-8C3E11EA2F78.xml" navtitle="Configuration de la langue d'affichage d'ArcGIS Web Adaptor" pubid="621" toc="None" token="01n10000000s000000" tpcid="15" treeid="01n10000000s000000" version="9">
+</topicref>
+<topichead esri_booktype="none" navtitle="Activation d'IIS et des composants IIS requis" token="00000019v2t8000000" treeid="00000019v2t8000000">
+<topicref href="/fr/null/noop1046/01n100000015000000.htm" hrefguid="GUID-F5BC289E-A42D-4AC3-A251-CBB8A908F426.xml" navtitle="Activation automatique des composants IIS" pubid="621" toc="None" token="01n100000015000000" tpcid="25" treeid="01n100000015000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000011000000.htm" hrefguid="GUID-B0BEA9C7-5D93-4E67-B22E-57449AB52F26.xml" navtitle="Activation d'IIS et des composants IIS requis sous Windows Server 2012/2012 R2" pubid="621" toc="None" token="01n100000011000000" tpcid="21" treeid="01n100000011000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n10000000w000000.htm" hrefguid="GUID-AB9D17DC-221C-4E28-AD42-D7A3AB277768.xml" navtitle="Activation d'IIS et des composants IIS requis sous Windows Server 2008/2008 R2" pubid="621" toc="None" token="01n10000000w000000" tpcid="18" treeid="01n10000000w000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000010000000.htm" hrefguid="GUID-7F7BE5E0-C1CA-431D-81E4-E8565CC19153.xml" navtitle="Activation d'IIS et des composants IIS requis sous Windows 8/8.1" pubid="621" toc="None" token="01n100000010000000" tpcid="20" treeid="01n100000010000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000013000000.htm" hrefguid="GUID-98E2EAC6-B975-4372-A0D6-09529BC863E6.xml" navtitle="Activation d'IIS et des composants IIS requis sous Windows 7" pubid="621" toc="None" token="01n100000013000000" tpcid="23" treeid="01n100000013000000" version="9">
+</topicref>
+</topichead>
+<topicref href="/fr/null/noop1046/01n100000032000000.htm" hrefguid="GUID-0D907AD3-B0D6-48CA-81A8-276E8B3DBD34.xml" navtitle="Questions, commentaires et informations" pubid="621" toc="None" token="01n100000032000000" tpcid="62" treeid="01n100000032000000" version="9">
+</topicref>
+<topicref href="/fr/null/noop1046/01n100000033000000.htm" hrefguid="GUID-3BAE2D4C-DE24-4322-83C2-76D4188DD7FE.xml" navtitle="Copyright information" pubid="621" toc="None" token="01n100000033000000" tpcid="63" treeid="01n100000033000000" version="9">
+</topicref>
+</topichead>
+</map>

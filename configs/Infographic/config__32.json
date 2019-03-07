@@ -1,0 +1,218 @@
+{
+  "layout": {
+    "definition": [
+      {
+        "type": "column",
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "width": 100,
+        "content": [
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "activeItemIndex": 0,
+            "height": 69.23090975520644,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "8039975676306006-2"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "8039975676306006-2"
+              }
+            ]
+          },
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "activeItemIndex": 0,
+            "height": 30.76909024479358,
+            "width": 59.15915915915916,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "8039975676306006-3"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "8039975676306006-3"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dijits": [
+    {
+      "id": "8039975676306006-1",
+      "type": "text",
+      "visible": false,
+      "config": {
+        "background": {
+          "backgroundColor": "#FFF",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 16,
+          "textColor": "#282828"
+        },
+        "text": "TITLE OF THE INFOGRAPHIC"
+      }
+    },
+    {
+      "id": "8039975676306006-2",
+      "type": "chart",
+      "visible": true,
+      "config": {
+        "mode": "category",
+        "type": "pie",
+        "categoryField": "Estado_EQR",
+        "dateConfig": null,
+        "valueFields": [
+          "Estado_EQR"
+        ],
+        "operation": "sum",
+        "nullValue": true,
+        "sortOrder": {
+          "isAsc": true,
+          "isLabelAxis": true
+        },
+        "maxLabels": 100,
+        "backgroundColor": "#fff",
+        "seriesStyle": {
+          "styles": [
+            {
+              "style": {
+                "color": [
+                  "#68D2E0",
+                  "#087E92",
+                  "#47BCF5",
+                  "#FBE66A",
+                  "#F29157",
+                  "#C8501D"
+                ]
+              },
+              "name": "pie~not-field",
+              "label": "pie~not-field"
+            }
+          ],
+          "type": "custom",
+          "customColor": {
+            "categories": [
+              {
+                "uniqueID": "5463934445461833",
+                "text": "Muy bueno",
+                "label": "Muy bueno",
+                "color": "#87cefa",
+                "id": 1
+              },
+              {
+                "uniqueID": "9069978478149616",
+                "text": "Moderado",
+                "label": "Moderado",
+                "color": "#ffd700",
+                "id": 2
+              },
+              {
+                "uniqueID": "4807311411722279",
+                "text": "Playa de sustrato blando",
+                "label": "Playa de sustrato blando",
+                "color": "#d3d3d3",
+                "id": 3
+              }
+            ],
+            "others": [
+              {
+                "uniqueID": "4763584038353672",
+                "text": "Null",
+                "label": "Null",
+                "color": "#808080",
+                "id": "null"
+              },
+              {
+                "uniqueID": "3943831203903745",
+                "text": "Others",
+                "label": "Others",
+                "color": "#808080",
+                "id": "others"
+              }
+            ]
+          }
+        },
+        "legend": {
+          "show": false,
+          "textStyle": {
+            "color": "#000",
+            "fontSize": 12
+          }
+        },
+        "dataLabel": {
+          "show": true,
+          "textStyle": {
+            "color": "#000",
+            "fontSize": 12
+          }
+        },
+        "innerRadius": 0
+      }
+    },
+    {
+      "id": "8039975676306006-3",
+      "type": "text",
+      "visible": true,
+      "config": {
+        "background": {
+          "backgroundColor": "#FFF",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Verdana",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": "14",
+          "textColor": "#282828"
+        },
+        "text": "Sumatorio de las categorías de calidad de las aguas clasificado en rangos de valores EQR para el año 2018 en la Serra d'Irta"
+      }
+    }
+  ],
+  "name": "pie",
+  "wid": "8039975676306006",
+  "dataSource": {
+    "dataSourceType": "DATA_SOURCE_FEATURE_LAYER_FROM_MAP",
+    "name": "Estado EQR 2018",
+    "layerId": "f8c0ecabb87d49a2baee71828eb656cd",
+    "useSelection": true,
+    "filterByExtent": false
+  }
+}

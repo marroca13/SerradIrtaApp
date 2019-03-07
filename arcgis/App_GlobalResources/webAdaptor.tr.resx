@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="wa_description1" xml:space="preserve">
+    <value>Web Adaptor uygulamasını yapılandırmak için sunucunuzun URL'sini ve bir yönetici hesabı belirtin.</value>
+  </data>
+  <data name="wa_sharedKeyLabel" xml:space="preserve">
+    <value>Paylaşılan Anahtar (isteğe bağlı):</value>
+  </data>
+  <data name="wa_passwordLabel" xml:space="preserve">
+    <value>Yönetici Parolası:</value>
+  </data>
+  <data name="wa_reconnectLabel" xml:space="preserve">
+    <value>Yeniden Bağlanma Aralığı:</value>
+  </data>
+  <data name="wa_siteUrlLabel" xml:space="preserve">
+    <value>ArcGIS Server URL'si:</value>
+  </data>
+  <data name="wa_submitButton" xml:space="preserve">
+    <value>Yapılandır</value>
+  </data>
+  <data name="wa_timeoutLabel" xml:space="preserve">
+    <value>Yenilenme Aralığı:</value>
+  </data>
+  <data name="wa_timeUnit" xml:space="preserve">
+    <value>dakika</value>
+  </data>
+  <data name="wa_userNameLabel" xml:space="preserve">
+    <value>Yönetici Kullanıcı Adı:</value>
+  </data>
+  <data name="wa_exampleUrl" xml:space="preserve">
+    <value>Örnek: https://serverhost.domain.com:6443</value>
+  </data>
+  <data name="wa_httpsPortMissing" xml:space="preserve">
+    <value>Lütfen bir HTTPS port numarası girin.</value>
+  </data>
+  <data name="wa_passwordMissing" xml:space="preserve">
+    <value>Lütfen bir yönetim parolası girin.</value>
+  </data>
+  <data name="wa_reconnectIntervalMissing" xml:space="preserve">
+    <value>Lütfen Sunucu Hatasında Yeniden Bağlan Aralığı için bir tamsayı değeri girin.</value>
+  </data>
+  <data name="wa_refreshIntervalMissing" xml:space="preserve">
+    <value>Sunucu Listesi Yenileme Aralığı için bir tamsayı değeri girin.</value>
+  </data>
+  <data name="wa_urlMissing" xml:space="preserve">
+    <value>Lütfen bir GIS sunucusu URL'si girin</value>
+  </data>
+  <data name="wa_usernameMissing" xml:space="preserve">
+    <value>Lütfen bir kullanıcı adı girin</value>
+  </data>
+  <data name="wa_validationSum" xml:space="preserve">
+    <value>Lütfen aşağıdaki hataları düzeltin:</value>
+  </data>
+  <data name="wa_errorPageTitle" xml:space="preserve">
+    <value>Web Adaptor Başarısız</value>
+  </data>
+  <data name="wa_getMachinesFailure" xml:space="preserve">
+    <value>Sunucu sitesinden makineler alınamadı.</value>
+  </data>
+  <data name="wa_loadConfigFailure" xml:space="preserve">
+    <value>Web Adaptors yapılandırma dosyası yüklenemedi. Lütfen WebAdaptor.config dosyanızın geçerli olduğundan emin olun; ayrıca Web Adaptor'ı http://{host}/{instance}/webadaptor üzerinden de tekrar yapılandırabilirsiniz</value>
+  </data>
+  <data name="wa_registerWebAdaptorFailure" xml:space="preserve">
+    <value>ArcGIS Server Web Adaptor'a kaydedilemiyor. Sunucu makinesinin çalıştığından ve tanımlı hesabın sitede yönetim ayrıcalıklarına sahip olduğundan emin olun.</value>
+  </data>
+  <data name="wa_help" xml:space="preserve">
+    <value>Yardım</value>
+  </data>
+  <data name="wa_status_machinesList" xml:space="preserve">
+    <value>Aşağıdaki sunucular Web Adaptor uygulamanızla yapılandırıldı:</value>
+  </data>
+  <data name="wa_status_noMachines" xml:space="preserve">
+    <value>Web Adaptor uygulamanızla yapılandırılan sunucu yok.</value>
+  </data>
+  <data name="wa_description2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_getAdminTokenFailure" xml:space="preserve">
+    <value>Sunucudan yönetici belirteci alınamadı. Belirtilen ArcGIS Server URL'sinin doğru ve erişilebilir olduğundan emin olun.</value>
+  </data>
+  <data name="wa_enableAdminAccess" xml:space="preserve">
+    <value> Web Adaptor yoluyla sitenize yönetim erişimini etkinleştirin.</value>
+  </data>
+  <data name="wa_serviceDirectoryDesc2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_serviceDirectoryDesc1" xml:space="preserve">
+    <value>Servisler Dizini'ne erişmek için aşağıdaki URL'yi kullanın:</value>
+  </data>
+  <data name="wa_serviceDirectoryDesc3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_displayRightToLeft" xml:space="preserve">
+    <value>yanlış</value>
+  </data>
+  <data name="wa_webAdaptorAccessedRemotely" xml:space="preserve">
+    <value>Web Adaptor yapılandırma URL'sine Web Adaptor'ı barındıran makineden erişilmesi gerekiyor.</value>
+  </data>
+  <data name="wa_webAdaptorAccessDenied" xml:space="preserve">
+    <value>Erişim engellendi.</value>
+  </data>
+  <data name="wa_configPageAdminPassworkToolTip" xml:space="preserve">
+    <value>ArcGIS Server sitesinde yönetim ayrıcalıkları olan bir hesabın parolasını girin.</value>
+  </data>
+  <data name="wa_configPageAdminUserNameToolTip" xml:space="preserve">
+    <value>ArcGIS Server sitesinde yönetim ayrıcalıkları olan bir hesabın parolasını girin. Bu hesap site ilk oluşturulduğunda girilen Birincil Site Yöneticisi hesabı veya site içinde yönetici ayrıcalığı atanmış bir hesap olabilir. &lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+ArcGIS Server kurulumunu çalıştırırken girdiğiniz işletim sistemi hesabını kullanmayın.</value>
+  </data>
+  <data name="wa_configPageEnableAdminToolTip" xml:space="preserve">
+    <value>Yönetici erişiminin etkinleştirilmesi ArcGIS Server Manager ve Administrator Directory uygulamalarına Web Adaptor üzerinden erişim sağlar. Bu seçenek işaretlenmediğinde, bu uygulamalara sitedeki sunuculardan birine doğrudan giden bir URL kullanılarak erişilmeye devam edilebilir. Örneğin:&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+ArcGIS Server Manager:&lt;br/&gt; https://serverhost.domain.com:6443&lt;br/&gt;/arcgis/manager&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+
+Administrator Directory:&lt;br/&gt; https://serverhost.domain.com:6443/arcgis/admin</value>
+  </data>
+  <data name="wa_configPageGisServerToolTip" xml:space="preserve">
+    <value>Sitenizdeki sunucularından birinin URL'sini girin. Bu URL sitenin bir parçası olan tüm makineleri bulmak ve bunların Web Adaptor kaydını yapmak için kullanılır.</value>
+  </data>
+  <data name="wa_configPageSharedKeyToolTip" xml:space="preserve">
+    <value>Web Adaptor ve ArcGIS Server arasındaki iletişimi şifrelemek için kullanılan paylaşılan anahtarı girin. Daha fazla bilgi için ArcGIS Server yardımındaki 'ArcGIS Server güvenliğini yapılandırma' yardım konusuna bakın.</value>
+  </data>
+  <data name="wa_status_lastUpdated" xml:space="preserve">
+    <value>En son {0} tarihinde güncellendi</value>
+  </data>
+  <data name="wa_timeoutError" xml:space="preserve">
+    <value>Web Adaptor yapılandırma sayfası, durgunluk nedeniyle zaman aşımına uğradı. Lütfen Web Adaptor yapılandırma sayfasını tekrar yükleyip yapılandırın.</value>
+  </data>
+  <data name="wa_adminaccessdisabled" xml:space="preserve">
+    <value>Yönetim erişimi devre dışı bırakıldı. Etkinleştirmek için lütfen sistem yöneticinizle iletişime geçin.</value>
+  </data>
+  <data name="wa_application_error" xml:space="preserve">
+    <value>Uygulama Hatası</value>
+  </data>
+  <data name="wa_gs_https_req" xml:space="preserve">
+    <value>HTTP isteği proxy'ye alınamıyor; ArcGIS Server yalnızca HTTPS isteklerini kabul edecek şekilde yapılandırılmış. Lütfen Web Server'ınızı SSL/HTTPS kullanacak şekilde yapılandırın.</value>
+  </data>
+  <data name="wa_https_req" xml:space="preserve">
+    <value>ArcGIS Web Adaptor SSL/HTTPS ile yapılandırılmış. Lütfen SSL/HTTPS'yi ArcGIS Server Siteniz için etkinleştirin.</value>
+  </data>
+  <data name="wa_versionmismatch" xml:space="preserve">
+    <value>ArcGIS Server, Web Adaptor ile yapılandırılamıyor. ArcGIS Server ve WebAdaptor sürümlerinin aynı olduğundan emin olun.</value>
+  </data>
+  <data name="wa_portalSharedKeyLabel" xml:space="preserve">
+    <value>Paylaşılan Anahtar:</value>
+  </data>
+  <data name="wa_portalSharedKeyMissing" xml:space="preserve">
+    <value>Lütfen Paylaşılan Anahtar'ı girin</value>
+  </data>
+  <data name="wa_portalSharedKeyToolTip" xml:space="preserve">
+    <value>Web Adaptor ile Portal arasındaki iletişimi şifrelemek için kullanılan paylaşılan anahtarı girin.</value>
+  </data>
+  <data name="wa_portalstatus_noMachines" xml:space="preserve">
+    <value>Portal Web Adaptor uygulamanızla yapılandırılmadı.</value>
+  </data>
+  <data name="wa_portalUpdateStatus" xml:space="preserve">
+    <value>Portalınızın Web Adaptor uygulamanıza kaydedilmesini tamamlamak için aşağıdakileri portal makinesindeki {Install}/portal/etc/portal-config.properties dosyasına kopyalayın ve sonra Portal for ArcGIS servisini tekrar başlatın.</value>
+  </data>
+  <data name="wa_portalURLDesc1" xml:space="preserve">
+    <value>Portal uygulamanıza erişmek için aşağıdaki URL'yi kullanın:</value>
+  </data>
+  <data name="wa_portalURLDesc2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_portalURLDesc3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_portalValidationSum" xml:space="preserve">
+    <value>Lütfen aşağıdaki hataları düzeltin:</value>
+  </data>
+  <data name="wa_portal_configPagePortalToolTip" xml:space="preserve">
+    <value>Portalınızın URL'sini girin. Bu URL, Portal'ı Web Adaptor'a kaydetmek için kullanılacak.</value>
+  </data>
+  <data name="wa_portal_description1" xml:space="preserve">
+    <value>Web Adaptor'ı yapılandırmak için URL'yi ve Portal'ınız için yönetici hesabını belirtin.</value>
+  </data>
+  <data name="wa_portal_exampleUrl" xml:space="preserve">
+    <value>Örnek: https://machine.domain.com:7443</value>
+  </data>
+  <data name="wa_portal_machinesList" xml:space="preserve">
+    <value>Aşağıdaki portal, Web Adaptor uygulamanızla başarıyla yapılandırıldı:</value>
+  </data>
+  <data name="wa_portal_portalUrlLabel" xml:space="preserve">
+    <value>Portal URL'si:</value>
+  </data>
+  <data name="wa_portal_urlMissing" xml:space="preserve">
+    <value>Lütfen bir Portal URL'si girin</value>
+  </data>
+  <data name="wa_portalnohttps" xml:space="preserve">
+    <value>Portal yapılandırması Web Server'da https'nin etkinleştirilmesini gerektirir. Lütfen bu sayfaya erişmek için bir https URL'si kullanın.</value>
+  </data>
+  <data name="wa_portal_fqdn_reqd" xml:space="preserve">
+    <value>Portal yapılandırması Portal URL'sinde tam olarak nitelenmiş etki alanı adı gerektirir</value>
+  </data>
+  <data name="wa_adminOperationsNotAllowed" xml:space="preserve">
+    <value>Bu yönetim işlemi, bir Web Adaptor üzerinden erişildiğinde kullanılamaz. Lütfen bu işleme sitedeki GIS sunucularından birine doğrudan bir URL kullanarak erişin.</value>
+  </data>
+  <data name="wa_config_next" xml:space="preserve">
+    <value>Sonraki &gt;</value>
+  </data>
+  <data name="wa_config_portal" xml:space="preserve">
+    <value>Portal for ArcGIS</value>
+  </data>
+  <data name="wa_config_server" xml:space="preserve">
+    <value>ArcGIS Server</value>
+  </data>
+  <data name="wa_config_server_or_portal" xml:space="preserve">
+    <value>Web Adaptor'ınız ile hangi ürünü yapılandırmak istiyorsunuz?</value>
+  </data>
+  <data name="wa_portal_prerequisite" xml:space="preserve">
+    <value>Yapılandırma Önkoşulu:</value>
+  </data>
+  <data name="wa_portal_prereq_desc1" xml:space="preserve">
+    <value>Portal for ArcGIS'e göre yapılandırılabilmesi için Web Adaptor'ın 80. portta çalışan bir web sitesine yüklenmesi gerekir.  Lütfen Web Adaptor'ı 80. portta çalışan bir web sitesine tekrar yükleyin.</value>
+  </data>
+  <data name="wa_portal_prereq_desc3" xml:space="preserve">
+    <value>ArcGIS Web Adaptor'ı yükleme.</value>
+  </data>
+  <data name="wa_portal_prereq_https_desc1" xml:space="preserve">
+    <value>Web Adaptor'ı Portal for ArcGIS'e kaydedebilmeniz için SSL'yi etkinleştirmeniz ve güvenlik sertifikanızı web sitenizde 443. porta bağlamanız gerekir. Daha fazla bilgi için, bkz. </value>
+  </data>
+  <data name="wa_portal_prereq_short_msg" xml:space="preserve">
+    <value>Portal for ArcGIS'e göre yapılandırılabilmesi için Web Adaptor'ın önce 80. portta çalışan bir web sitesine yüklenmesi gerekir.</value>
+  </data>
+  <data name="wa_portal_prereq_desc2" xml:space="preserve">
+    <value>Talimatlar için, bkz.</value>
+  </data>
+  <data name="wa_portal_prereq_https_desc2" xml:space="preserve">
+    <value>SSL'i web sunucunuzda etkinleştirme.</value>
+  </data>
+  <data name="wa_portal_prerq_https_desc1_443reqd" xml:space="preserve">
+    <value>Web Adaptor'ı Portal for ArcGIS'e kaydedebilmeniz için önce güvenlik sertifikanızı SSL portu 443'e bağlamanız gerekir.  Daha fazla bilgi için, bkz.</value>
+  </data>
+  <data name="wa_config_prev" xml:space="preserve">
+    <value>&lt; Geri</value>
+  </data>
+  <data name="wa_portal_prerq_https_443reqd" xml:space="preserve">
+    <value>Web Adaptor'ı Portal for ArcGIS'e kaydedebilmeniz için önce güvenlik sertifikanızı SSL portu 443'e bağlamanız gerekir</value>
+  </data>
+  <data name="wa_config_status" xml:space="preserve">
+    <value>Durum:</value>
+  </data>
+  <data name="wa_portal_configured_status" xml:space="preserve">
+    <value>Portal Web Adaptor uygulamanızla yapılandırıldı.</value>
+  </data>
+  <data name="wa_portal_not_configured_status" xml:space="preserve">
+    <value>Portal Web Adaptor uygulamanızla yapılandırılmadı.</value>
+  </data>
+  <data name="wa_server_configured_status" xml:space="preserve">
+    <value>Bir sunucu Web Adaptor uygulamanızla yapılandırıldı.</value>
+  </data>
+  <data name="wa_server_not_configured_status" xml:space="preserve">
+    <value>Bir sunucu Web Adaptor uygulamanızla yapılandırılmadı.</value>
+  </data>
+  <data name="wa_about" xml:space="preserve">
+    <value>Hakkında</value>
+  </data>
+  <data name="waConfigServerError1" xml:space="preserve">
+    <value>ArcGIS Web Adaptor'ı ArcGIS Server ile yapılandırabilmeniz için önce Web Adaptor uygulamasının .NET güven düzeyini IIS'de Tam olarak ayarlamalısınız. Yapılandırdıktan sonra uygulamanın güven düzeyini ilk düzeye geri ayarlayabilir ve sunucunuza Web Adaptor üzerinden normal şekilde erişebilirsiniz.</value>
+  </data>
+  <data name="waConfigServerError2" xml:space="preserve">
+    <value>ArcGIS Web Adaptor'ı Portal for ArcGIS ile yapılandırabilmeniz için önce Web Adaptor uygulamasının .NET güven düzeyini IIS'de Tam olarak ayarlamalısınız. Yapılandırdıktan sonra uygulamanın güven düzeyini ilk düzeye geri ayarlayabilir ve portalınıza Web Adaptor üzerinden normal şekilde erişebilirsiniz.</value>
+  </data>
+  <data name="waConfigServerError3" xml:space="preserve">
+    <value>.NET Güven Düzeyi'ni IIS'de yapılandırma.</value>
+  </data>
+  <data name="waConfigServerError4" xml:space="preserve">
+    <value>Daha fazla bilgi için, bkz.</value>
+  </data>
+  <data name="wa_trust_level_not_full" xml:space="preserve">
+    <value>Web Adaptor yapılandırma sayfasına erişmek için, güven düzeyinin Tam olarak atanması gerekir.</value>
+  </data>
+  <data name="wa_ArcGIS" xml:space="preserve">
+    <value>ArcGIS</value>
+  </data>
+  <data name="wa_build" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="wa_iis" xml:space="preserve">
+    <value>Web Adaptor (IIS)</value>
+  </data>
+  <data name="wa_version" xml:space="preserve">
+    <value>Versiyon:</value>
+  </data>
+  <data name="wa_portaladminaccessdisabled" xml:space="preserve">
+    <value>Yönetim erişimi devre dışı bırakıldı. Etkinleştirmek için sistem yöneticinizle iletişime geçin.</value>
+  </data>
+  <data name="wa_portalConfigPageAdminPasswordToolTip" xml:space="preserve">
+    <value>Portal'da yönetim ayrıcalıkları olan bir hesabın parolasını girin.</value>
+  </data>
+  <data name="wa_portalConfigPageAdminUserNameToolTip" xml:space="preserve">
+    <value>Portal'da yönetim ayrıcalıkları olan bir hesabın kullanıcı adını girin. Bu hesap, Portal'ınızı ilk yapılandırırken girilen İlk Yönetici hesabı veya yönetim ayrıcalığı atanmış bir hesap olabilir.</value>
+  </data>
+  <data name="wa_portalConfigPageEnableAdminToolTip" xml:space="preserve">
+    <value>Yönetim erişimini etkinleştirmek Portal Yönetici Dizini uygulamalarına Web Adaptor'dan erişilmesine izin verir. Bu seçenek işaretlenmeden bırakıldığında (önerilir), bu uygulamalara Portal'a doğrudan bir URL kullanılarak erişmeye devam edilebilir. Örnek:&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+Portal Yöneticisi:&lt;br/&gt; http://machine.domain.com:7080&lt;br/&gt;/arcgis/portaladmin&lt;br/&gt;</value>
+  </data>
+  <data name="wa_getPortalAdminTokenFailure" xml:space="preserve">
+    <value>Portal'dan yönetici belirteci alınamadı. Belirtilen Portal URL'sine başarıyla erişilebildiğini doğrulayın.</value>
+  </data>
+  <data name="wa_portalRegisterWebAdaptorFailure" xml:space="preserve">
+    <value>Portal, Web Adaptor ile yapılandırılamıyor. Portal makinesinin çalıştığından ve belirtilen hesabın Portal'da yönetici ayrıcalıklarına sahip olduğundan emin olun.</value>
+  </data>
+  <data name="wa_portal_multiplewaerror" xml:space="preserve">
+    <value>Bir Web Adaptor uygulaması Portal for ArcGIS ile önceden yapılandırılmış durumda. Portal ile yalnızca bir Web Adaptor yapılandırılabilir. Portalı farklı bir Web Adaptor kullanmak üzere güncellemek isterseniz, geçerli Web Adaptor uygulaması kaydını kaldırmanız gerekir. Talimatların tamamı için bkz.</value>
+  </data>
+  <data name="wa_portal_not_configured" xml:space="preserve">
+    <value>Yapılandırılmış portal yok</value>
+  </data>
+  <data name="wa_portal_unregisterwa" xml:space="preserve">
+    <value>ArcGIS Web Adaptor kaydı kaldırılıyor.</value>
+  </data>
+  <data name="wa_portal_restart_timout_error" xml:space="preserve">
+    <value>Portal uygulaması beklenen sürede yanıt vermedi. Belirtilen Portal URL'sinin erişilebilir olduğunu doğrulayın.</value>
+  </data>
+  <data name="wa_portal_loading_message" xml:space="preserve">
+    <value>Portal, Web Adaptor uygulamanızla yapılandırılıncaya kadar bekleyin. Bu, birkaç dakika sürebilir.</value>
+  </data>
+  <data name="wa_portal_loading_message1" xml:space="preserve">
+    <value>Yapılandırılma tamamlandıktan sonra, portala erişmek için kullanacağınız yeni URL görüntülenir.</value>
+  </data>
+  <data name="wa_logging_add_node" xml:space="preserve">
+    <value>HealthCheck Durumu {1} olan {0} düğümü ekleniyor</value>
+  </data>
+  <data name="wa_logging_admin_access_enabled" xml:space="preserve">
+    <value>Yönetici Erişimi Etkinleştirildi: </value>
+  </data>
+  <data name="wa_logging_config_req_url" xml:space="preserve">
+    <value>Web Adaptor yapılandırma isteği Url'si: </value>
+  </data>
+  <data name="wa_logging_config_resp" xml:space="preserve">
+    <value>Web Adaptor yapılandırma yanıtı: </value>
+  </data>
+  <data name="wa_logging_config_update" xml:space="preserve">
+    <value>Web Adaptor yapılandırması güncelleniyor.</value>
+  </data>
+  <data name="wa_logging_getmachines_req" xml:space="preserve">
+    <value>GetMachines isteği gönderiliyor.</value>
+  </data>
+  <data name="wa_logging_getmachines_requrl" xml:space="preserve">
+    <value>GetMachines isteği Url'si:</value>
+  </data>
+  <data name="wa_logging_getmachines_req_fail" xml:space="preserve">
+    <value>GetMachines isteği başarısız oldu: </value>
+  </data>
+  <data name="wa_logging_getmachines_resp" xml:space="preserve">
+    <value>GetMachines yanıtı: </value>
+  </data>
+  <data name="wa_logging_getwaconfig_fail" xml:space="preserve">
+    <value>Web Adaptor yapılandırma bilgileri alınamıyor.</value>
+  </data>
+  <data name="wa_logging_getwalist_fail" xml:space="preserve">
+    <value>Webadaptor öğelerinin alınamadı</value>
+  </data>
+  <data name="wa_logging_getwa_req_fail" xml:space="preserve">
+    <value>GET Web Adaptor yapılandırma isteği şu sunucuda başarısız oldu:</value>
+  </data>
+  <data name="wa_logging_health_check" xml:space="preserve">
+    <value>{0} düğümünün sağlıklı olup olmadığı denetleniyor</value>
+  </data>
+  <data name="wa_logging_https_port" xml:space="preserve">
+    <value>Server HttpsPort: </value>
+  </data>
+  <data name="wa_logging_https_url_req" xml:space="preserve">
+    <value>Https Url'si ile deneniyor.</value>
+  </data>
+  <data name="wa_logging_http_port" xml:space="preserve">
+    <value>Server HttpPort:</value>
+  </data>
+  <data name="wa_logging_http_url_req" xml:space="preserve">
+    <value>Http Url'si ile deneniyor.</value>
+  </data>
+  <data name="wa_logging_load_config_file_fail" xml:space="preserve">
+    <value>Yapılandırma dosyası yüklenemedi, geçerli olup olmadığını denetleyin.</value>
+  </data>
+  <data name="wa_logging_mark_node" xml:space="preserve">
+    <value>{0} düğümü UnHealthy Olarak İşaretleniyor</value>
+  </data>
+  <data name="wa_logging_next_node" xml:space="preserve">
+    <value>Sonraki düğüm deneniyor</value>
+  </data>
+  <data name="wa_logging_portal_restart" xml:space="preserve">
+    <value>Web sunucusunun yeniden başlatılması bekleniyor</value>
+  </data>
+  <data name="wa_logging_portal_wareg_succ" xml:space="preserve">
+    <value>Web Adaptor, Portala başarıyla kaydedildi.</value>
+  </data>
+  <data name="wa_logging_proxy_url" xml:space="preserve">
+    <value>İstek Url'ye proxy ile iletiliyor: </value>
+  </data>
+  <data name="wa_logging_regwa_resp" xml:space="preserve">
+    <value>Web Adaptor Kaydını Yap yanıtı:</value>
+  </data>
+  <data name="wa_logging_reg_success" xml:space="preserve">
+    <value>WebAdaptor kaydı başarıyla yapıldı.</value>
+  </data>
+  <data name="wa_logging_remove_node" xml:space="preserve">
+    <value>Düğüm listeden kaldırılıyor:</value>
+  </data>
+  <data name="wa_logging_req_failed" xml:space="preserve">
+    <value>Sunucuya gönderilen istek başarısız oldu:</value>
+  </data>
+  <data name="wa_logging_req_headers" xml:space="preserve">
+    <value>İstek başlıkları sunucuya gönderiliyor.</value>
+  </data>
+  <data name="wa_logging_req_url" xml:space="preserve">
+    <value>İstek Url'si: </value>
+  </data>
+  <data name="wa_logging_resp_headers" xml:space="preserve">
+    <value>Yanıt başlıkları gönderiliyor.</value>
+  </data>
+  <data name="wa_logging_svr_protocol" xml:space="preserve">
+    <value>Sunucu Protokolü: </value>
+  </data>
+  <data name="wa_logging_unregwa_fail" xml:space="preserve">
+    <value>Webadaptor kaydı kaldırılamadı.</value>
+  </data>
+  <data name="wa_logging_unregwa_succ" xml:space="preserve">
+    <value>Web Adaptor kaydı başarıyla kaldırıldı.</value>
+  </data>
+  <data name="wa_logging_unreg_wa_url" xml:space="preserve">
+    <value>Web Adaptor kaydı şu istek Url'siyle kaldırılıyor: </value>
+  </data>
+  <data name="wa_logging_updated_nodelist" xml:space="preserve">
+    <value>Düğüm listesi güncellendi.</value>
+  </data>
+  <data name="wa_logging_update_nodelist" xml:space="preserve">
+    <value>Düğüm listesi GetMachines aramasından güncelleniyor</value>
+  </data>
+  <data name="wa_logging_waconfig_404_resp" xml:space="preserve">
+    <value>404 yanıtı alındı. Yapılandırma sıfırlanıyor.</value>
+  </data>
+  <data name="wa_logging_wa_id" xml:space="preserve">
+    <value>Web Adaptor Kimliği: </value>
+  </data>
+  <data name="wa_logging_webexception" xml:space="preserve">
+    <value>Sunucu tarafından döndürülen WebException</value>
+  </data>
+  <data name="wa_logging_healthcheck_status" xml:space="preserve">
+    <value>{0} sunucusunun sağlık durumu: {1}</value>
+  </data>
+  <data name="wa_logging_gemachines_reqfail" xml:space="preserve">
+    <value>{0} sunucusuna gönderilen GetMachines isteği başarısız oldu:</value>
+  </data>
+  <data name="wa_logging_folder_invalid" xml:space="preserve">
+    <value>Web Adatptor günlük klasörü geçersiz veya erişilemez durumda.</value>
+  </data>
+  <data name="wa_no_server_nodes" xml:space="preserve">
+    <value>Herhangi bir sunucu makinesine erişilemiyor. Sistem yöneticinizle görüşün.</value>
+  </data>
+  <data name="wa_portalversionmismatch" xml:space="preserve">
+    <value>Portal, Web Adaptor ile yapılandırılamıyor. Portal ve WebAdaptor sürümlerinin aynı olduğundan emin olun.</value>
+  </data>
+  <data name="wa_logging_portal_gemachines_reqfail" xml:space="preserve">
+    <value>{0} Portal Düğümüne gönderilen GetMachines isteği başarısız oldu:</value>
+  </data>
+  <data name="wa_logging_portal_healthcheck_status" xml:space="preserve">
+    <value>{0} Portal Düğümünün sağlık durumu: {1}</value>
+  </data>
+  <data name="wa_no_portalnodes" xml:space="preserve">
+    <value>Herhangi bir Portal makinesine erişilemedi. Sistem yöneticinize danışın.</value>
+  </data>
+  <data name="wa_portal_not_configured_wacontexturl" xml:space="preserve">
+    <value>Bir Web Adaptor zaten Portal for ArcGIS ile yapılandırılmış durumda. Birden çok Web Adaptor yapılandırmak için ArcGIS Portal Directory'deki WebContextURL özelliğini ayarlayın, bkz. </value>
+  </data>
+  <data name="wa_portaladminOperationsNotAllowed" xml:space="preserve">
+    <value>Bu yönetim işlemi, bir Web Adaptor üzerinden erişildiğinde kullanılamaz. Sitedeki Portal makinelerinden birine doğrudan URL kullanarak bu işleme erişin.</value>
+  </data>
+  <data name="waRegMultipleWAwithPortal" xml:space="preserve">
+    <value>Birden Çok Web Adaptor Öğesini Portala Kaydetme</value>
+  </data>
+  <data name="wa_config_warning" xml:space="preserve">
+    <value>Bu Web Adaptor zaten yapılandırılmış. Lütfen Server ve Portal için Web Adaptor'lar yapılandırın.</value>
+  </data>
+</root>

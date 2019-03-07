@@ -1,0 +1,31 @@
+<html lang="ja" xml:lang="ja"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="Web 層認証を使用する際には、ArcGIS Web Adaptor のシステム メモリ キャッシュのオプションを構成します。"><meta name="content-language" content="ja"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+ArcGIS Web Adaptor のメモリ キャッシュ オプションの構成
+</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-070AFEC5-DE9F-49D1-9019-C5350B73D24F]--><body><div id="content"><div class="header"><h1>
+ArcGIS Web Adaptor のメモリ キャッシュ オプションの構成
+</h1><div id="breadcrumb"></div></div>
+<p id="GUID-B6D4217C-6336-442A-B229-7FA63AE8931E">認証されたユーザーが ArcGIS Server のリソースにアクセスする際に、<span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> で Web 層認証が有効になっていると、ArcGIS Web Adaptor はそのユーザーのロール メンバーシップ リストを Active Directory から取得します。Active Directory を何度も呼び出してユーザーのロール リストを取得しようとすると、Active Directory と ArcGIS Server のいずれにおいてもパフォーマンスに悪影響を与えます。パフォーマンスを最適化するために、ArcGIS Web Adaptor は、ユーザーがメンバーになっているロールのリストのキャッシュを作成します。</p><p id="GUID-1CDC5BEE-8AAD-41B2-94FD-49D5E74EBF3E">  <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> の標準インストールの場合、ユーザーのロールのキャッシュは、Web ブラウザーで管理されているクッキー、または ArcGIS Web Adaptor をホストしている Web サーバーのプライマリ システム メモリ (RAM) に作成されます。ユーザーのロール リストのサイズが 4KB 未満の場合、そのリストは Web ブラウザーにクッキーとして格納されます。サイズが 4KB 以上のリストは、システム メモリで管理されます。</p><p id="GUID-EA9D29F6-6927-4812-814E-C85A6257BE3A"> ユーザーのロール リストが Web ブラウザーのクッキー キャッシュに格納された場合は、1 分以内にそのリストの有効期限が切れます。<span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> のシステム メモリ キャッシュはユーザーのロール リストを格納できるように構成可能であり、そのプロパティは <span class="usertext">C:\inetpub\wwwroot\{Web Adaptor name}\WebAdaptor.config</span> ファイル内に定義されている <span class="usertext">RoleCache</span> エレメントで管理されます。<span class="usertext">RoleCache</span> エレメントとそのプロパティを次のセクションで説明します。</p><div class="codeblock" purpose="codeblock"><div class="codeblockdesc" purpose="codeblockdesc"></div><div class="highlight"><pre><code>&lt;RoleCache&gt;
+    &lt;NumberOfUsers&gt;100&lt;/NumberOfUsers&gt;
+    &lt;Expiration&gt;5&lt;/Expiration&gt;
+    &lt;Enabled&gt;true&lt;/Enabled&gt;
+    &lt;CacheAllRolesInMemory&gt;false&lt;/CacheAllRolesInMemory&gt;
+&lt;/RoleCache&gt;
+</code></pre></div>
+</div>
+<div class="block_table" id="TABLE_EF8BAAF0FDF64239B08FED5D5B915E86" purpose="block_table"><span class="table_title"></span><table class="table"><colgroup width="*"></colgroup><colgroup width="*"></colgroup><tbody><tr><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-D8F520D0-4B12-441C-8F71-C596237D681B"><b>プロパティ</b></p></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-DC30A72B-4E44-4F87-9C2B-1216823822B9"><b>説明</b></p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">NumberOfUsers</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-2BC513E0-7140-441A-B05A-31195274C561">このプロパティによって、ロール メンバーシップ リストをシステム メモリに格納できるユーザーの数が制限されます。</p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">Expiration</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-E5179A5F-CBC2-4246-B7F7-185B07C05539">このプロパティでは、ユーザーのロール リストがシステム メモリに格納される時間を分単位で指定します。このプロパティの推奨最大値は 1 日 (1,440 分) です。</p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">Enabled</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-F8500AB5-C7AE-427A-973C-ABEF5F309003">このプロパティを使用すると、システム メモリ キャッシュが無効になります。システム キャッシュを無効にすることは推奨していません。</p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">CacheAllRolesInMemory</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-C237AC7D-3C6E-4E28-9B4E-A8B76EA87F42">このプロパティを <span class="usertext">true</span> に設定すると、クッキー キャッシュが無効になり、システム メモリだけがすべてのユーザーのロール メンバーシップ リストのキャッシュに使用されます。</p></td></tr></tbody><caption class="table_desc"></caption></table></div><div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

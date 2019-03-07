@@ -1,0 +1,32 @@
+<html lang="zh-cn" xml:lang="zh-cn"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="通过门户配置多个 ArcGIS Web Adaptor。"><meta name="content-language" content="zh-cn"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+配置多个 ArcGIS Web Adaptor</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-7026982B-45C5-4389-AE86-6F7373C4BF63]--><body><div id="content"><div class="header"><h1>
+配置多个 ArcGIS Web Adaptor</h1><div id="breadcrumb"></div></div>
+<p id="GUID-62BCF47E-BDC4-4394-BBE1-162FFEBB9A09"> 配置使用 Web 层身份验证的高可用性门户时，会需要多个 <span purpose="ph" translate="no" varid="WebAdaptorforArcGIS">ArcGIS Web Adaptor</span>。要使用 <span purpose="ph" translate="no" varid="PortalForArcGIS">Portal for ArcGIS</span> 配置多个 Web Adaptor，需要使用单一端点来访问门户。必须在 <span class="usertext">WebContextURL </span> 属性中定义该 URL。然后即可按照下列步骤使用门户对多个 Web Adaptor 进行配置。</p><div class="wfsteps" purpose="wfsteps"><h4></h4><div class="steps" id="GUID-B2B3F0A1-012E-48DE-A0A7-5AECAFFDCCED"><div class="step_title">步骤：</div><ol>
+<li purpose="step" id="GUID-2DBEC3A7-A000-432D-9082-D6E09A50C993">
+<span purpose="cmd" id="GUID-39134131-C1C9-4005-9439-0121C845F2EF">
+<span purpose="ph" ishcondition="srv_platform=dotnet"><a class="xref" rel="01n1/01n10000001p000000.htm" href="01n1/01n10000001p000000.htm">通过门户配置第一个 ArcGIS Web Adaptor</a>。</span>  </span>
+</li>
+<li purpose="step" id="ESRI_STEP_4429388B35CB4A9C8EB8148FBF59D4D8"><span purpose="cmd" id="GUID-54EAC279-AD6B-4CBF-B329-43D3CA04878E"><span purpose="ph" ishcondition="srv_platform=dotnet"><a class="xref" rel="01n1/01n100000036000000.htm" href="01n1/01n100000036000000.htm">将 Portal for ArcGIS 添加到反向代理服务器。</a></span>   确保已按下列步骤设置 <span class="usertext">WebContextURL</span> 属性：</span><div class="substeps" id="ESRI_SUBSTEPS_0BB5983D9BE44FF083C4A4F01D7C224E" purpose="substeps"><ol><li purpose="substep" id="ESRI_SUBSTEP_A546F1E5C1FF4931ACFE45A64A55AE79"><span purpose="cmd" id="GUID-D2B10BDE-4876-4A61-8911-CAE5249D5FD1">打开 Web 浏览器并以组织管理员的身份登录到 <a class="xref" target="_blank" rel="http://server.arcgis.com/zh-cn/portal/latest/administer/windows/about-the-arcgis-portal-directory.htm" href="http://server.arcgis.com/zh-cn/portal/latest/administer/windows/about-the-arcgis-portal-directory.htm">ArcGIS Portal Directory</a>。URL 地址格式为 <span class="usertext">https://portal.domain.com:7443/arcgis/portaladmin</span>。</span></li><li purpose="substep" id="ESRI_SUBSTEP_50B8DC1E15AC4ADD828E66B7CCBC7575"><span purpose="cmd" id="GUID-E8118541-F2E4-48B8-BF30-E62A43C7DCFF">单击<span class="uicontrol">系统 <span class="greaterthan">&gt;</span> 属性 <span class="greaterthan">&gt;</span> 更新属性</span>。这将导致 <span purpose="ph" translate="no" varid="PortalForArcGIS">Portal for ArcGIS</span> 服务重启。您将需要等待重新启动完成后才能继续操作。</span></li><li purpose="substep" id="ESRI_SUBSTEP_A33524C42ED64DE093B3F98EBEB064B5"><span purpose="cmd" id="GUID-063C0CE8-7348-4DDA-BB7E-7A4032491D28">在<span class="uicontrol">更新系统属性</span>对话框中，插入以下 JSON，将您自己的反向代理服务器或 DNS 别名 URL 替换为组织防火墙以外的用户所看到的 URL。</span><div class="info" purpose="info"><div class="codeblock" purpose="codeblock"><div class="codeblockdesc" purpose="codeblockdesc"></div><div class="highlight"><pre><code>{
+   &quot;WebContextURL&quot;: &quot;https://reverseproxy.domain.com/myorg&quot;
+}
+</code></pre></div>
+</div></div></li><li purpose="substep" id="ESRI_SUBSTEP_EC38AC71D65C4C799D3B393DFA1E1706"><span purpose="cmd" id="GUID-2D3DBC34-4358-4CC3-97A3-A368FAFB412E">单击<span class="uicontrol">更新属性</span>。</span></li></ol></div></li>
+<li purpose="step" id="ESRI_STEP_94653773BB924FDFB442BAFE22C818A3"><span purpose="cmd" id="GUID-7AB344D3-48E9-4BFD-A982-EFC56F5771DD">配置附加 Web Adaptor。</span></li></ol></div></div>
+<div class="wfsummary" id="ESRI_WORKFLOWSUMMARY_99CEDEDA0E9F4544B2504602ADA0B2D7" purpose="wfsummary"><p id="GUID-754EB1FD-25B8-4BC7-8615-91644A7E1DA6">通过门户配置的所有 Web Adaptor 都将在配置摘要页面中列出。用户可通过反向代理服务器或 DNS 别名 URL 访问门户网站。</p></div><div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

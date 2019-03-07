@@ -1,0 +1,61 @@
+<html lang="es" xml:lang="es"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="ArcGIS Web Adaptor necesita que IIS esté habilitado y que determinados componentes de IIS estén habilitados en Windows 8/8.1."><meta name="content-language" content="es"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+Habilitar IIS y los componentes requeridos de IIS en Windows 8/8.1</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-7F7BE5E0-C1CA-431D-81E4-E8565CC19153]--><body><div id="content"><div class="header"><h1>
+Habilitar IIS y los componentes requeridos de IIS en Windows 8/8.1</h1><div id="breadcrumb"></div></div>
+<p id="GUID-1FD43CF9-5CD5-4AD6-BF52-325FE27FEB51"><span purpose="ph" translate="no" varid="WebAdaptorforArcGIS">ArcGIS Web Adaptor</span> necesita que IIS esté habilitado y que determinados componentes de IIS estén habilitados en Windows 8/8.1. No se podrá proceder con la instalación si no se detecta IIS y los componentes de IIS específicos no están habilitados.</p><p id="GUID-8D700D1D-97A2-4A38-86F1-655419F75B12">Si ya ha habilitado IIS pero faltan los componentes necesarios de IIS, el proceso de instalación mostrará un mensaje indicando que faltan ciertos componentes de IIS. Tiene la opción de permitir que la instalación habilite automáticamente los componentes de IIS obligatorios. Sin embargo, dependiendo de las políticas de seguridad de su organización, tal vez sea necesario habilitar manualmente los componentes requeridos de IIS, tal y como se describe a continuación.</p><p id="GUID-9DCCF9AB-A2CA-40EA-9629-53F143CE2589">Para aprender a habilitar IIS y los componentes de IIS requeridos en Windows 8/8.1, consulte las instrucciones siguientes.</p>
+
+<ol purpose="ol" id="OL_46402731458F49C0A9EB581C4EA827E0">
+<li purpose="li" id="LI_647597BAD9574248B38072995F191E73">Abra el <span class="uicontrol">Panel de control</span> y haga clic en <span class="uicontrol">Programas y características <span class="greaterthan">&gt;</span> Activar o desactivar las características de Windows</span>.</li><li purpose="li" id="LI_F4EDD90558164B4ABA20ED80082FAC6F">Habilite <span class="uicontrol">Internet Information Services</span>.</li><li purpose="li" id="LI_A7882913E62E436C9DD4BCE59F24411E">Expanda la característica <span class="uicontrol">Internet Information Services</span> y verifique que estén habilitados los componentes de servidor Web que se enumeran más abajo.</li><li purpose="li" id="LI_045A3A2F92F642A9B7F28713F1752F74">Haga clic en <span class="uicontrol">Aceptar</span>.</li>
+
+
+</ol><div class="section1" id="GUID-62088EDA-F929-4B8B-8AE8-E8633CBD3C39" purpose="section1"><h2>Componentes de IIS necesarios</h2><p id="GUID-D6CF329E-D038-4925-8022-343169495939">  Los componentes de IIS que se detallan a continuación cumplen con los requisitos mínimos para ejecutar Web Adaptor. Si están habilitados otros componentes de IIS, no es necesario quitarlos.</p><p id="GUID-09D61B57-1919-4D5B-90F3-96A57DBE11C2">
+<ul purpose="ul" id="UL_ADFC533BF75546D08440CA3281C8D1F3">
+<li purpose="li" id="LI_DF5B55DCCB02413890EA96FE915244DB">Herramientas de administración Web<ul purpose="ul" id="UL_B5EBD76273EB4E2A8BA78B277C9DB04B">
+<li purpose="li" id="LI_AD26EDB3017F4036A7D94E002613F45D">Compatibilidad con la administración de IIS 6<ul purpose="ul" id="UL_DEE11B1297DF49699640EBAA5F2A44FE">
+<li purpose="li" id="LI_E990497BFAEA4306BF860A084F037727">Compatibilidad con la configuración de IIS 6 y metabase de IIS</li>
+</ul></li>
+<li purpose="li" id="LI_3826B191F8874132A38AB54EC6826FE2">Consola de administración de IIS</li>
+<li purpose="li" id="LI_32069508E63648A7AF4B23F6F2850DA3">Scripts y herramientas de administración de IIS</li>
+<li purpose="li" id="LI_09C68FE68C4F40AFA97C4E766F43BA89">Servicio de administración de IIS</li>
+</ul></li>
+</ul>
+</p><p id="GUID-99F83C1F-8C07-439E-933D-87A162F3D7F3">
+<ul purpose="ul" id="UL_EAD12FF6A3064513879C7B7140D1EC33">
+<li purpose="li" id="LI_4B6E9B74219E42B29854722C112741D5">Servicios World Wide Web<ul purpose="ul" id="UL_D6419E9CF6474A078E4F3AFA71823F56">
+<li purpose="li" id="LI_A3E044B76577419C977BC1D6942F1E6A">Características de desarrollo de aplicaciones <p id="GUID-80E7A12F-F7F2-43DC-AE45-5F2FA54C8E11">
+<ul purpose="ul" id="UL_D50B0AB2C4B34F219CD1C659D3B3AD02">
+<li purpose="li" id="LI_EF41A54E95FC45A4A0CEAC1BB6A2CCDA">.NET Extensibility 4.5</li>
+<li purpose="li" id="LI_5A74183ACA194DCDA44421B8F30F3024">ASP.NET 4.5</li>
+<li purpose="li" id="LI_5F64064FA7EB4B3F952600BC9A47E44E">Extensiones ISAPI</li>
+<li purpose="li" id="LI_8233ED85E9AB4F29A909A0DFCC0109AC">Filtros ISAPI</li>
+</ul>
+</p></li>
+<li purpose="li" id="LI_FFEFB8C0EB214098A2555E69CA2F7BAE">Características HTTP comunes<ul purpose="ul" id="UL_90FAA398F32E489BA00D869EF84FCBAF">
+<li purpose="li" id="LI_DAE8F678E4B54FC3B724C034056685AA">Documento predeterminado</li>
+<li purpose="li" id="LI_56F81EADF5F34C928D23F914E37DB5AD">Contenido estático</li>
+</ul></li>
+<li purpose="li" id="LI_BEDEC5F0B9A74CE99CF12D22FE9A3202">Seguridad<ul purpose="ul" id="UL_F7A457798B4346968D8782AC3D3C9320">
+<li purpose="li" id="LI_8318FAE417AE42F1BA525B42F50CF1CC">Autenticación básica</li>
+<li purpose="li" id="LI_EC1E6250DEAE48A79572785F2B0AE839">Filtro de solicitudes</li>
+<li purpose="li" id="LI_6033D8FEC59641C3A05D52D86BED58FE">Autenticación de Windows</li>
+</ul></li>
+</ul></li>
+</ul>
+</p></div>
+<div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

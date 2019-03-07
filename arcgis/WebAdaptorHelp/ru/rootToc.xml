@@ -1,0 +1,126 @@
+<map title='Справка ArcGIS Web Adaptor'>
+<topichead title='Введение'>
+<topicref title='Начало работы с ArcGIS Web Adaptor' path='01n1/01n10000001n000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Установка и настройка ArcGIS Web Adaptor для работы с ArcGIS Server'>
+<topicref title='О программе ArcGIS Web Adaptor' path='01n1/01n100000012000000.htm'>
+</topicref>
+<topicref title='Обзор использования ArcGIS Web Adaptor с ArcGIS Server' path='01n1/01n10000000t000000.htm'>
+</topicref>
+<topichead title='Шаг 1: Планирование конфигурации сайта ArcGIS Server'>
+<topicref title='Компоненты сайта ArcGIS Server' path='01n1/01n10000000z000000.htm'>
+</topicref>
+<topicref title='Сценарии развертывания' path='01n1/01n10000000m000000.htm'>
+</topicref>
+<topichead title='Настройки для сайта на одной машине.'>
+<topicref title='Развертывание на одном компьютере' path='01n1/01n10000002w000000.htm'>
+</topicref>
+<topicref title='Развертывание на одном компьютере с использованием обратного прокси-сервера' path='01n1/01n10000002r000000.htm'>
+</topicref>
+<topicref title='Развертывание конфигурации с одним активным сервером высокой доступности (active-passive)' path='01n1/01n10000002s000000.htm'>
+</topicref>
+<topicref title='Конфигурация развертывания с одним сервером высокой доступности (active-active)' path='01n1/01n10000002z000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Настройки для сайта на нескольких машинах'>
+<topicref title='Развертывание на нескольких компьютерах ArcGIS Web Adaptor' path='01n1/01n10000002t000000.htm'>
+</topicref>
+<topicref title='Развертывание на нескольких серверах с балансировщиком нагрузки стороннего разработчика' path='01n1/01n100000030000000.htm'>
+</topicref>
+</topichead>
+</topichead>
+<topichead title='Шаг 2: Установка ArcGIS Web Adaptor'>
+<topicref title='Установка ArcGIS Web Adaptor' path='01n1/01n100000008000000.htm'>
+</topicref>
+<topicref title='Установка ArcGIS Web Adaptor в автоматическом режиме' path='01n1/01n10000000q000000.htm'>
+</topicref>
+<topicref title='Установка нескольких ArcGIS Web Adaptor' path='01n1/01n100000016000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Шаг 3: Настройка ArcGIS Web Adaptor'>
+<topicref title='Настройка ArcGIS Web Adaptor' path='01n1/01n100000017000000.htm'>
+</topicref>
+<topicref title='Отмена регистрации ArcGIS Web Adaptor с ArcGIS Server' path='01n1/01n100000038000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Удаление ArcGIS Web Adaptor'>
+<topicref title='Удаление ArcGIS Web Adaptor' path='01n1/01n10000000n000000.htm'>
+</topicref>
+</topichead>
+<topicref title='Настройка уровня доверия .NET в IIS' path='01n1/01n10000002p000000.htm'>
+</topicref>
+<topicref title='Отключение поиска групп Windows Active Directory в ArcGIS Web Adaptor (IIS)' path='01n1/01n100000031000000.htm'>
+</topicref>
+<topicref title='Настройка опций кэша памяти ArcGIS Web Adaptor' path='01n1/01n100000035000000.htm'>
+</topicref>
+<topicref title='Настройка HTTPS на ArcGIS Server при доступе через ArcGIS Web Adaptor' path='01n1/01n10000000p000000.htm'>
+</topicref>
+<topicref title='Включение HTTPS на вашем веб-сервере' path='01n1/01n10000002m000000.htm'>
+</topicref>
+<topicref title='Защита веб-сервисов при помощи встроенной системы аутентификации Windows' path='01n1/01n100000028000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Установка и настройка ArcGIS Web Adaptor для работы с Portal for ArcGIS'>
+<topicref title='О программе ArcGIS Web Adaptor' path='01n1/01n100000023000000.htm'>
+</topicref>
+<topicref title='Обзор использования ArcGIS Web Adaptor с Portal for ArcGIS' path='01n1/01n100000021000000.htm'>
+</topicref>
+<topichead title='Шаг 1: Планирование конфигурации Portal for ArcGIS'>
+<topicref title='Роль портала в ArcGIS' path='01n1/01n10000001s000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Шаг 2: Включение HTTPS на вашем веб-сервере'>
+<topicref title='Включение HTTPS на вашем веб-сервере' path='01n1/01n100000026000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Шаг 3: Установка ArcGIS Web Adaptor'>
+<topicref title='Установка ArcGIS Web Adaptor' path='01n1/01n100000019000000.htm'>
+</topicref>
+<topicref title='Установка ArcGIS Web Adaptor в автоматическом режиме' path='01n1/01n10000001v000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Шаг 4: Настройка ArcGIS Web Adaptor'>
+<topicref title='Настройка ArcGIS Web Adaptor' path='01n1/01n10000001p000000.htm'>
+</topicref>
+<topicref title='Настройка нескольких ArcGIS Web Adaptor' path='01n1/01n100000037000000.htm'>
+</topicref>
+<topicref title='Отмена регистрации ArcGIS Web Adaptor на Portal for ArcGIS' path='01n1/01n10000002q000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Удаление ArcGIS Web Adaptor'>
+<topicref title='Удаление ArcGIS Web Adaptor' path='01n1/01n100000025000000.htm'>
+</topicref>
+</topichead>
+<topicref title='Настройка уровня доверия .NET в IIS' path='01n1/01n10000002n000000.htm'>
+</topicref>
+<topicref title='Использование встроенной аутентификации Windows в вашем портале' path='01n1/01n100000029000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Справочная информация'>
+<topicref title='Системные требования ArcGIS Web Adaptor 10.6' path='01n1/01n100000034000000.htm'>
+</topicref>
+<topicref title='Использование обратного прокси-сервера с Portal for ArcGIS' path='01n1/01n100000036000000.htm'>
+</topicref>
+<topicref title='О файлах междоменной политики' path='01n1/01n100000027000000.htm'>
+</topicref>
+<topicref title='Настройка языка интерфейса ArcGIS Web Adaptor' path='01n1/01n10000000s000000.htm'>
+</topicref>
+<topichead title='Включение IIS и требуемых компонентов IIS'>
+<topicref title='Автоматическая активация компонентов IIS' path='01n1/01n100000015000000.htm'>
+</topicref>
+<topicref title='Включение IIS и обязательных компонентов IIS в Windows Server 2012/2012 R2' path='01n1/01n100000011000000.htm'>
+</topicref>
+<topicref title='Включение IIS и обязательных компонентов IIS в Windows Server 2008/2008 R2' path='01n1/01n10000000w000000.htm'>
+</topicref>
+<topicref title='Включение IIS и обязательных компонентов IIS в Windows 8/8.1' path='01n1/01n100000010000000.htm'>
+</topicref>
+<topicref title='Включение IIS и обязательных компонентов IIS в Windows 7' path='01n1/01n100000013000000.htm'>
+</topicref>
+</topichead>
+<topicref title='Вопросы, обратная связь и дополнительная информация' path='01n1/01n100000032000000.htm'>
+</topicref>
+<topicref title='Copyright information' path='01n1/01n100000033000000.htm'>
+</topicref>
+</topichead>
+</map>

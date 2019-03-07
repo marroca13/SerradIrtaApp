@@ -1,0 +1,61 @@
+<html lang="fr" xml:lang="fr"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="ArcGIS Web Adaptor nécessite qu'IIS et que certains composants IIS spécifiques soient activés sous Windows 8/8.1."><meta name="content-language" content="fr"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+Activation d'IIS et des composants IIS requis sous Windows 8/8.1</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-7F7BE5E0-C1CA-431D-81E4-E8565CC19153]--><body><div id="content"><div class="header"><h1>
+Activation d'IIS et des composants IIS requis sous Windows 8/8.1</h1><div id="breadcrumb"></div></div>
+<p id="GUID-1FD43CF9-5CD5-4AD6-BF52-325FE27FEB51"><span purpose="ph" translate="no" varid="WebAdaptorforArcGIS">ArcGIS Web Adaptor</span> nécessite qu'IIS et que certains composants IIS spécifiques soient activés sous Windows 8/8.1. Le programme d'installation ne se poursuit pas si IIS n'est pas détecté et que les composants IIS spécifiques ne sont pas activés.</p><p id="GUID-8D700D1D-97A2-4A38-86F1-655419F75B12">Si vous avez déjà activé IIS, mais que les composants IIS requis manquent, l'installation affiche un message indiquant que certains composants IIS sont manquants. Vous avez la possibilité d'autoriser l'installation à activer automatiquement les composants IIS. Cependant, selon les règles de sécurité de votre organisation, il peut s'avérer nécessaire d'activer manuellement les composants IIS requis, comme décrit ci-après.</p><p id="GUID-9DCCF9AB-A2CA-40EA-9629-53F143CE2589">Pour savoir comment activer IIS et les composants IIS requis sous Windows 8/8.1, consultez les instructions ci-après.</p>
+
+<ol purpose="ol" id="OL_46402731458F49C0A9EB581C4EA827E0">
+<li purpose="li" id="LI_647597BAD9574248B38072995F191E73">Ouvrez <span class="uicontrol">Panneau de configuration</span>, puis cliquez sur <span class="uicontrol">Programmes et fonctionnalités <span class="greaterthan">&gt;</span> Activer ou désactiver des fonctionnalités Windows</span>.</li><li purpose="li" id="LI_F4EDD90558164B4ABA20ED80082FAC6F">Activez <span class="uicontrol">Internet Information Services</span>.</li><li purpose="li" id="LI_A7882913E62E436C9DD4BCE59F24411E">Développez la fonctionnalité <span class="uicontrol">Internet Information Services</span> et vérifiez que les composants de serveur Web ci-dessous sont activés.</li><li purpose="li" id="LI_045A3A2F92F642A9B7F28713F1752F74">Cliquez sur <span class="uicontrol">OK</span>.</li>
+
+
+</ol><div class="section1" id="GUID-62088EDA-F929-4B8B-8AE8-E8633CBD3C39" purpose="section1"><h2>Composants IIS requis</h2><p id="GUID-D6CF329E-D038-4925-8022-343169495939">  Les composants IIS répertoriés ci-après correspondent à la configuration minimale requise pour exécuter Web Adaptor. Si d'autres composants IIS sont activés, ils n'ont pas besoin d'être supprimés.</p><p id="GUID-09D61B57-1919-4D5B-90F3-96A57DBE11C2">
+<ul purpose="ul" id="UL_ADFC533BF75546D08440CA3281C8D1F3">
+<li purpose="li" id="LI_DF5B55DCCB02413890EA96FE915244DB">Outils d'administration Web<ul purpose="ul" id="UL_B5EBD76273EB4E2A8BA78B277C9DB04B">
+<li purpose="li" id="LI_AD26EDB3017F4036A7D94E002613F45D">Compatibilité avec la gestion IIS 6<ul purpose="ul" id="UL_DEE11B1297DF49699640EBAA5F2A44FE">
+<li purpose="li" id="LI_E990497BFAEA4306BF860A084F037727">Compatibilité avec la métabase IIS et la configuration IIS 6</li>
+</ul></li>
+<li purpose="li" id="LI_3826B191F8874132A38AB54EC6826FE2">Console de gestion IIS</li>
+<li purpose="li" id="LI_32069508E63648A7AF4B23F6F2850DA3">Scripts et outils de gestion IIS</li>
+<li purpose="li" id="LI_09C68FE68C4F40AFA97C4E766F43BA89">Service de gestion IIS</li>
+</ul></li>
+</ul>
+</p><p id="GUID-99F83C1F-8C07-439E-933D-87A162F3D7F3">
+<ul purpose="ul" id="UL_EAD12FF6A3064513879C7B7140D1EC33">
+<li purpose="li" id="LI_4B6E9B74219E42B29854722C112741D5">Services World Wide Web<ul purpose="ul" id="UL_D6419E9CF6474A078E4F3AFA71823F56">
+<li purpose="li" id="LI_A3E044B76577419C977BC1D6942F1E6A">Fonctionnalités de développement d'applications <p id="GUID-80E7A12F-F7F2-43DC-AE45-5F2FA54C8E11">
+<ul purpose="ul" id="UL_D50B0AB2C4B34F219CD1C659D3B3AD02">
+<li purpose="li" id="LI_EF41A54E95FC45A4A0CEAC1BB6A2CCDA">.NET Extensibility 4.5</li>
+<li purpose="li" id="LI_5A74183ACA194DCDA44421B8F30F3024">ASP.NET 4.5</li>
+<li purpose="li" id="LI_5F64064FA7EB4B3F952600BC9A47E44E">Extensions ISAPI</li>
+<li purpose="li" id="LI_8233ED85E9AB4F29A909A0DFCC0109AC">Filtres ISAPI</li>
+</ul>
+</p></li>
+<li purpose="li" id="LI_FFEFB8C0EB214098A2555E69CA2F7BAE">Fonctionnalités HTTP communes<ul purpose="ul" id="UL_90FAA398F32E489BA00D869EF84FCBAF">
+<li purpose="li" id="LI_DAE8F678E4B54FC3B724C034056685AA">Document par défaut</li>
+<li purpose="li" id="LI_56F81EADF5F34C928D23F914E37DB5AD">Contenu statique</li>
+</ul></li>
+<li purpose="li" id="LI_BEDEC5F0B9A74CE99CF12D22FE9A3202">Sécurité<ul purpose="ul" id="UL_F7A457798B4346968D8782AC3D3C9320">
+<li purpose="li" id="LI_8318FAE417AE42F1BA525B42F50CF1CC">Authentification de base</li>
+<li purpose="li" id="LI_EC1E6250DEAE48A79572785F2B0AE839">Filtrage des demandes</li>
+<li purpose="li" id="LI_6033D8FEC59641C3A05D52D86BED58FE">Authentification Windows</li>
+</ul></li>
+</ul></li>
+</ul>
+</p></div>
+<div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

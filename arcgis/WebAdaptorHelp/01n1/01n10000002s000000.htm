@@ -1,0 +1,79 @@
+<html lang="en" xml:lang="en"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="To eliminate a single point of failure in your
+ArcGIS Server tier, a single-machine ArcGIS Server site can be configured in a failover fashion with the inclusion of a third-party load balancer."><meta name="content-language" content="en"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+Single-machine high-availability (active-passive) deployment</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-5BAC2F6A-272F-46A1-B7C1-2051320339BA]--><body><div id="content"><div class="header"><h1>
+Single-machine high-availability (active-passive) deployment</h1><div id="breadcrumb"></div></div>
+<p id="GUID-36F9A1B2-A480-4256-8D70-EDA6F9381933"> To eliminate a single point of failure in your
+<span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> tier, a single-machine <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> site can be configured in a failover fashion with the inclusion of a third-party load balancer.</p><p id="GUID-530A2A53-6D12-423C-A75F-A29D9D8EB644"> At a high level, the idea in this deployment pattern is to clone a single-machine site and place two or more independent instances of it behind a load balancer with an active-passive configuration. While all the sites behind the load balancer are running and ready to service requests, the load balancer will only hand over requests to one of the sites, designated as the primary site. If the load balancer detects that the primary site is unavailable, incoming requests are then redirected to a failover or standby site.</p><div class="image" purpose="image"><table><tr><td><img class="break" src="01n1/GUID-5C90B73D-37F7-49B6-BA71-C78FE2A76D5D-web.png" purpose="img" alt="Highly available single-machine deployment with standby site" title="Highly available single-machine deployment with standby site"></td></tr><tr><td><div class="caption" purpose="caption">Highly available single-machine deployment with standby site.  Administrators connect to each site separately.  Both sites have an identical copy of the server directories and configuration store.</div></td></tr></table></div><p id="GUID-B2F53AB0-20AB-4A1A-87B9-2DE1B681002F"> The failover process is handled completely outside of <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> and can be typically configured to be triggered when the <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> machine is completely unavailable (network or hardware failure),  or in some cases, when a specific GIS service or operation is failing.</p><div class="notes" id="GUID-4AB84509-E900-4BAA-BF8A-1795C5996A5F"><div class="note"><img class="note_img" src="rsrc/note.png" alt="Note" title="Note"><span>Note:</span></div><div class="tipbody"><p id="GUID-E7204827-F79D-4C0A-BCB5-465EBCEC4760">You can request license files from <span purpose="ph" varid="myesrilink"><a target="_blank" class="xref" href="https://my.esri.com/" rel="https://my.esri.com/">My Esri</a></span> for your standby or failover sites at no additional cost.</p></div></div><p id="GUID-582734D0-2474-450E-BA4C-513D2701FE6B"> While several machines are used to host <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span>s in this deployment pattern, this configuration cannot be technically described as a multiple-machine site, because each of the sites behind the load balancer are independent of each other. Each site is composed of a single <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> machine and has its own local configuration store and server directories.</p>
+
+
+
+<div class="section1" id="ESRI_SECTION1_6855783BE1014AAF8C9BAAA490966934" purpose="section1"><h2><span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> machine, server directories, and configuration store</h2><p id="GUID-14FA6DC6-BCD6-4225-ABE4-05DAC4AE0791"> Apply the same considerations here as described in the <a class="xref" rel="01n1/01n10000002w000000.htm" href="01n1/01n10000002w000000.htm">single-machine deployment</a>. Each
+<span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> will have its own local server directories and configuration
+store. This ensures maximum performance and
+keeps interdependencies to a minimum.</p></div><div class="section1" id="ESRI_SECTION1_BF1EDC0004BA41DC802401E547D314D9" purpose="section1"><h2>Data</h2><p id="GUID-7FF07C0D-DB56-421E-AEF9-68C62417A2CA"> If using file-based data sources in your GIS
+services, it is recommended that these be stored locally on every
+<span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> machine instead of network shares to maximize the performance of
+your services. In some cases, such as when handling large amounts of
+imagery, sharing your files over the network may be the only
+practical choice.  If using files in shared resources over the network, it is very important that you choose a storage device configured for high availability.</p><p id="GUID-FC892FD0-09B5-4A0E-AA48-03C3FF722C81">If using databases, you can dedicate a database to each of your sites: one database for your primary site and a separate one for your standby site. To keep the databases in sync, you can leverage database replication, or if needed, geodatabase replication techniques. Alternatively, you can leverage other high-availability techniques from your database provider.</p></div><div class="section1" id="ESRI_SECTION1_E28679F50AC74EA885D013361DC0F1E5" purpose="section1"><h2>Reverse proxy server</h2><p id="GUID-9605B5A1-A4C5-4E7B-80F0-F58070FF4D82"> In this configuration, a third-party load
+balancer is required. At a minimum, this component will be used to
+handle the load across the sites and failover when
+necessary. Typically, the load balancer will also fulfill
+the role of the reverse proxy server as described in the <a class="xref" rel="01n1/01n10000002r000000.htm" href="01n1/01n10000002r000000.htm">Single-machine deployment with reverse proxy server</a>. In some scenarios, you already may have a <a class="xref" target="_blank" rel="http://server.arcgis.com/en/server/latest/administer/windows/using-a-reverse-proxy-server-with-arcgis-server.htm" href="http://server.arcgis.com/en/server/latest/administer/windows/using-a-reverse-proxy-server-with-arcgis-server.htm">reverse proxy server</a> configured independently from the load balancer.</p><p id="GUID-C09E8E7A-2E5A-4CA2-9C60-6AA77BD53977">If your network load balancer supports a health check function, you can use <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span>'s heath check endpoint to determine if the site is available to receive requests.  This is useful to quickly determine if there's a  software or hardware failure in the site.  For more information, see <a class="xref" target="_blank" rel="http://resources.arcgis.com/en/help/arcgis-rest-api/02r3/02r3000002n7000000.htm" href="http://resources.arcgis.com/en/help/arcgis-rest-api/02r3/02r3000002n7000000.htm">Health Check</a> in the ArcGIS REST API.</p><p id="GUID-4F6CC4E8-8356-43C3-B384-011F5711C6D7"> The use of ArcGIS Web Adaptor is optional
+and typically only necessary for this scenario if you would like to
+leverage web tier authentication. For simplicity, you can
+choose to configure it in the same machine as your <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span>.  Alternatively, you can configure it on a dedicated
+machine.  In either case, if using ArcGIS Web Adaptor, you must configure a separate ArcGIS Web Adaptor for every site.</p></div><div class="section1" id="ESRI_SECTION1_196562782F0149D9A8D7862BA38841EB" purpose="section1"><h2>Other considerations</h2><div class="section2" id="ESRI_SECTION2_C0955A61BFD348F68136E7289F25B83B" purpose="section2"><h3>Keeping the services in your sites in sync</h3><p id="GUID-236BE866-44C2-4547-A913-EFAC3C3B4888"> Unlike a true multiple-machine site,
+this configuration requires that all of the
+sites behind the load balancer host exactly
+the same content and that they follow the same security model. You
+are responsible for ensuring that all the sites look exactly
+the same to the load balancer.</p><p id="GUID-8F3DE45D-6ADC-4E02-9070-DB09850AFCC8"> There are multiple techniques that can help you keep <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> services in sync across the primary and failover sites:</p><ul purpose="ul" id="UL_F4A876F72DBB46A397A69054C851CD96"><li purpose="li" id="LI_2402FD84A05D4D2695366E4E4B018FF4">Scripting: <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> includes a RESTful administrative API that you can use to script
+administrative tasks, such as publishing services and changing their
+security settings. You can create your own scripts to apply changes
+to all the <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span>s involved in your deployment consistently.
+Scripting is especially useful when you need to make small
+adjustments, such as changing the security of a service or
+overwriting it.  For more information, see <a class="xref" target="_blank" rel="http://server.arcgis.com/en/server/latest/administer/windows/scripting-arcgis-server-administration.htm" href="http://server.arcgis.com/en/server/latest/administer/windows/scripting-arcgis-server-administration.htm">Scripting ArcGIS Server administration</a>.</li><li purpose="li" id="LI_952B7B2D50774CF58097DC68DC7094F5"> Virtualization: If
+you operate in a  virtual environment, virtual machine templates can be
+created and used to launch new sites. Each template
+will have a copy of the data needed for
+GIS services (unless a database is used). The template will also have all services published and
+configured. If changes are necessary, such as adding or updating
+existing services, a new template can  be created to later launch
+new virtual machines that would replace the existing pool of <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> machines in use under the load balancer. Virtual machine templates
+can also be used to quickly recover stale <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> machines.</li></ul><p id="GUID-34948C59-10A8-43D3-9F4B-0BA0299F63D9"> The recommended procedure to apply changes to your sites in this deployment pattern is as follows:</p><div class="wfsteps" purpose="wfsteps"><h4></h4><div class="steps" id="ESRI_STEPS_784E84BE74D5437E9707B1399BAF19EE"><div class="step_title">Steps:</div><ol><li purpose="step" id="ESRI_STEP_B00B728FB6064C4E9681C58120712FBB"><span purpose="cmd" id="GUID-212C7A42-1687-4CCF-8C9C-07B0C4F1FB24"> Administrative changes will first be made against
+a site that is in standby mode. For example, you will add a
+new service and change the security of another in a site that is
+not actively handling requests. This ensures that there will be absolutely no impact
+to applications using your primary site.</span></li><li purpose="step" id="ESRI_STEP_4EB66725C203433EAE03FF73D698F6EA"><span purpose="cmd" id="GUID-437B3239-C47C-4C38-B0B1-FCDD44E91446">Manually configure your load balancer to hand over
+all requests to the standby site on which the changes have
+been made.</span></li><li purpose="step" id="ESRI_STEP_4D19A677A2694061AFDF1806C895BB3B"><span purpose="cmd" id="GUID-6350C413-0F06-4D6C-AE2D-8AE3C45F3423">Apply the same changes to the idle site.</span></li><li purpose="step" id="ESRI_STEP_18542AF42544419FA949DC39C30CDBD4"><span purpose="cmd" id="GUID-43995EA3-BF8D-431F-9636-94A578E0E428">Revert the load balancer so requests are directed
+back to the original primary site and leave the standby site in
+standby mode.</span></li></ol></div></div><p id="GUID-87CCE021-1815-4423-8A82-75FB64408A6B"> Changes to your site in the procedure described above can be applied manually through <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> Manager, scripts, or virtual images.</p></div><div class="section2" id="ESRI_SECTION2_7A70BE1D4E11428099693C68837E9A51" purpose="section2"><h3>Asynchronous geoprocessing and long-running tasks</h3><p id="GUID-63ABF49E-433F-4944-AAC1-5820842EE1EF"> When the load balancer switches to the standby site, any active requests in the primary site are lost. For example, if a long-running request such as a geoprocessing task is running when the failover occurs, the task will need to be reinitiated in the standby site by the client application.</p></div><div class="section2" id="ESRI_SECTION2_AD2A918F0F5D4FF59EEDA3502C56B77A" purpose="section2"><h3>Using token-based security</h3><p id="GUID-D8F944FD-F648-4A63-84EB-013DDE5EE2F1"> If using token-based authentication,
+also referred to as GIS tier authentication, it is important that
+all sites in this configuration use exactly the same shared
+token key. Otherwise, tokens generated in the primary site will not be
+valid when used against a standby site. To learn how to duplicate
+the shared token keys across multiple sites, refer to <a class="xref" target="_blank" rel="http://server.arcgis.com/en/server/latest/administer/windows/about-arcgis-tokens.htm" href="http://server.arcgis.com/en/server/latest/administer/windows/about-arcgis-tokens.htm">About ArcGIS tokens</a> and <a class="xref" target="_blank" rel="http://server.arcgis.com/en/server/latest/administer/windows/editing-token-settings-in-manager.htm" href="http://server.arcgis.com/en/server/latest/administer/windows/editing-token-settings-in-manager.htm">Editing token settings in Manager</a>.</p></div></div><div class="section1" id="ESRI_SECTION1_BF8390AFC33E4EE28CC8EFEA035E1177" purpose="section1"><h2>Advantages</h2><ul purpose="ul" id="UL_D574A80631724B608ABA0C3675CC3E59"><li purpose="li" id="LI_B0AE7ABEB5DE479E8502D99B03B1A1AB">The active-passive failover configuration allows you to build a redundant <span purpose="ph" varid="ArcGISforServer" translate="no">ArcGIS Server</span> tier without incurring additional licensing fees. Standby servers can be licensed at no additional cost.</li></ul></div><div class="section1" id="ESRI_SECTION1_9A6F1AE806F140AD80FB926FCF4A55CA" purpose="section1"><h2>Disadvantages</h2><ul purpose="ul" id="UL_2C134694CD7344C2B3B6E70AD1BDB471"><li purpose="li" id="LI_B00353D7F391425ABB1010D183B89649">Each site behind the load balancer
+is independent of the other. Each site must be managed separately;
+the sites have their own local configuration store and server
+directories.   This can potentially add significant administration and management overhead if the site's services or data change frequently.</li><li purpose="li" id="LI_F90D1CC466E14AA49D912E0C125EC2AC">When switching to the standby site,
+any active requests in the primary site are lost.</li></ul></div><div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

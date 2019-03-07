@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="wa_description1" xml:space="preserve">
+    <value>要配置 Web Adaptor，请为您的服务器指定 URL 和管理员帐户。</value>
+  </data>
+  <data name="wa_sharedKeyLabel" xml:space="preserve">
+    <value>共享密钥(可选):</value>
+  </data>
+  <data name="wa_passwordLabel" xml:space="preserve">
+    <value>管理员密码:</value>
+  </data>
+  <data name="wa_reconnectLabel" xml:space="preserve">
+    <value>重新连接间隔:</value>
+  </data>
+  <data name="wa_siteUrlLabel" xml:space="preserve">
+    <value>ArcGIS Server URL：</value>
+  </data>
+  <data name="wa_submitButton" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="wa_timeoutLabel" xml:space="preserve">
+    <value>刷新间隔:</value>
+  </data>
+  <data name="wa_timeUnit" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="wa_userNameLabel" xml:space="preserve">
+    <value>管理员用户名:</value>
+  </data>
+  <data name="wa_exampleUrl" xml:space="preserve">
+    <value>示例：https://serverhost.domain.com:6443</value>
+  </data>
+  <data name="wa_httpsPortMissing" xml:space="preserve">
+    <value>请输入 HTTPS 端口号。</value>
+  </data>
+  <data name="wa_passwordMissing" xml:space="preserve">
+    <value>请输入管理密码。</value>
+  </data>
+  <data name="wa_reconnectIntervalMissing" xml:space="preserve">
+    <value>在“服务器失败时重新连接间隔”中输入整数值。</value>
+  </data>
+  <data name="wa_refreshIntervalMissing" xml:space="preserve">
+    <value>在“刷新服务器列表间隔”中输入整数值。</value>
+  </data>
+  <data name="wa_urlMissing" xml:space="preserve">
+    <value>请输入 GIS 服务器 URL</value>
+  </data>
+  <data name="wa_usernameMissing" xml:space="preserve">
+    <value>请输入用户名</value>
+  </data>
+  <data name="wa_validationSum" xml:space="preserve">
+    <value>请修复以下错误:</value>
+  </data>
+  <data name="wa_errorPageTitle" xml:space="preserve">
+    <value>Web Adaptor 失败</value>
+  </data>
+  <data name="wa_getMachinesFailure" xml:space="preserve">
+    <value>从服务器站点获取计算机失败。</value>
+  </data>
+  <data name="wa_loadConfigFailure" xml:space="preserve">
+    <value>加载 Web Adaptor 配置文件失败。请确保 WebAdaptor.config 有效，或者可以通过 http://{host}/{instance}/webadaptor 重新配置 Web Adaptor</value>
+  </data>
+  <data name="wa_registerWebAdaptorFailure" xml:space="preserve">
+    <value>无法将 ArcGIS Server 注册到 Web Adaptor。请确保服务器计算机正在运行，并且指定的帐户具有站点的管理权限。</value>
+  </data>
+  <data name="wa_help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="wa_status_machinesList" xml:space="preserve">
+    <value>已针对您的 Web Adaptor 配置了以下服务器：</value>
+  </data>
+  <data name="wa_status_noMachines" xml:space="preserve">
+    <value>尚未针对您的 Web Adaptor 配置任何服务器。</value>
+  </data>
+  <data name="wa_description2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_getAdminTokenFailure" xml:space="preserve">
+    <value>从服务器获取管理员令牌失败。请确认指定的 ArcGIS Server URL 是否可以成功访问。</value>
+  </data>
+  <data name="wa_enableAdminAccess" xml:space="preserve">
+    <value> 通过 Web Adaptor 启用对站点的管理访问。</value>
+  </data>
+  <data name="wa_serviceDirectoryDesc2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_serviceDirectoryDesc1" xml:space="preserve">
+    <value>使用以下 URL 来访问服务目录:</value>
+  </data>
+  <data name="wa_serviceDirectoryDesc3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_displayRightToLeft" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="wa_webAdaptorAccessedRemotely" xml:space="preserve">
+    <value>web adaptor 的配置 URL 只能通过托管该 web adaptor 的计算机进行访问。</value>
+  </data>
+  <data name="wa_webAdaptorAccessDenied" xml:space="preserve">
+    <value>访问被拒绝。</value>
+  </data>
+  <data name="wa_configPageAdminPassworkToolTip" xml:space="preserve">
+    <value>输入对 ArcGIS Server 站点具有管理权限的帐户的密码。</value>
+  </data>
+  <data name="wa_configPageAdminUserNameToolTip" xml:space="preserve">
+    <value>输入对 ArcGIS Server 站点具有管理权限的帐户的用户名。该帐户可以是在首次创建站点时输入的主站点管理员帐户，也可以是已在站点内分配了管理员权限的帐户。&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+请勿使用您在运行 ArcGIS Server 安装程序时输入的操作系统帐户。</value>
+  </data>
+  <data name="wa_configPageEnableAdminToolTip" xml:space="preserve">
+    <value>启用管理员级访问后，可以通过 Web Adaptor 来访问 ArcGIS Server Manager 和 Administrator Directory 应用程序。如果未选中此选项，仍可通过指向站点中某一服务器的直接 URL 来访问这些应用程序。例如：&lt;br/&gt;&amp;nbsp;&lt;br/&gt; ArcGIS Server Manager：&lt;br/&gt; https://serverhost.domain.com:6443&lt;br/&gt;/arcgis/manager&lt;br/&gt;&amp;nbsp;&lt;br/&gt; 管理员目录：&lt;br/&gt; https://serverhost.domain.com:6443/arcgis/admin</value>
+  </data>
+  <data name="wa_configPageGisServerToolTip" xml:space="preserve">
+    <value>输入指向站点中某个服务器的 URL。该 URL 将用于发现所有参与站点的计算机，并将这些计算机注册到 Web Adaptor。</value>
+  </data>
+  <data name="wa_configPageSharedKeyToolTip" xml:space="preserve">
+    <value>请输入对 Web Adaptor 与 ArcGIS Server 之间的通信进行加密的共享密钥。有关详细信息，请参阅 ArcGIS Server 帮助中的帮助主题“配置 ArcGIS Server 安全性”。</value>
+  </data>
+  <data name="wa_status_lastUpdated" xml:space="preserve">
+    <value>上次更新时间 {0}</value>
+  </data>
+  <data name="wa_timeoutError" xml:space="preserve">
+    <value>Web Adaptor 配置页面由于处于休眠状态而超时。请重新载入该 Web Adaptor 配置页面并进行重新配置。</value>
+  </data>
+  <data name="wa_adminaccessdisabled" xml:space="preserve">
+    <value>管理访问权限已禁用。请联系您的系统管理员以启用该权限。</value>
+  </data>
+  <data name="wa_application_error" xml:space="preserve">
+    <value>应用程序错误</value>
+  </data>
+  <data name="wa_gs_https_req" xml:space="preserve">
+    <value>无法代理 HTTP 请求，ArcGIS Server 已配置为只接受 HTTPS 请求。请对 Web 服务器进行配置以使用 SSL/HTTPS。</value>
+  </data>
+  <data name="wa_https_req" xml:space="preserve">
+    <value>ArcGIS Web Adaptor 已使用 SSL/HTTPS 进行配置。请在您的 ArcGIS Server 站点中启用 SSL/HTTPS。</value>
+  </data>
+  <data name="wa_versionmismatch" xml:space="preserve">
+    <value>无法为 ArcGIS Server 配置 Web Adaptor。请确保 ArcGIS Server 和 Web Adaptor 的版本相同。</value>
+  </data>
+  <data name="wa_portalSharedKeyLabel" xml:space="preserve">
+    <value>共享密钥:</value>
+  </data>
+  <data name="wa_portalSharedKeyMissing" xml:space="preserve">
+    <value>请输入共享密钥</value>
+  </data>
+  <data name="wa_portalSharedKeyToolTip" xml:space="preserve">
+    <value>输入对 Web Adaptor 和 Portal 之间的通信进行加密的共享密钥。</value>
+  </data>
+  <data name="wa_portalstatus_noMachines" xml:space="preserve">
+    <value>未针对您的 Web Adaptor 配置任何门户。</value>
+  </data>
+  <data name="wa_portalUpdateStatus" xml:space="preserve">
+    <value>要将门户成功注册到 Web Adaptor，请将以下内容复制到门户计算机的 {Install}/portal/etc/portal-config.properties 文件中，然后重新启动 Portal for ArcGIS 服务。</value>
+  </data>
+  <data name="wa_portalURLDesc1" xml:space="preserve">
+    <value>使用以下 URL 访问您的门户应用程序:</value>
+  </data>
+  <data name="wa_portalURLDesc2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_portalURLDesc3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_portalValidationSum" xml:space="preserve">
+    <value>请修复以下错误:</value>
+  </data>
+  <data name="wa_portal_configPagePortalToolTip" xml:space="preserve">
+    <value>输入门户的 URL。此 URL 用于将门户注册到 Web Adaptor。</value>
+  </data>
+  <data name="wa_portal_description1" xml:space="preserve">
+    <value>要配置 Web Adaptor，请为门户指定 URL 和管理员帐户。</value>
+  </data>
+  <data name="wa_portal_exampleUrl" xml:space="preserve">
+    <value>示例: https://machine.domain.com:7443</value>
+  </data>
+  <data name="wa_portal_machinesList" xml:space="preserve">
+    <value>以下门户成功配置了您的 Web Adaptor:</value>
+  </data>
+  <data name="wa_portal_portalUrlLabel" xml:space="preserve">
+    <value>门户 URL:</value>
+  </data>
+  <data name="wa_portal_urlMissing" xml:space="preserve">
+    <value>请输入门户 URL</value>
+  </data>
+  <data name="wa_portalnohttps" xml:space="preserve">
+    <value>需要在 Web 服务器上启用 https 才能进行门户配置。请使用 https url 访问此页面。</value>
+  </data>
+  <data name="wa_portal_fqdn_reqd" xml:space="preserve">
+    <value>门户配置需要在门户 URL 中使用完全限定域名</value>
+  </data>
+  <data name="wa_adminOperationsNotAllowed" xml:space="preserve">
+    <value>通过 Web Adaptor 访问时该管理操作不可用。要访问该操作，请使用指向站点中的某个 GIS 服务器的直接 URL。</value>
+  </data>
+  <data name="wa_config_next" xml:space="preserve">
+    <value>下一步 &gt;</value>
+  </data>
+  <data name="wa_config_portal" xml:space="preserve">
+    <value>Portal for ArcGIS</value>
+  </data>
+  <data name="wa_config_server" xml:space="preserve">
+    <value>ArcGIS Server</value>
+  </data>
+  <data name="wa_config_server_or_portal" xml:space="preserve">
+    <value>要使用 Web Adaptor 配置哪种产品?</value>
+  </data>
+  <data name="wa_portal_prerequisite" xml:space="preserve">
+    <value>配置先决条件:</value>
+  </data>
+  <data name="wa_portal_prereq_desc1" xml:space="preserve">
+    <value>Web Adaptor 必须安装到运行在端口 80 的 web 站点上，然后才能通过 Portal for ArcGIS 进行配置。  请将 Web Adaptor 重新安装到运行在端口 80 的 web 站点上。</value>
+  </data>
+  <data name="wa_portal_prereq_desc3" xml:space="preserve">
+    <value>正在安装 ArcGIS Web Adaptor。</value>
+  </data>
+  <data name="wa_portal_prereq_https_desc1" xml:space="preserve">
+    <value>必须在网站上启用 SSL 并将安全证书绑定到端口 443，然后才能将 Web Adaptor 注册到 Portal for ArcGIS。有关详细信息，请参阅 </value>
+  </data>
+  <data name="wa_portal_prereq_short_msg" xml:space="preserve">
+    <value>Web Adaptor 必须安装到运行在端口 80 的网站上，然后才能使用 Portal for ArcGIS 进行配置。</value>
+  </data>
+  <data name="wa_portal_prereq_desc2" xml:space="preserve">
+    <value>有关说明，请参阅</value>
+  </data>
+  <data name="wa_portal_prereq_https_desc2" xml:space="preserve">
+    <value>在 Web 服务器上启用 SSL。</value>
+  </data>
+  <data name="wa_portal_prerq_https_desc1_443reqd" xml:space="preserve">
+    <value>必须将安全证书绑定到 SSL 端口 443，然后才能将 Web Adaptor 注册到 Portal for ArcGIS。有关详细信息，请参阅</value>
+  </data>
+  <data name="wa_config_prev" xml:space="preserve">
+    <value>&lt; 上一步</value>
+  </data>
+  <data name="wa_portal_prerq_https_443reqd" xml:space="preserve">
+    <value>必须将安全证书绑定到 SSL 端口 443，然后才能将 Web Adaptor 注册到 Portal for ArcGIS</value>
+  </data>
+  <data name="wa_config_status" xml:space="preserve">
+    <value>状态:</value>
+  </data>
+  <data name="wa_portal_configured_status" xml:space="preserve">
+    <value>为门户配置了您的 Web Adaptor。</value>
+  </data>
+  <data name="wa_portal_not_configured_status" xml:space="preserve">
+    <value>没有为门户配置您的 Web Adaptor。</value>
+  </data>
+  <data name="wa_server_configured_status" xml:space="preserve">
+    <value>已为服务器配置了 Web Adaptor。</value>
+  </data>
+  <data name="wa_server_not_configured_status" xml:space="preserve">
+    <value>尚未为服务器配置 Web Adaptor。</value>
+  </data>
+  <data name="wa_about" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="waConfigServerError1" xml:space="preserve">
+    <value>使用 ArcGIS Server 配置 ArcGIS Web Adaptor 之前，必须在 IIS 中将 Web Adaptor 应用程序的 .NET 信任级别设置为“完全”。配置后，可将应用程序的信任级别设置回初始级别，并照常通过 Web Adaptor 访问服务器。</value>
+  </data>
+  <data name="waConfigServerError2" xml:space="preserve">
+    <value>使用 Portal for ArcGIS 配置 ArcGIS Web Adaptor 之前，必须在 IIS 中将 Web Adaptor 应用程序的 .NET 信任级别设置为“完全”。配置后，可将应用程序的信任级别设置回初始级别，并照常通过 Web Adaptor 访问门户。</value>
+  </data>
+  <data name="waConfigServerError3" xml:space="preserve">
+    <value>在 IIS 中配置 .NET 信任级别。</value>
+  </data>
+  <data name="waConfigServerError4" xml:space="preserve">
+    <value>要了解详细信息，请参阅</value>
+  </data>
+  <data name="wa_trust_level_not_full" xml:space="preserve">
+    <value>要访问 Web Adaptor 配置页面，应将信任级别分配为“完全”。</value>
+  </data>
+  <data name="wa_ArcGIS" xml:space="preserve">
+    <value>ArcGIS</value>
+  </data>
+  <data name="wa_build" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="wa_iis" xml:space="preserve">
+    <value>Web Adaptor (IIS)</value>
+  </data>
+  <data name="wa_version" xml:space="preserve">
+    <value>版本:</value>
+  </data>
+  <data name="wa_portaladminaccessdisabled" xml:space="preserve">
+    <value>管理访问权限已禁用。请联系您的系统管理员以启用该权限。</value>
+  </data>
+  <data name="wa_portalConfigPageAdminPasswordToolTip" xml:space="preserve">
+    <value>将具有管理权限的帐户密码输入到门户。</value>
+  </data>
+  <data name="wa_portalConfigPageAdminUserNameToolTip" xml:space="preserve">
+    <value>将具有管理权限的帐户用户名输入到门户。该帐户可能是首次配置门户时输入的初始管理员帐户或是已分配管理权限的帐户。</value>
+  </data>
+  <data name="wa_portalConfigPageEnableAdminToolTip" xml:space="preserve">
+    <value>启用管理访问后，将能够通过 Web Adaptor 访问门户管理员目录应用程序。如果未选中该选项(建议)，则可使用门户的直接 URL 继续访问这些应用程序。例如:&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+Portal Adminr:&lt;br/&gt; http://machine.domain.com:7080&lt;br/&gt;/arcgis/portaladmin&lt;br/&gt;</value>
+  </data>
+  <data name="wa_getPortalAdminTokenFailure" xml:space="preserve">
+    <value>从门户获取管理员令牌失败。请验证是否可以成功访问指定的门户 URL。</value>
+  </data>
+  <data name="wa_portalRegisterWebAdaptorFailure" xml:space="preserve">
+    <value>无法为门户配置 Web Adaptor。请确保门户计算机正在运行并且指定的帐户具有门户的管理权限。</value>
+  </data>
+  <data name="wa_portal_multiplewaerror" xml:space="preserve">
+    <value>Web Adaptor 已使用 Portal for ArcGIS 进行配置。只可为一个 Web Adaptor 配置门户。如果想升级门户以使用不同的 Web Adaptor，需要取消注册当前的 Web Adaptor。有关完整说明，请参阅</value>
+  </data>
+  <data name="wa_portal_not_configured" xml:space="preserve">
+    <value>未对任何门户进行配置</value>
+  </data>
+  <data name="wa_portal_unregisterwa" xml:space="preserve">
+    <value>正在取消注册 ArcGIS Web Adaptor。</value>
+  </data>
+  <data name="wa_portal_restart_timout_error" xml:space="preserve">
+    <value>门户应用程序未在预期时间内响应。请确认是否能够成功访问指定的门户 URL。</value>
+  </data>
+  <data name="wa_portal_loading_message" xml:space="preserve">
+    <value>请稍后，正在为门户配置 Web Adaptor。这可能需要几分钟的时间。</value>
+  </data>
+  <data name="wa_portal_loading_message1" xml:space="preserve">
+    <value>完成配置后，将显示用于访问门户的新 URL。</value>
+  </data>
+  <data name="wa_logging_add_node" xml:space="preserve">
+    <value>正在添加具有 HealthCheck 状态 {1} 的节点 {0}</value>
+  </data>
+  <data name="wa_logging_admin_access_enabled" xml:space="preserve">
+    <value>已启用管理访问: </value>
+  </data>
+  <data name="wa_logging_config_req_url" xml:space="preserve">
+    <value>Web Adaptor 配置请求 Url: </value>
+  </data>
+  <data name="wa_logging_config_resp" xml:space="preserve">
+    <value>Web Adaptor 配置响应: </value>
+  </data>
+  <data name="wa_logging_config_update" xml:space="preserve">
+    <value>正在更新 Web Adaptor 配置。</value>
+  </data>
+  <data name="wa_logging_getmachines_req" xml:space="preserve">
+    <value>正在发送 GetMachines 请求。</value>
+  </data>
+  <data name="wa_logging_getmachines_requrl" xml:space="preserve">
+    <value>GetMachines 请求 Url:</value>
+  </data>
+  <data name="wa_logging_getmachines_req_fail" xml:space="preserve">
+    <value>GetMachines 请求失败: </value>
+  </data>
+  <data name="wa_logging_getmachines_resp" xml:space="preserve">
+    <value>GetMachines 响应: </value>
+  </data>
+  <data name="wa_logging_getwaconfig_fail" xml:space="preserve">
+    <value>无法获取 Web Adaptor 配置信息。</value>
+  </data>
+  <data name="wa_logging_getwalist_fail" xml:space="preserve">
+    <value>无法获取 webadaptor 列表</value>
+  </data>
+  <data name="wa_logging_getwa_req_fail" xml:space="preserve">
+    <value>服务器上的 GET Web Adaptor 配置请求失败:</value>
+  </data>
+  <data name="wa_logging_health_check" xml:space="preserve">
+    <value>正在检查节点: {0} 是否正常</value>
+  </data>
+  <data name="wa_logging_https_port" xml:space="preserve">
+    <value>服务器 HttpsPort: </value>
+  </data>
+  <data name="wa_logging_https_url_req" xml:space="preserve">
+    <value>正在尝试使用 https Url。</value>
+  </data>
+  <data name="wa_logging_http_port" xml:space="preserve">
+    <value>服务器 HttpPort:</value>
+  </data>
+  <data name="wa_logging_http_url_req" xml:space="preserve">
+    <value>正在尝试使用 http Url。</value>
+  </data>
+  <data name="wa_logging_load_config_file_fail" xml:space="preserve">
+    <value>无法加载配置文件，请检查文件是否有效。</value>
+  </data>
+  <data name="wa_logging_mark_node" xml:space="preserve">
+    <value>将节点 {0} 标记为不良</value>
+  </data>
+  <data name="wa_logging_next_node" xml:space="preserve">
+    <value>正在尝试下一节点</value>
+  </data>
+  <data name="wa_logging_portal_restart" xml:space="preserve">
+    <value>正在等待 web 服务器重新启动</value>
+  </data>
+  <data name="wa_logging_portal_wareg_succ" xml:space="preserve">
+    <value>已成功将 Web Adaptor 注册到门户。</value>
+  </data>
+  <data name="wa_logging_proxy_url" xml:space="preserve">
+    <value>正在代理对 Url 的请求: </value>
+  </data>
+  <data name="wa_logging_regwa_resp" xml:space="preserve">
+    <value>注册 Web Adaptor 响应:</value>
+  </data>
+  <data name="wa_logging_reg_success" xml:space="preserve">
+    <value>已成功注册 WebAdaptor。</value>
+  </data>
+  <data name="wa_logging_remove_node" xml:space="preserve">
+    <value>正在从列表中移除节点:</value>
+  </data>
+  <data name="wa_logging_req_failed" xml:space="preserve">
+    <value>无法将请求发送到服务器:</value>
+  </data>
+  <data name="wa_logging_req_headers" xml:space="preserve">
+    <value>正在向服务器发送请求标题。</value>
+  </data>
+  <data name="wa_logging_req_url" xml:space="preserve">
+    <value>请求 Url: </value>
+  </data>
+  <data name="wa_logging_resp_headers" xml:space="preserve">
+    <value>正在发送响应标题。</value>
+  </data>
+  <data name="wa_logging_svr_protocol" xml:space="preserve">
+    <value>服务器协议: </value>
+  </data>
+  <data name="wa_logging_unregwa_fail" xml:space="preserve">
+    <value>取消注册 webadaptor 失败。</value>
+  </data>
+  <data name="wa_logging_unregwa_succ" xml:space="preserve">
+    <value>已成功取消注册 Web Adaptor。</value>
+  </data>
+  <data name="wa_logging_unreg_wa_url" xml:space="preserve">
+    <value>正在取消将 Web Adaptor 注册到请求 Url: </value>
+  </data>
+  <data name="wa_logging_updated_nodelist" xml:space="preserve">
+    <value>节点列表已更新。</value>
+  </data>
+  <data name="wa_logging_update_nodelist" xml:space="preserve">
+    <value>正在更新 GetMachines 调用中的节点列表</value>
+  </data>
+  <data name="wa_logging_waconfig_404_resp" xml:space="preserve">
+    <value>接收到 404 响应。正在重置配置。</value>
+  </data>
+  <data name="wa_logging_wa_id" xml:space="preserve">
+    <value>Web Adaptor Id: </value>
+  </data>
+  <data name="wa_logging_webexception" xml:space="preserve">
+    <value>服务器返回的 WebException</value>
+  </data>
+  <data name="wa_logging_healthcheck_status" xml:space="preserve">
+    <value>服务器 {0} 的运行状况检查状态: {1}</value>
+  </data>
+  <data name="wa_logging_gemachines_reqfail" xml:space="preserve">
+    <value>无法将 GetMachines 请求发送到服务器 {0}:</value>
+  </data>
+  <data name="wa_logging_folder_invalid" xml:space="preserve">
+    <value>Web Adatptor 日志文件夹无效或无法访问。</value>
+  </data>
+  <data name="wa_no_server_nodes" xml:space="preserve">
+    <value>无法访问任何服务器计算机。请联系您的系统管理员。</value>
+  </data>
+  <data name="wa_portalversionmismatch" xml:space="preserve">
+    <value>无法为 Portal 配置 Web Adaptor。请确保 Portal 和 Web Adaptor 的版本相同。</value>
+  </data>
+  <data name="wa_logging_portal_gemachines_reqfail" xml:space="preserve">
+    <value>无法将 GetMachines 请求发送到门户节点 {0}:</value>
+  </data>
+  <data name="wa_logging_portal_healthcheck_status" xml:space="preserve">
+    <value>门户节点 {0} 的运行状况检查状态: {1}</value>
+  </data>
+  <data name="wa_no_portalnodes" xml:space="preserve">
+    <value>无法访问任何门户计算机。请联系您的系统管理员。</value>
+  </data>
+  <data name="wa_portal_not_configured_wacontexturl" xml:space="preserve">
+    <value>已通过 Portal for ArcGIS 配置 Web Adaptor。要配置多个 Web Adaptor，请在 ArcGIS 门户目录中设置 WebContextURL 属性。有关详细信息，请参阅 </value>
+  </data>
+  <data name="wa_portaladminOperationsNotAllowed" xml:space="preserve">
+    <value>通过 Web Adaptor 进行访问时，此管理操作将不可用。请使用站点中任意一台门户计算机的直接 URL 来访问此操作。</value>
+  </data>
+  <data name="waRegMultipleWAwithPortal" xml:space="preserve">
+    <value>将多个 Web Adaptor 注册到门户</value>
+  </data>
+  <data name="wa_config_warning" xml:space="preserve">
+    <value>This Web Adaptor has already been configured. Please configure separate Web Adaptors for Server and Portal.</value>
+  </data>
+</root>

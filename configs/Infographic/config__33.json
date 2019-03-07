@@ -1,0 +1,232 @@
+{
+  "layout": {
+    "definition": [
+      {
+        "type": "column",
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "width": 100,
+        "content": [
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "activeItemIndex": 0,
+            "height": 69.23090975520644,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "7793093568805929-2"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "7793093568805929-2"
+              }
+            ]
+          },
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "activeItemIndex": 0,
+            "height": 30.76909024479358,
+            "width": 59.15915915915916,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "7793093568805929-3"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "7793093568805929-3"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dijits": [
+    {
+      "id": "7793093568805929-1",
+      "type": "text",
+      "visible": false,
+      "config": {
+        "background": {
+          "backgroundColor": "#FFF",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 16,
+          "textColor": "#282828"
+        },
+        "text": "TITLE OF THE INFOGRAPHIC"
+      }
+    },
+    {
+      "id": "7793093568805929-2",
+      "type": "chart",
+      "visible": true,
+      "config": {
+        "mode": "category",
+        "type": "pie",
+        "categoryField": "Estado_EQR",
+        "dateConfig": null,
+        "valueFields": [
+          "Estado_EQR"
+        ],
+        "operation": "sum",
+        "nullValue": true,
+        "sortOrder": {
+          "isAsc": true,
+          "isLabelAxis": true
+        },
+        "maxLabels": 100,
+        "backgroundColor": "#fff",
+        "seriesStyle": {
+          "styles": [
+            {
+              "name": "pie~not-field",
+              "style": {
+                "color": [
+                  "#68D2E0",
+                  "#087E92",
+                  "#47BCF5",
+                  "#FBE66A",
+                  "#F29157",
+                  "#C8501D"
+                ]
+              },
+              "label": "pie~not-field"
+            }
+          ],
+          "type": "custom",
+          "customColor": {
+            "categories": [
+              {
+                "uniqueID": "29281171105873893",
+                "text": "Muy bueno",
+                "label": "Muy bueno",
+                "color": "#87cefa",
+                "id": 1
+              },
+              {
+                "uniqueID": "5596486405089485",
+                "text": "Bueno",
+                "label": "Bueno",
+                "color": "#7fff00",
+                "id": 2
+              },
+              {
+                "uniqueID": "8271629914816119",
+                "text": "Moderado",
+                "label": "Moderado",
+                "color": "#ffd700",
+                "id": 3
+              },
+              {
+                "uniqueID": "04902593048074411",
+                "text": "Deficiente",
+                "label": "Deficiente",
+                "color": "#ffa500",
+                "id": 4
+              },
+              {
+                "uniqueID": "6362871516900825",
+                "text": "Playa de sustrato blando",
+                "label": "Playa de sustrato blando",
+                "color": "#d3d3d3",
+                "id": 5
+              }
+            ],
+            "others": [
+              {
+                "uniqueID": "40631708801710986",
+                "text": "Null",
+                "label": "Null",
+                "color": "#808080",
+                "id": "null"
+              },
+              {
+                "uniqueID": "853085763993265",
+                "text": "Others",
+                "label": "Others",
+                "color": "#808080",
+                "id": "others"
+              }
+            ]
+          }
+        },
+        "legend": {
+          "show": false,
+          "textStyle": {
+            "color": "#000",
+            "fontSize": 12
+          }
+        },
+        "dataLabel": {
+          "show": true,
+          "textStyle": {
+            "color": "#000",
+            "fontSize": 12
+          }
+        },
+        "innerRadius": 0
+      }
+    },
+    {
+      "id": "7793093568805929-3",
+      "type": "text",
+      "visible": true,
+      "config": {
+        "background": {
+          "backgroundColor": "#FFF",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Verdana",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": "14",
+          "textColor": "#282828"
+        },
+        "text": "Sumatorio de las categorías de calidad de las aguas clasificado en rangos de valores EQR para el año 2017 en la Serra d'Irta"
+      }
+    }
+  ],
+  "name": "pie",
+  "wid": "7793093568805929",
+  "dataSource": {
+    "dataSourceType": "DATA_SOURCE_FEATURE_LAYER_FROM_MAP",
+    "name": "Estado EQR 2017",
+    "layerId": "6c3c5e85d2554be8be91aab9172689a4",
+    "useSelection": true,
+    "filterByExtent": false
+  }
+}

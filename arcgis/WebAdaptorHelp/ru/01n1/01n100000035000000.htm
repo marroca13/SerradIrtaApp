@@ -1,0 +1,31 @@
+<html lang="ru" xml:lang="ru"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="Настройка опций для кэша системной памяти ArcGIS Web Adaptor при использовании аутентификации веб-уровня."><meta name="content-language" content="ru"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+Настройка опций кэша памяти ArcGIS Web Adaptor
+</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-070AFEC5-DE9F-49D1-9019-C5350B73D24F]--><body><div id="content"><div class="header"><h1>
+Настройка опций кэша памяти ArcGIS Web Adaptor
+</h1><div id="breadcrumb"></div></div>
+<p id="GUID-B6D4217C-6336-442A-B229-7FA63AE8931E"> Когда аутентифицированный пользователь получает доступ к ресурсу ArcGIS Server, а аутентификация веб-уровня была включена с помощью <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span>, Web Adaptor получает список принадлежности роли пользователя из Active Directory. Повторные запросы к Active Directory для получения списка роли пользователя негативно влияют на производительность как Active Directory, так и ArcGIS Server. Для оптимизации производительности Wed Adaptor кэширует список ролей, участником которых является пользователь.</p><p id="GUID-1CDC5BEE-8AAD-41B2-94FD-49D5E74EBF3E">  В готовой коробочной установке <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> роли пользователя кэшированы либо в cookie, управляемым веб-браузером, или в основной памяти системы (ОЗУ) веб-сервера, на котором размещен Web Adaptor. Если размер списка ролей пользователя меньше 4 Кб, этот список хранится как cookie в веб-браузере. Если размер списка 4 Кб или больше, он хранится в системной памяти.</p><p id="GUID-EA9D29F6-6927-4812-814E-C85A6257BE3A"> Если список ролей пользователя хранится как cookie в веб-браузере, он устаревает через одну минуту. Кэш системной памяти <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> для списка ролей пользователя можно настроить, его свойства управляются через элемент <span class="usertext">RoleCache</span>, определенный в файле <span class="usertext">C:\inetpub\wwwroot\{Web Adaptor name}\WebAdaptor.config</span>. Следующий раздел описывает элемент <span class="usertext">RoleCache</span> и его свойства.</p><div class="codeblock" purpose="codeblock"><div class="codeblockdesc" purpose="codeblockdesc"></div><div class="highlight"><pre><code>&lt;RoleCache&gt;
+    &lt;NumberOfUsers&gt;100&lt;/NumberOfUsers&gt;
+    &lt;Expiration&gt;5&lt;/Expiration&gt;
+    &lt;Enabled&gt;true&lt;/Enabled&gt;
+    &lt;CacheAllRolesInMemory&gt;false&lt;/CacheAllRolesInMemory&gt;
+&lt;/RoleCache&gt;
+</code></pre></div>
+</div>
+<div class="block_table" id="TABLE_EF8BAAF0FDF64239B08FED5D5B915E86" purpose="block_table"><span class="table_title"></span><table class="table"><colgroup width="*"></colgroup><colgroup width="*"></colgroup><tbody><tr><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-D8F520D0-4B12-441C-8F71-C596237D681B"><b>Свойство </b></p></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-DC30A72B-4E44-4F87-9C2B-1216823822B9"><b>Описание</b></p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">NumberOfUsers</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-2BC513E0-7140-441A-B05A-31195274C561">Это свойство ограничивает количество пользователей, которые могут иметь сохраняемый в системной памяти список принадлежащих ролей.</p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">Expiration</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-E5179A5F-CBC2-4246-B7F7-185B07C05539">Это свойство определяет количество времени, в минутах, которое список пользователя будет храниться в системной памяти. Максимальное рекомендуемое значение для этого свойства - один день (или 1 440 минут).</p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">Enabled</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-F8500AB5-C7AE-427A-973C-ABEF5F309003">Это свойство используется для отключения кэша системной памяти. Отключение системного кэша не рекомендуется.</p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">CacheAllRolesInMemory</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-C237AC7D-3C6E-4E28-9B4E-A8B76EA87F42">Если этому свойству присвоено значение <span class="usertext">true</span>, то кэш cookie отключен и для кэширования списка принадлежности ролей всех пользователей используется только системная память.</p></td></tr></tbody><caption class="table_desc"></caption></table></div><div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

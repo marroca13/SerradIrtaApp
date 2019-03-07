@@ -1,0 +1,34 @@
+<html lang="zh-cn" xml:lang="zh-cn"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="您可禁用 ArcGIS Web Adaptor (IIS) 中的 Active Directory 组查找功能。"><meta name="content-language" content="zh-cn"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+禁用 ArcGIS Web Adaptor (IIS) 中的 Windows 活动目录组查找功能</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-D86FDBFE-FAC2-49EF-8817-1250353CE428]--><body><div id="content"><div class="header"><h1>
+禁用 ArcGIS Web Adaptor (IIS) 中的 Windows 活动目录组查找功能</h1><div id="breadcrumb"></div></div>
+<p id="GUID-E805D801-96F9-45EA-B989-F2C49194D2F2">使用 <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> 执行 Web 层身份验证时，每次向 ArcGIS Server 站点发送请求后，Web Adaptor 都会查找已登录用户的 Windows Active Directory 组。在群组数量较少的组织内，该查找功能不会对性能造成影响。但是，如果组织中包含了成百上千个群组，则可能会降低性能，因为完成查找需要耗费一定的时间。</p><p id="GUID-70673AA7-BE62-4125-B3EA-1FCA8674BF8A">如果发现性能有所下降，您可以禁用 <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> 中的活动目录组查找功能。只有在满足以下条件时才能禁用此功能：</p><ul purpose="ul" id="UL_6BE74C8DA348469D92237350E127668B"><li purpose="li" id="LI_E8ACEF4B1F4E46C9B5CD27B6FCF94E52">已在 <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span>.中配置了 Web 层身份验证（集成的 Windows 身份验证或 PKI）。</li><li purpose="li" id="LI_237F2053B35641CAB3E9C1B02DCC673C">您正在使用 ArcGIS Server 的内置组作为站点的组存储。如果正在使用的是 Windows Active Directory 中的组，则必须进行查找以获取组。</li></ul><p id="GUID-2DA972F9-CBC1-4C82-AFEC-60792BFCFBE8">要禁用 <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> 中的 Active Directory 组查找功能，请执行以下操作：</p>
+<div class="wfsteps" purpose="wfsteps"><h4></h4><div class="steps" id="GUID-BD659D37-7EB3-4840-9690-EB0D96005C8F"><div class="step_title">步骤：</div><ol>
+<li purpose="step" id="GUID-8C00F757-0470-4728-A040-5F386AE95775">
+<span purpose="cmd" id="GUID-47393521-0806-465A-884A-D0B0DAFEB936">
+在托管 <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> 的计算机中，浏览到 WebAdaptor.config 文件并将其打开。默认情况下，该文件位于 IIS inetpub 文件夹下，例如 <span class="usertext">C:\inetpub\wwwroot\&lt;web adaptor name&gt;\WebAdaptor.config</span>。</span>
+</li>
+<li purpose="step" id="ESRI_STEP_9A0ADD87F1A84D1CA12207F623CC4762"><span purpose="cmd" id="GUID-7A77332F-0259-4246-950C-3B6BD18691C5">定位到 <span class="usertext">EnableGetRolesForUser</span> 属性，然后将其值更改为 false，例如：</span><div class="info" purpose="info"><div class="codeblock" purpose="codeblock"><div class="highlight"><pre><code>&lt;EnableGetRolesForUser&gt;false&lt;/EnableGetRolesForUser&gt;
+</code></pre></div>
+</div></div></li><li purpose="step" id="ESRI_STEP_EF37A7669F894EE39A766C1154C20109"><span purpose="cmd" id="GUID-7F464DBF-6EBA-4250-B8F7-00B659CF4919">保存并关闭文件。</span></li><li purpose="step" id="ESRI_STEP_A1F85D74C32747E99A22299978B66BC9"><span purpose="cmd" id="GUID-4185E65C-C7F2-444B-886F-EB6B79D121DF">重新启动 IIS。</span></li><li purpose="step" id="ESRI_STEP_0EC72CC1151341A38A248389E906BD91"><span purpose="cmd" id="GUID-CCDF9213-E46A-4D4B-B73B-49BE4E759401">为使用站点配置的其余 Web Adaptor 重复上述步骤。</span></li></ol></div></div>
+<div class="wfsummary" id="GUID-39D4CBFF-5E33-43C8-BF2F-FDE73DCFCA23" purpose="wfsummary">
+<p id="GUID-0DD6BD55-72BB-499C-AC15-271D4379EAC3">
+将 <span class="usertext">EnableGetRolesForUser</span> 属性更改为 <span class="usertext">true</span> 后，您可随时启用查找功能。</p>
+</div>
+<div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

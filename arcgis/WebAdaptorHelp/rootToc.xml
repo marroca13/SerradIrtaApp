@@ -1,0 +1,126 @@
+<map title='ArcGIS Web Adaptor Help'>
+<topichead title='Introduction'>
+<topicref title='Getting started with ArcGIS Web Adaptor' path='01n1/01n10000001n000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Install and configure ArcGIS Web Adaptor with ArcGIS Server'>
+<topicref title='About ArcGIS Web Adaptor' path='01n1/01n100000012000000.htm'>
+</topicref>
+<topicref title='An overview of implementing ArcGIS Web Adaptor with ArcGIS Server' path='01n1/01n10000000t000000.htm'>
+</topicref>
+<topichead title='Step 1: Plan your ArcGIS Server site configuration'>
+<topicref title='Inside an ArcGIS Server site' path='01n1/01n10000000z000000.htm'>
+</topicref>
+<topicref title='Deployment scenarios' path='01n1/01n10000000m000000.htm'>
+</topicref>
+<topichead title='Single machine site configurations'>
+<topicref title='Single-machine deployment' path='01n1/01n10000002w000000.htm'>
+</topicref>
+<topicref title='Single-machine deployment with reverse proxy server' path='01n1/01n10000002r000000.htm'>
+</topicref>
+<topicref title='Single-machine high-availability (active-passive) deployment' path='01n1/01n10000002s000000.htm'>
+</topicref>
+<topicref title='Single-machine high-availability (active-active) deployment' path='01n1/01n10000002z000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Multiple machine site configurations'>
+<topicref title='Multiple-machine deployment with ArcGIS Web Adaptor' path='01n1/01n10000002t000000.htm'>
+</topicref>
+<topicref title='Multiple-machine deployment with third party load balancer' path='01n1/01n100000030000000.htm'>
+</topicref>
+</topichead>
+</topichead>
+<topichead title='Step 2: Install ArcGIS Web Adaptor'>
+<topicref title='Installing ArcGIS Web Adaptor' path='01n1/01n100000008000000.htm'>
+</topicref>
+<topicref title='Silently installing ArcGIS Web Adaptor' path='01n1/01n10000000q000000.htm'>
+</topicref>
+<topicref title='Installing multiple ArcGIS Web Adaptors' path='01n1/01n100000016000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Step 3: Configure ArcGIS Web Adaptor'>
+<topicref title='Configure ArcGIS Web Adaptor' path='01n1/01n100000017000000.htm'>
+</topicref>
+<topicref title='Unregister ArcGIS Web Adaptor with ArcGIS Server' path='01n1/01n100000038000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Uninstall ArcGIS Web Adaptor'>
+<topicref title='Uninstalling  ArcGIS Web Adaptor' path='01n1/01n10000000n000000.htm'>
+</topicref>
+</topichead>
+<topicref title='Configuring the .NET Trust level in IIS' path='01n1/01n10000002p000000.htm'>
+</topicref>
+<topicref title='Disable Windows Active Directory groups lookup in ArcGIS Web Adaptor (IIS)' path='01n1/01n100000031000000.htm'>
+</topicref>
+<topicref title='Configure ArcGIS Web Adaptor memory cache options' path='01n1/01n100000035000000.htm'>
+</topicref>
+<topicref title='Configure HTTPS on ArcGIS Server  when accessed through ArcGIS Web Adaptor' path='01n1/01n10000000p000000.htm'>
+</topicref>
+<topicref title='Enable HTTPS on your web server' path='01n1/01n10000002m000000.htm'>
+</topicref>
+<topicref title='Securing web services with Integrated Windows Authentication' path='01n1/01n100000028000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Install and configure ArcGIS Web Adaptor with Portal for ArcGIS'>
+<topicref title='About ArcGIS Web Adaptor' path='01n1/01n100000023000000.htm'>
+</topicref>
+<topicref title='An overview of implementing ArcGIS Web Adaptor with Portal for ArcGIS' path='01n1/01n100000021000000.htm'>
+</topicref>
+<topichead title='Step 1: Plan your Portal for ArcGIS configuration'>
+<topicref title='The portal&apos;s role in ArcGIS' path='01n1/01n10000001s000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Step 2: Enable HTTPS on your web server'>
+<topicref title='Enable HTTPS on your web server' path='01n1/01n100000026000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Step 3: Install ArcGIS Web Adaptor'>
+<topicref title='Install ArcGIS Web Adaptor' path='01n1/01n100000019000000.htm'>
+</topicref>
+<topicref title='Silently installing ArcGIS Web Adaptor' path='01n1/01n10000001v000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Step 4: Configure ArcGIS Web Adaptor'>
+<topicref title='Configure ArcGIS Web Adaptor' path='01n1/01n10000001p000000.htm'>
+</topicref>
+<topicref title='Configure multiple ArcGIS Web Adaptors' path='01n1/01n100000037000000.htm'>
+</topicref>
+<topicref title='Unregistering ArcGIS Web Adaptor with Portal for ArcGIS' path='01n1/01n10000002q000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Uninstall ArcGIS Web Adaptor'>
+<topicref title='Uninstalling ArcGIS Web Adaptor' path='01n1/01n100000025000000.htm'>
+</topicref>
+</topichead>
+<topicref title='Configuring the .NET Trust level in IIS' path='01n1/01n10000002n000000.htm'>
+</topicref>
+<topicref title='Use Integrated Windows Authentication with your portal' path='01n1/01n100000029000000.htm'>
+</topicref>
+</topichead>
+<topichead title='Reference'>
+<topicref title='ArcGIS Web Adaptor 10.6 system requirements' path='01n1/01n100000034000000.htm'>
+</topicref>
+<topicref title='Use a reverse proxy server with Portal for ArcGIS' path='01n1/01n100000036000000.htm'>
+</topicref>
+<topicref title='About cross-domain policy files' path='01n1/01n100000027000000.htm'>
+</topicref>
+<topicref title='Configuring the display language for ArcGIS Web Adaptor' path='01n1/01n10000000s000000.htm'>
+</topicref>
+<topichead title='Enabling IIS and required IIS components'>
+<topicref title='Automatically enabling IIS components' path='01n1/01n100000015000000.htm'>
+</topicref>
+<topicref title='Enabling IIS and required IIS components on Windows Server 2012/2012 R2' path='01n1/01n100000011000000.htm'>
+</topicref>
+<topicref title='Enabling IIS and required IIS components on Windows Server 2008/2008 R2' path='01n1/01n10000000w000000.htm'>
+</topicref>
+<topicref title='Enabling IIS and required IIS components on  Windows 8/8.1' path='01n1/01n100000010000000.htm'>
+</topicref>
+<topicref title='Enabling IIS and required IIS components on Windows 7' path='01n1/01n100000013000000.htm'>
+</topicref>
+</topichead>
+<topicref title='Questions, feedback, and information' path='01n1/01n100000032000000.htm'>
+</topicref>
+<topicref title='Copyright information' path='01n1/01n100000033000000.htm'>
+</topicref>
+</topichead>
+</map>

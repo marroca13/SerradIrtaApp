@@ -1,0 +1,45 @@
+<html lang="zh-cn" xml:lang="zh-cn"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="在 Windows Server 2012/2012 R2 中，ArcGIS Web Adaptor 要求启用 IIS 及特定 IIS 组件。"><meta name="content-language" content="zh-cn"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 在 Windows Server 2012/2012 R2 中启用 IIS 及所需 IIS 组件</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-B0BEA9C7-5D93-4E67-B22E-57449AB52F26]--><body><div id="content"><div class="header"><h1>在 Windows Server 2012/2012 R2 中启用 IIS 及所需 IIS 组件</h1><div id="breadcrumb"></div></div>
+<p id="GUID-1FD43CF9-5CD5-4AD6-BF52-325FE27FEB51">在 Windows Server 2012/2012 R2 中，<span purpose="ph" translate="no" varid="WebAdaptorforArcGIS">ArcGIS Web Adaptor</span> 要求启用 IIS 及特定 IIS 组件。如果未检测到 IIS 或未启用特定的 IIS 组件，则安装程序将无法继续。</p><p id="GUID-209E9945-5C1A-4968-849E-65FAAD54AAFA">如果您已启用 IIS 但缺少所需 IIS 组件，则安装程序将显示一条消息，提示缺少某些 IIS 组件。您可以选择允许安装程序自动启用所需 IIS 组件。但是根据组织安全策略，也可能需要按以下说明手动启用所需的 IIS 组件。</p><p id="GUID-2DB0CD5F-3D36-4D96-B068-786663B24C2E">要了解在 Windows Server 2012/2012 R2 中启用 IIS 及所需 IIS 组件的方法，请参阅以下说明。</p><ol purpose="ol" id="OL_C4E02EA065C64CBAA3F6014605C0C378"><li purpose="li" id="LI_647597BAD9574248B38072995F191E73">打开<span class="uicontrol">服务器管理器</span>，然后单击<span class="uicontrol">管理 <span class="greaterthan">&gt;</span> 添加角色和功能</span>。单击<span class="uicontrol">下一步</span>。</li><li purpose="li" id="LI_26311478E13C44FEBEC9BB764FC55540">选择<span class="uicontrol">基于角色或基于功能安装</span>，然后单击<span class="uicontrol">下一步</span>。</li><li purpose="li" id="LI_7EB55583428647D1948C9F9A35B0B6F7">选择相应的服务器。默认情况下选择本地服务器。单击<span class="uicontrol">下一步</span>。</li><li purpose="li" id="LI_5FB4821D23744BA28C3C0308A3835D64">启用 <span class="uicontrol">Web 服务器 (IIS)</span>，然后单击<span class="uicontrol">下一步</span>。</li><li purpose="li" id="LI_51AAF5DA482741B9BE00BCB92F759FFB">安装 Web Adaptor 无需其他功能，因此单击<span class="uicontrol">下一步</span>。</li><li purpose="li" id="LI_5233D6E7E49344E79F6CD84D7B7568E9">在 <span class="uicontrol">Web 服务器角色 (IIS)</span> 对话框中，单击<span class="uicontrol">下一步</span>。</li><li purpose="li" id="LI_EBF8510F760740B0ACE3928309F2F897">在<span class="uicontrol">选择角色服务</span>对话框中，确认以下列出的 Web 服务器组件是否已启用。单击<span class="uicontrol">下一步</span>。</li><li purpose="li" id="LI_717C88949B5E4184A9784B068AE5EC12">确认您的设置是否正确，然后单击<span class="uicontrol">安装</span>。</li><li purpose="li" id="LI_2C86B83341774136B73973CD259BC989">安装完成后，单击<span class="uicontrol">关闭</span>退出向导。</li></ol>
+<div class="section1" id="GUID-FCE5C4E8-C261-4920-9A26-DF5600164391" purpose="section1"><h2>
+所需 IIS 组件</h2><p id="GUID-DDF58425-8EAB-43A1-9B95-F9A3FE41740A">  以下列出的 IIS 组件可以满足运行 Web Adaptor 的最低要求。如果您已启用了其他 IIS 组件，也无需删除它们。</p><p id="GUID-DAEAD8BA-3833-4842-9A52-A033FEB89C63">
+<ul purpose="ul" id="UL_3C703A282BA2489F8AF61042374592F0">
+<li purpose="li" id="LI_2A43B6F6AD7D4B41BBB53EAC5BF3398D">Web 服务器<ul purpose="ul" id="UL_9D206995BF2041E8876297A5EDD204BC">
+<li purpose="li" id="LI_A56398DC5DC04E4F95813B49B9618AFB">常见 HTTP 功能<ul purpose="ul" id="UL_8B10A4A65BAF48EEBC9FFE04464662D9">
+<li purpose="li" id="LI_A2D714601D3A45B3BE7C67C13528F521">默认文档</li><li purpose="li" id="LI_FE044A187DA94560B6094B0A17DB5C8A">静态内容</li>
+</ul></li>
+<li purpose="li" id="LI_43A4466C1BF84F00A7941AC344086961">安全性<ul purpose="ul" id="UL_8B0157B0367A440994E38FBDB0E2CCA0">
+<li purpose="li" id="LI_44EE1C8CD2634756841344CC2427ECD0">请求筛选</li><li purpose="li" id="LI_E56A5C47334B4D8F9201D63806E862BB">基本身份验证</li>
+<li purpose="li" id="LI_EABBBC1DBC0241B29048F7DA540FE3E4">Windows 身份验证</li>
+</ul></li><li purpose="li" id="LI_8ADD02162AB143518ADCCC0F88E23EF5">应用程序开发<ul purpose="ul" id="UL_15901D6FC0894F569EC706A0F8A65234">
+<li purpose="li" id="LI_D109DDE558324968911E50909E553250">.NET 扩展性 4.5</li><li purpose="li" id="LI_17DD47991FA042948C30494081B23942">.NET 扩展性</li><li purpose="li" id="LI_86E413DB524F4A388CB8205A6A609C4E">ASP.NET 4.5</li>
+<li purpose="li" id="LI_9DD7FB97D1A4414E888C08E01F17747C">ASP.NET</li><li purpose="li" id="LI_662695746C1D4D9DAC0A44F40AC57E8E">ISAPI 扩展</li>
+<li purpose="li" id="LI_DE4A67B3B1D442D8B5DF9E67994DC369">ISAPI 筛选器</li>
+</ul></li>
+</ul></li>
+<li purpose="li" id="LI_93BEF98BF11341FFA00D2ED13C8294AF">管理工具<ul purpose="ul" id="UL_C863E59842174E6A885A418C24FC0AA5">
+<li purpose="li" id="LI_4E4954CDDED54B4283CCE5BEF2EF8748">IIS 管理控制台</li>
+<li purpose="li" id="LI_89D69391EEF24E49B5CC00932D08965B">IIS 6 管理兼容性<ul purpose="ul" id="UL_BC60FAD14D114928BE4619C970142E12">
+<li purpose="li" id="LI_9B257730E8494BBDA5A114480C227F71">IIS 6 元数据库兼容性</li>
+</ul></li><li purpose="li" id="LI_7184BD2F892048CB9E4F1422D8B48257">IIS 管理脚本和工具</li>
+<li purpose="li" id="LI_E5F0E67EEA5849D891135A73A1B987A8">管理服务</li>
+</ul></li>
+</ul>
+</p></div>
+<div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

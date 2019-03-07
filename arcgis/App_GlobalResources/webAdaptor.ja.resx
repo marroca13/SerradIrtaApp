@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="wa_description1" xml:space="preserve">
+    <value>ArcGIS Web Adaptor を構成するには、サーバーの URL と管理者アカウントを指定します。</value>
+  </data>
+  <data name="wa_sharedKeyLabel" xml:space="preserve">
+    <value>共有鍵 (オプション):</value>
+  </data>
+  <data name="wa_passwordLabel" xml:space="preserve">
+    <value>管理者パスワード:</value>
+  </data>
+  <data name="wa_reconnectLabel" xml:space="preserve">
+    <value>再接続間隔:</value>
+  </data>
+  <data name="wa_siteUrlLabel" xml:space="preserve">
+    <value>ArcGIS Server の URL:</value>
+  </data>
+  <data name="wa_submitButton" xml:space="preserve">
+    <value>構成</value>
+  </data>
+  <data name="wa_timeoutLabel" xml:space="preserve">
+    <value>更新間隔:</value>
+  </data>
+  <data name="wa_timeUnit" xml:space="preserve">
+    <value>分</value>
+  </data>
+  <data name="wa_userNameLabel" xml:space="preserve">
+    <value>管理者のユーザー名:</value>
+  </data>
+  <data name="wa_exampleUrl" xml:space="preserve">
+    <value>例: https://serverhost.domain.com:6443</value>
+  </data>
+  <data name="wa_httpsPortMissing" xml:space="preserve">
+    <value>HTTPS ポート番号を入力してください。</value>
+  </data>
+  <data name="wa_passwordMissing" xml:space="preserve">
+    <value>管理パスワードを入力してください。</value>
+  </data>
+  <data name="wa_reconnectIntervalMissing" xml:space="preserve">
+    <value>[サーバー障害時の再接続間隔] に整数値を入力してください。</value>
+  </data>
+  <data name="wa_refreshIntervalMissing" xml:space="preserve">
+    <value>[サーバー リストの更新間隔] に整数値を入力してください。</value>
+  </data>
+  <data name="wa_urlMissing" xml:space="preserve">
+    <value>GIS サーバーの URL を入力してください。</value>
+  </data>
+  <data name="wa_usernameMissing" xml:space="preserve">
+    <value>ユーザー名を入力してください</value>
+  </data>
+  <data name="wa_validationSum" xml:space="preserve">
+    <value>次のエラーを修正してください:</value>
+  </data>
+  <data name="wa_errorPageTitle" xml:space="preserve">
+    <value>Web Adaptor でエラーが発生しました</value>
+  </data>
+  <data name="wa_getMachinesFailure" xml:space="preserve">
+    <value>サーバー サイトからコンピューターを取得できませんでした。</value>
+  </data>
+  <data name="wa_loadConfigFailure" xml:space="preserve">
+    <value>Web Adaptor の構成ファイルを読み込めませんでした。WebAdaptor.config が有効であることを確認するか、http://{host}/{instance}/webadaptor にアクセスして Web Adaptor を再構成してください</value>
+  </data>
+  <data name="wa_registerWebAdaptorFailure" xml:space="preserve">
+    <value>ArcGIS Server を ArcGIS Web Adaptor に登録できません。サーバー コンピューターが実行されていて、指定のアカウントにサイトへの管理者権限があるか確認してください。</value>
+  </data>
+  <data name="wa_help" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="wa_status_machinesList" xml:space="preserve">
+    <value>次のサーバーが ArcGIS Web Adaptor を使用して構成されています:</value>
+  </data>
+  <data name="wa_status_noMachines" xml:space="preserve">
+    <value>サーバーが ArcGIS Web Adaptor を使用して構成されていません。</value>
+  </data>
+  <data name="wa_description2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_getAdminTokenFailure" xml:space="preserve">
+    <value>サーバーから管理者トークンを取得できませんでした。指定した ArcGIS Server の URL に正常にアクセスできるか確認してください。</value>
+  </data>
+  <data name="wa_enableAdminAccess" xml:space="preserve">
+    <value> Web Adaptor を介したサイトへの管理アクセスを有効にする</value>
+  </data>
+  <data name="wa_serviceDirectoryDesc2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_serviceDirectoryDesc1" xml:space="preserve">
+    <value>次の URL を使用して Services Directory にアクセスします:</value>
+  </data>
+  <data name="wa_serviceDirectoryDesc3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_displayRightToLeft" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="wa_webAdaptorAccessedRemotely" xml:space="preserve">
+    <value>Web Adaptor の構成 URL には、Web Adaptor をホストしているコンピューターからアクセスする必要があります。</value>
+  </data>
+  <data name="wa_webAdaptorAccessDenied" xml:space="preserve">
+    <value>アクセスが拒否されました。</value>
+  </data>
+  <data name="wa_configPageAdminPassworkToolTip" xml:space="preserve">
+    <value>ArcGIS Server サイトへの管理者権限を持つアカウントのパスワードを入力します。</value>
+  </data>
+  <data name="wa_configPageAdminUserNameToolTip" xml:space="preserve">
+    <value>ArcGIS Server サイトへの管理者権限を持つアカウントのユーザー名を入力します。このアカウントは、サイトを初めて作成したときに入力されたプライマリ サイト管理者のアカウント、またはサイト内の管理者権限を割り当てられているアカウントの場合があります。&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+ArcGIS Server のセットアップを実行するときに入力したオペレーティング システムのアカウントを使用しないでください。</value>
+  </data>
+  <data name="wa_configPageEnableAdminToolTip" xml:space="preserve">
+    <value>管理アクセスを有効化すると、Web Adaptor を使用して ArGIS Server Manager および Administrator Directory アプリケーションにアクセスできるようになります。このオプションがオフの場合でも、サイト内にあるいずれかのサーバーへのダイレクト URL を使用して、これらのアプリケーションにアクセスできます。例を示します。&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+ArcGIS Server Manager:&lt;br/&gt; https://serverhost.domain.com:6443&lt;br/&gt;/arcgis/manager&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+
+Administrator Directory:&lt;br/&gt; https://serverhost.domain.com:6443/arcgis/admin</value>
+  </data>
+  <data name="wa_configPageGisServerToolTip" xml:space="preserve">
+    <value>サイト内にあるいずれかのサーバーの URL を入力してください。この URL は、サイトに属しているすべてのコンピューターを検出し、それらを ArcGIS Web Adaptor に登録するために使用されます。</value>
+  </data>
+  <data name="wa_configPageSharedKeyToolTip" xml:space="preserve">
+    <value>Web Adaptor および ArcGIS Server 間の暗号化通信に使用する共有鍵を入力します。詳細は、ArcGIS Server ヘルプのヘルプ トピック「ArcGIS Server セキュリテイの構成」をご参照ください。</value>
+  </data>
+  <data name="wa_status_lastUpdated" xml:space="preserve">
+    <value>最終更新日: {0}</value>
+  </data>
+  <data name="wa_timeoutError" xml:space="preserve">
+    <value>操作が行われなかったために、Web Adaptor 構成ページがタイム アウトしました。Web Adaptor 構成ページを再読み込みして、構成をやり直してください。</value>
+  </data>
+  <data name="wa_adminaccessdisabled" xml:space="preserve">
+    <value>管理アクセスが無効です。システム管理者に連絡して、管理アクセスを有効にしてください。</value>
+  </data>
+  <data name="wa_application_error" xml:space="preserve">
+    <value>アプリケーション エラー</value>
+  </data>
+  <data name="wa_gs_https_req" xml:space="preserve">
+    <value>HTTP リクエストを処理できません。ArcGIS Server は、HTTPS リクエストのみを使用するように構成されています。SSL/HTTPS を使用するように Web Server を構成してください。</value>
+  </data>
+  <data name="wa_https_req" xml:space="preserve">
+    <value>ArcGIS Web Adaptor は、SSL/HTTPS で構成されています。ArcGIS Server サイトの SSL/HTTPS を有効にしてください。</value>
+  </data>
+  <data name="wa_versionmismatch" xml:space="preserve">
+    <value>ArcGIS Web Adaptor を使用して ArcGIS Server を構成できません。ArcGIS Server および ArcGIS Web Adaptor のバージョンが同じであるか確認してください。</value>
+  </data>
+  <data name="wa_portalSharedKeyLabel" xml:space="preserve">
+    <value>共有鍵:</value>
+  </data>
+  <data name="wa_portalSharedKeyMissing" xml:space="preserve">
+    <value>共有鍵を入力してください。</value>
+  </data>
+  <data name="wa_portalSharedKeyToolTip" xml:space="preserve">
+    <value>Web Adaptor およびポータル間の暗号化通信に使用する共有鍵を入力します。</value>
+  </data>
+  <data name="wa_portalstatus_noMachines" xml:space="preserve">
+    <value>ポータルが Web Adaptor を使用して構成されていません。</value>
+  </data>
+  <data name="wa_portalUpdateStatus" xml:space="preserve">
+    <value>ポータルの Web Adaptor への登録を完了するには、以下をポータル コンピューター上の {Install}/portal/etc/portal-config.properties ファイルにコピーしてから、Portal for ArcGIS サービスを再開してください。</value>
+  </data>
+  <data name="wa_portalURLDesc1" xml:space="preserve">
+    <value>次の URL を使用してポータル アプリケーションにアクセスします:</value>
+  </data>
+  <data name="wa_portalURLDesc2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_portalURLDesc3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_portalValidationSum" xml:space="preserve">
+    <value>次のエラーを修正してください:</value>
+  </data>
+  <data name="wa_portal_configPagePortalToolTip" xml:space="preserve">
+    <value>ポータルの URL を入力します。この URL を使用して、ポータルを Web Adaptor に登録します。</value>
+  </data>
+  <data name="wa_portal_description1" xml:space="preserve">
+    <value>Web Adaptor を構成するには、ポータルの URL と管理者アカウントを指定します。</value>
+  </data>
+  <data name="wa_portal_exampleUrl" xml:space="preserve">
+    <value>例: https://machine.domain.com:7443</value>
+  </data>
+  <data name="wa_portal_machinesList" xml:space="preserve">
+    <value>次のポータルが Web Adaptor を使用して正常に構成されています:</value>
+  </data>
+  <data name="wa_portal_portalUrlLabel" xml:space="preserve">
+    <value>ポータルの URL:</value>
+  </data>
+  <data name="wa_portal_urlMissing" xml:space="preserve">
+    <value>ポータルの URL を入力してください。</value>
+  </data>
+  <data name="wa_portalnohttps" xml:space="preserve">
+    <value>ポータルの構成には、Web サーバー上で有効な https が必要です。https URL を使用してこのページにアクセスしてください。</value>
+  </data>
+  <data name="wa_portal_fqdn_reqd" xml:space="preserve">
+    <value>ポータルの構成では、ポータルの URL に完全修飾ドメイン名が必要です</value>
+  </data>
+  <data name="wa_adminOperationsNotAllowed" xml:space="preserve">
+    <value>この管理操作は、Web Adaptor を使用してアクセスしているときは使用できません。この操作には、サイトのいずれかの GIS に対するダイレクト URL を使用してアクセスしてください。</value>
+  </data>
+  <data name="wa_config_next" xml:space="preserve">
+    <value>次へ &gt;</value>
+  </data>
+  <data name="wa_config_portal" xml:space="preserve">
+    <value>Portal for ArcGIS</value>
+  </data>
+  <data name="wa_config_server" xml:space="preserve">
+    <value>ArcGIS Server</value>
+  </data>
+  <data name="wa_config_server_or_portal" xml:space="preserve">
+    <value>Web Adaptor を使用して構成する製品を選択してください。</value>
+  </data>
+  <data name="wa_portal_prerequisite" xml:space="preserve">
+    <value>構成の前提条件:</value>
+  </data>
+  <data name="wa_portal_prereq_desc1" xml:space="preserve">
+    <value>Web Adaptor は、Portal for ArcGIS を使用して構成する前に、ポート 80 で実行している Web サイトにインストールする必要があります。Web Adaptor をポート 80 で実行している Web サイトに再インストールしてください。</value>
+  </data>
+  <data name="wa_portal_prereq_desc3" xml:space="preserve">
+    <value>ArcGIS Web Adaptor をインストールしています。</value>
+  </data>
+  <data name="wa_portal_prereq_https_desc1" xml:space="preserve">
+    <value>Web Adaptor を Portal for ArcGIS で登録する前に、SSL を有効にして、セキュリティ証明書を Web サイトのポート 443 にバインドする必要があります。詳細については、以下をご参照ください。 </value>
+  </data>
+  <data name="wa_portal_prereq_short_msg" xml:space="preserve">
+    <value>Web Adaptor は、Portal for ArcGIS を使用して構成する前に、ポート 80 上で実行している Web サイトにインストールする必要があります。</value>
+  </data>
+  <data name="wa_portal_prereq_desc2" xml:space="preserve">
+    <value>手順については、以下をご参照ください。</value>
+  </data>
+  <data name="wa_portal_prereq_https_desc2" xml:space="preserve">
+    <value>Web サーバーで SSL を有効にしています。</value>
+  </data>
+  <data name="wa_portal_prerq_https_desc1_443reqd" xml:space="preserve">
+    <value>Web Adaptor を Portal for ArcGIS で登録する前に、セキュリティ証明書を SSL ポート 443 にバインドする必要があります。詳細については、以下をご参照ください。</value>
+  </data>
+  <data name="wa_config_prev" xml:space="preserve">
+    <value>&lt; 戻る</value>
+  </data>
+  <data name="wa_portal_prerq_https_443reqd" xml:space="preserve">
+    <value>Web Adaptor を Portal for ArcGIS で登録する前に、セキュリティ証明書を SSL ポート 443 にバインドする必要があります。</value>
+  </data>
+  <data name="wa_config_status" xml:space="preserve">
+    <value>状態:</value>
+  </data>
+  <data name="wa_portal_configured_status" xml:space="preserve">
+    <value>ポータルが Web Adaptor を使用して構成されています</value>
+  </data>
+  <data name="wa_portal_not_configured_status" xml:space="preserve">
+    <value>ポータルが Web Adaptor を使用して構成されていません。</value>
+  </data>
+  <data name="wa_server_configured_status" xml:space="preserve">
+    <value>サーバーが ArcGIS Web Adaptor を使用して構成されています。</value>
+  </data>
+  <data name="wa_server_not_configured_status" xml:space="preserve">
+    <value>サーバーが ArcGIS Web Adaptor を使用して構成されていません。</value>
+  </data>
+  <data name="wa_about" xml:space="preserve">
+    <value>ArcGIS Web Adaptor について</value>
+  </data>
+  <data name="waConfigServerError1" xml:space="preserve">
+    <value>ArcGIS Server を使用して ArcGIS Web Adaptor を構成する前に、Web Adaptor アプリケーションの .NET 信頼レベルを IIS で Full に設定する必要があります。構成後は、アプリケーションの信頼レベルを元のレベルに戻して、Web Adaptor を通じて通常通りサーバーにアクセスできます。</value>
+  </data>
+  <data name="waConfigServerError2" xml:space="preserve">
+    <value>Portal for ArcGIS を使用して ArcGIS Web Adaptor を構成する前に、Web Adaptor アプリケーションの .NET 信頼レベルをIIS で Full に設定する必要があります。構成後は、アプリケーションの信頼レベルを元のレベルに戻して、Web Adaptor を通じて通常通りポータルにアクセスできます。</value>
+  </data>
+  <data name="waConfigServerError3" xml:space="preserve">
+    <value>IIS で .NET 信頼レベルを構成しています。</value>
+  </data>
+  <data name="waConfigServerError4" xml:space="preserve">
+    <value>詳細については、次をご参照ください。</value>
+  </data>
+  <data name="wa_trust_level_not_full" xml:space="preserve">
+    <value>Web Adaptor の構成ページにアクセスするには、信頼レベルに Full を割り当てる必要があります。</value>
+  </data>
+  <data name="wa_ArcGIS" xml:space="preserve">
+    <value>ArcGIS</value>
+  </data>
+  <data name="wa_build" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="wa_iis" xml:space="preserve">
+    <value>Web Adaptor (IIS)</value>
+  </data>
+  <data name="wa_version" xml:space="preserve">
+    <value>バージョン:</value>
+  </data>
+  <data name="wa_portaladminaccessdisabled" xml:space="preserve">
+    <value>管理アクセスが無効です。システム管理者に連絡して、管理アクセスを有効にしてください。</value>
+  </data>
+  <data name="wa_portalConfigPageAdminPasswordToolTip" xml:space="preserve">
+    <value>ポータルへの管理者権限を持つアカウントのパスワードを入力します。</value>
+  </data>
+  <data name="wa_portalConfigPageAdminUserNameToolTip" xml:space="preserve">
+    <value>ポータルへの管理者権限を持つアカウントのユーザー名を入力します。このアカウントは、ポータルを最初に構成したときに入力した初期管理者アカウントや、管理権限を割り当てられたアカウントです。</value>
+  </data>
+  <data name="wa_portalConfigPageEnableAdminToolTip" xml:space="preserve">
+    <value>管理アクセスを有効にすると、Portal Administrator Directory アプリケーションは、Web Adaptor を使用してアクセスできるようになります。このオプションのチェックを外しておくと (推奨)、これらのアプリケーションは、ダイレクト URL を使用してポータルからアクセスし続けることができます。例:&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+Portal Adminr:&lt;br/&gt; http://machine.domain.com:7080&lt;br/&gt;/arcgis/portaladmin&lt;br/&gt;</value>
+  </data>
+  <data name="wa_getPortalAdminTokenFailure" xml:space="preserve">
+    <value>ポータルから管理者トークンを取得できませんでした。指定されたポータルの URL に正常にアクセスできることを確認してください。</value>
+  </data>
+  <data name="wa_portalRegisterWebAdaptorFailure" xml:space="preserve">
+    <value>ArcGIS Web Adaptor を使用してポータルを構成できません。ポータルのコンピューターが実行中であることと、指定されたアカウントにポータルへの管理者権限があることを確認してください。</value>
+  </data>
+  <data name="wa_portal_multiplewaerror" xml:space="preserve">
+    <value>Web Adaptor は Portal for ArcGIS を使用してすでに構成されています。ポータルを使用して構成できる Web Adaptor は 1 つだけです。別の Web Adaptor を使用するようにポータルを更新する場合は、現在登録している Web Adaptor を解除する必要があります。詳細な手順については、以下をご参照ください。</value>
+  </data>
+  <data name="wa_portal_not_configured" xml:space="preserve">
+    <value>ポータルが構成されていません</value>
+  </data>
+  <data name="wa_portal_unregisterwa" xml:space="preserve">
+    <value>ArcGIS Web Adaptor を登録解除しています。</value>
+  </data>
+  <data name="wa_portal_restart_timout_error" xml:space="preserve">
+    <value>ポータル アプリケーションが想定時間内に応答しませんでした。指定したポータルの URL に問題なくアクセスできるか確認してください。</value>
+  </data>
+  <data name="wa_portal_loading_message" xml:space="preserve">
+    <value>Web Adaptor を使用してポータルを構成しています。しばらくお待ちください。これには数分かかります。</value>
+  </data>
+  <data name="wa_portal_loading_message1" xml:space="preserve">
+    <value>構成が完了したら、ポータルへのアクセスに使用する新しい URL が表示されます。</value>
+  </data>
+  <data name="wa_logging_add_node" xml:space="preserve">
+    <value>HealthCheck ステータス {1} を持つノード {0} を追加しています</value>
+  </data>
+  <data name="wa_logging_admin_access_enabled" xml:space="preserve">
+    <value>有効化された管理アクセス: </value>
+  </data>
+  <data name="wa_logging_config_req_url" xml:space="preserve">
+    <value>ArcGIS Web Adaptor 構成リクエストの URL: </value>
+  </data>
+  <data name="wa_logging_config_resp" xml:space="preserve">
+    <value>ArcGIS Web Adaptor 構成応答: </value>
+  </data>
+  <data name="wa_logging_config_update" xml:space="preserve">
+    <value>ArcGIS Web Adaptor 構成を更新しています。</value>
+  </data>
+  <data name="wa_logging_getmachines_req" xml:space="preserve">
+    <value>GetMachines リクエストを送信しています。</value>
+  </data>
+  <data name="wa_logging_getmachines_requrl" xml:space="preserve">
+    <value>GetMachines リクエストの URL:</value>
+  </data>
+  <data name="wa_logging_getmachines_req_fail" xml:space="preserve">
+    <value>GetMachines リクエストに失敗しました: </value>
+  </data>
+  <data name="wa_logging_getmachines_resp" xml:space="preserve">
+    <value>GetMachines 応答: </value>
+  </data>
+  <data name="wa_logging_getwaconfig_fail" xml:space="preserve">
+    <value>ArcGIS Web Adaptor 構成情報を取得できません。</value>
+  </data>
+  <data name="wa_logging_getwalist_fail" xml:space="preserve">
+    <value>ArcGIS Web Adaptor のリストを取得できませんでした</value>
+  </data>
+  <data name="wa_logging_getwa_req_fail" xml:space="preserve">
+    <value>ArcGIS Web Adaptor 構成取得リクエストがサーバー上で失敗しました:</value>
+  </data>
+  <data name="wa_logging_health_check" xml:space="preserve">
+    <value>ノード {0} が正常であるかをチェックしています</value>
+  </data>
+  <data name="wa_logging_https_port" xml:space="preserve">
+    <value>サーバー HTTPS ポート: </value>
+  </data>
+  <data name="wa_logging_https_url_req" xml:space="preserve">
+    <value>HTTPS URL で試行しています。</value>
+  </data>
+  <data name="wa_logging_http_port" xml:space="preserve">
+    <value>サーバー HTTP ポート:</value>
+  </data>
+  <data name="wa_logging_http_url_req" xml:space="preserve">
+    <value>HTTP URL で試行しています。</value>
+  </data>
+  <data name="wa_logging_load_config_file_fail" xml:space="preserve">
+    <value>構成ファイルを読み込めませんでした。構成ファイルが有効かどうかを確認してください。</value>
+  </data>
+  <data name="wa_logging_mark_node" xml:space="preserve">
+    <value>ノード {0} に異常のマークを付けています</value>
+  </data>
+  <data name="wa_logging_next_node" xml:space="preserve">
+    <value>次のノードを試しています</value>
+  </data>
+  <data name="wa_logging_portal_restart" xml:space="preserve">
+    <value>Web サーバーが再起動されるのを待機しています</value>
+  </data>
+  <data name="wa_logging_portal_wareg_succ" xml:space="preserve">
+    <value>ArcGIS Web Adaptor がポータルに正常に登録されました。</value>
+  </data>
+  <data name="wa_logging_proxy_url" xml:space="preserve">
+    <value>URL のプロキシ サーバーにリクエストを送信しています: </value>
+  </data>
+  <data name="wa_logging_regwa_resp" xml:space="preserve">
+    <value>ArcGIS Web Adaptor 登録の応答:</value>
+  </data>
+  <data name="wa_logging_reg_success" xml:space="preserve">
+    <value>ArcGIS Web Adaptor が正常に登録されました。</value>
+  </data>
+  <data name="wa_logging_remove_node" xml:space="preserve">
+    <value>ノードをリストから削除しています:</value>
+  </data>
+  <data name="wa_logging_req_failed" xml:space="preserve">
+    <value>サーバーへのリクエストの送信が失敗しました:</value>
+  </data>
+  <data name="wa_logging_req_headers" xml:space="preserve">
+    <value>リクエストのヘッダーをサーバーに送信しています。</value>
+  </data>
+  <data name="wa_logging_req_url" xml:space="preserve">
+    <value>リクエスト URL: </value>
+  </data>
+  <data name="wa_logging_resp_headers" xml:space="preserve">
+    <value>リクエストのヘッダーを送信しています。</value>
+  </data>
+  <data name="wa_logging_svr_protocol" xml:space="preserve">
+    <value>サーバー プロトコル: </value>
+  </data>
+  <data name="wa_logging_unregwa_fail" xml:space="preserve">
+    <value>ArcGIS Web Adaptor を登録解除できませんでした。</value>
+  </data>
+  <data name="wa_logging_unregwa_succ" xml:space="preserve">
+    <value>ArcGIS Web Adaptor を正常に登録解除しました。</value>
+  </data>
+  <data name="wa_logging_unreg_wa_url" xml:space="preserve">
+    <value>リクエスト URL を使用して ArcGIS Web Adaptor を登録解除しています: </value>
+  </data>
+  <data name="wa_logging_updated_nodelist" xml:space="preserve">
+    <value>ノード リストが更新されます。</value>
+  </data>
+  <data name="wa_logging_update_nodelist" xml:space="preserve">
+    <value>GetMachines 呼び出しからノード リストを更新しています</value>
+  </data>
+  <data name="wa_logging_waconfig_404_resp" xml:space="preserve">
+    <value>404 応答を受信しました。構成をリセットしています。</value>
+  </data>
+  <data name="wa_logging_wa_id" xml:space="preserve">
+    <value>ArcGIS Web Adaptor ID: </value>
+  </data>
+  <data name="wa_logging_webexception" xml:space="preserve">
+    <value>サーバーから WebException が返されました</value>
+  </data>
+  <data name="wa_logging_healthcheck_status" xml:space="preserve">
+    <value>サーバー {0} の状態チェック ステータス: {1}</value>
+  </data>
+  <data name="wa_logging_gemachines_reqfail" xml:space="preserve">
+    <value>サーバー {0} への GetMachines リクエストの送信が失敗しました:</value>
+  </data>
+  <data name="wa_logging_folder_invalid" xml:space="preserve">
+    <value>ArcGIS Web Adaptor のログ フォルダーが無効であるか、アクセス不可になっています。</value>
+  </data>
+  <data name="wa_no_server_nodes" xml:space="preserve">
+    <value>いずれのサーバー コンピューターにもアクセスできませんでした。システム管理者に問い合わせてください。</value>
+  </data>
+  <data name="wa_portalversionmismatch" xml:space="preserve">
+    <value>ArcGIS Web Adaptor を使用してポータルを構成できません。ポータルおよび ArcGIS Web Adaptor のバージョンが同じであるか確認してください。</value>
+  </data>
+  <data name="wa_logging_portal_gemachines_reqfail" xml:space="preserve">
+    <value>ポータル ノード {0} への GetMachines リクエストの送信が失敗しました:</value>
+  </data>
+  <data name="wa_logging_portal_healthcheck_status" xml:space="preserve">
+    <value>ポータル ノード {0} の状態チェック ステータス: {1}</value>
+  </data>
+  <data name="wa_no_portalnodes" xml:space="preserve">
+    <value>いずれのポータル コンピューターにもアクセスできませんでした。システム管理者に問い合わせてください。</value>
+  </data>
+  <data name="wa_portal_not_configured_wacontexturl" xml:space="preserve">
+    <value>ArcGIS Web Adaptor はすでに Poratl for ArcGIS で構成されています。複数の ArcGIS Web Adaptor を構成するには、ArcGIS Portal Directory で WebContextURL プロパティを設定します。詳細については、以下をご参照ください。 </value>
+  </data>
+  <data name="wa_portaladminOperationsNotAllowed" xml:space="preserve">
+    <value>この管理操作は、ArcGIS Web Adaptor を使用してアクセスしているときは使用できません。この操作には、サイトのいずれかのポータル コンピューターに対するダイレクト URL を使用してアクセスしてください。</value>
+  </data>
+  <data name="waRegMultipleWAwithPortal" xml:space="preserve">
+    <value>複数の ArcGIS Web Adaptor をポータルに登録しています。</value>
+  </data>
+  <data name="wa_config_warning" xml:space="preserve">
+    <value>この Web Adaptor はすでに構成されています。サーバーとポータルには別々の Web Adaptor を構成してください。</value>
+  </data>
+</root>

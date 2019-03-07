@@ -1,0 +1,1 @@
+To view the ArcGIS Server Help, open the file index.htm located in this directory. The most recent version of the Help is available online at http://webhelp.esri.com.

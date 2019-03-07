@@ -1,0 +1,51 @@
+<html lang="en" xml:lang="en"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="The ArcGIS Web Adaptor requires that IIS be enabled and specific IIS components be enabled   on Windows Server 2008/2008 R2."><meta name="content-language" content="en"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+Enabling IIS and required IIS components on Windows Server 2008/2008 R2</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-AB9D17DC-221C-4E28-AD42-D7A3AB277768]--><body><div id="content"><div class="header"><h1>
+Enabling IIS and required IIS components on Windows Server 2008/2008 R2</h1><div id="breadcrumb"></div></div>
+
+<p id="GUID-1FD43CF9-5CD5-4AD6-BF52-325FE27FEB51">The <span purpose="ph" varid="WebAdaptorforArcGIS" translate="no">ArcGIS Web Adaptor</span> requires that IIS be enabled and specific IIS components be enabled   on Windows Server 2008/2008 R2.  The setup will not proceed if IIS is not detected and specific IIS components are not enabled.</p><p id="GUID-E63B97D4-1B99-4A75-B1DC-F0567506C77A">If you've already enabled IIS but are missing the required IIS components, the installation will display a message indicating that certain IIS components are missing.  You have the option to allow the installation to automatically enable the required IIS components.   However, depending on your organization's security policies, it may be necessary to manually enable the required IIS components, as described below.</p><p id="GUID-D87270F5-3E5F-4F64-B889-264512959DC5">To learn how to enable IIS and the required IIS components on Windows Server 2008/2008 R2,  see the instructions below.</p><ol purpose="ol" id="OL_EBE44709A949499D8E3FE352454E0C37"><li purpose="li" id="LI_C7FAB6D4F3CF4A76AE86E4F4D91639C4"><p id="GUID-A6CE6AA7-C66D-49FF-9BFB-4FA2467646A7">Click <span class="uicontrol">Start <span class="greaterthan">&gt;</span> Administrative Tools <span class="greaterthan">&gt;</span> Server Manager</span>.</p></li><li purpose="li" id="LI_7D35E05B5C064627BF1CDA6FBD77F908">On the left panel of the <span class="wintitle">Server Manager</span> dialog box, click <span class="uicontrol">Roles</span>.<ul purpose="ul" id="UL_92FDAF8E35384C3DBC73C4B73DA5D790"><li purpose="li" id="LI_2AA5D78C70B043898EB61DD5925C1969">If IIS has not been enabled, click <span class="uicontrol">Add Roles</span> on the <span class="wintitle">Roles Summary</span> panel.  Click <span class="uicontrol">Next</span> and enable <span class="uicontrol">Web Server (IIS)</span> in the list.   Then, click <span class="uicontrol">Next</span> and select <span class="uicontrol">Role Services</span> in the left panel.</li><li purpose="li" id="LI_1D1A1D6646074FD08F4EDF92843DDEB1">If IIS is already enabled, but not all required components have been enabled, click <span class="uicontrol">Add Role Services</span> in the <span class="wintitle">Web Server (IIS)</span> panel on the right.</li></ul></li><li purpose="li" id="LI_DDFE7E689F6F41C082FF7A8438786EB6"><p id="GUID-992820DC-255A-4468-A081-544E5B75B00D">On the <span class="wintitle">Select Role Services</span> dialog box, verify that the web server components listed below are enabled.</p></li><li purpose="li" id="LI_EF331AAFA01A48A683024654AD7F55FE"><p id="GUID-BD2563BA-B539-4359-A20B-A6725E7D388B">After enabling the required IIS components, click <span class="uicontrol">Next <span class="greaterthan">&gt;</span> Install</span>.</p></li></ol><div class="section1" id="GUID-3AEE4554-CE89-4833-8C99-28ADE890C154" purpose="section1"><h2> Required IIS components</h2><p id="GUID-2727E5AC-7F5D-4800-80B8-4E312CFBF1CC">  The IIS components listed below satisfy the minimum requirements to run the Web Adaptor.   If other IIS components are enabled, they do not need to be removed.</p><p id="GUID-DAEAD8BA-3833-4842-9A52-A033FEB89C63">
+<ul purpose="ul" id="UL_3C703A282BA2489F8AF61042374592F0">
+<li purpose="li" id="LI_2A43B6F6AD7D4B41BBB53EAC5BF3398D">Web Server<ul purpose="ul" id="UL_9D206995BF2041E8876297A5EDD204BC">
+<li purpose="li" id="LI_A56398DC5DC04E4F95813B49B9618AFB">Common HTTP Features<ul purpose="ul" id="UL_8B10A4A65BAF48EEBC9FFE04464662D9">
+<li purpose="li" id="LI_FE044A187DA94560B6094B0A17DB5C8A">Static Content</li>
+<li purpose="li" id="LI_A2D714601D3A45B3BE7C67C13528F521">Default Document</li>
+</ul></li>
+<li purpose="li" id="LI_8ADD02162AB143518ADCCC0F88E23EF5">Application Development<ul purpose="ul" id="UL_15901D6FC0894F569EC706A0F8A65234">
+<li purpose="li" id="LI_86E413DB524F4A388CB8205A6A609C4E">ASP.NET</li>
+<li purpose="li" id="LI_D109DDE558324968911E50909E553250">.NET Extensibility</li>
+<li purpose="li" id="LI_662695746C1D4D9DAC0A44F40AC57E8E">ISAPI Extensions</li>
+<li purpose="li" id="LI_DE4A67B3B1D442D8B5DF9E67994DC369">ISAPI Filters</li>
+</ul></li>
+<li purpose="li" id="LI_43A4466C1BF84F00A7941AC344086961">Security<ul purpose="ul" id="UL_8B0157B0367A440994E38FBDB0E2CCA0">
+<li purpose="li" id="LI_E56A5C47334B4D8F9201D63806E862BB">Basic Authentication</li>
+<li purpose="li" id="LI_EABBBC1DBC0241B29048F7DA540FE3E4">Windows Authentication</li>
+<li purpose="li" id="LI_44EE1C8CD2634756841344CC2427ECD0">Request Filtering</li>
+</ul></li>
+</ul></li>
+<li purpose="li" id="LI_93BEF98BF11341FFA00D2ED13C8294AF">Management Tools<ul purpose="ul" id="UL_C863E59842174E6A885A418C24FC0AA5">
+<li purpose="li" id="LI_4E4954CDDED54B4283CCE5BEF2EF8748">IIS Management Console</li>
+<li purpose="li" id="LI_7184BD2F892048CB9E4F1422D8B48257">IIS Management Scripts and Tools</li>
+<li purpose="li" id="LI_E5F0E67EEA5849D891135A73A1B987A8">Management Service</li>
+<li purpose="li" id="LI_89D69391EEF24E49B5CC00932D08965B">IIS 6 Management Compatibility<ul purpose="ul" id="UL_BC60FAD14D114928BE4619C970142E12">
+<li purpose="li" id="LI_9B257730E8494BBDA5A114480C227F71">IIS 6 Metabase Compatibility</li>
+</ul></li>
+</ul></li>
+</ul>
+</p></div>
+<div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

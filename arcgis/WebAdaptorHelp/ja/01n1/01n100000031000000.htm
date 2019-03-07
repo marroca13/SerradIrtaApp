@@ -1,0 +1,34 @@
+<html lang="ja" xml:lang="ja"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="ArcGIS Web Adaptor (IIS) で Windows Active Directory グループのルックアップを無効化できます。"><meta name="content-language" content="ja"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+ArcGIS Web Adaptor (IIS) での Windows Active Directory グループのルックアップの無効化</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-D86FDBFE-FAC2-49EF-8817-1250353CE428]--><body><div id="content"><div class="header"><h1>
+ArcGIS Web Adaptor (IIS) での Windows Active Directory グループのルックアップの無効化</h1><div id="breadcrumb"></div></div>
+<p id="GUID-E805D801-96F9-45EA-B989-F2C49194D2F2"><span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> を使用して Web 層認証を実行している場合、ArcGIS Web Adaptor は、リクエストが ArcGIS Server サイトに送信されるごとに、ログインしているユーザーを Windows Active Directory グループから検索します。グループの数が少ない組織では、このルックアップはパフォーマンスに影響しません。しかし、組織に数百または数千のグループがある場合、ルックアップにかかる時間によってパフォーマンスが低下する可能性があります。</p><p id="GUID-70673AA7-BE62-4125-B3EA-1FCA8674BF8A">パフォーマンスが低下する場合、<span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> で Active Directory グループのルックアップを無効化できます。この機能を無効化できるのは、次の条件を満たす場合のみです。</p><ul purpose="ul" id="UL_6BE74C8DA348469D92237350E127668B"><li purpose="li" id="LI_E8ACEF4B1F4E46C9B5CD27B6FCF94E52"><span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> で Web 層認証 (統合 Windows 認証または PKI) を構成している。</li><li purpose="li" id="LI_237F2053B35641CAB3E9C1B02DCC673C">ArcGIS Server の組み込みグループをサイトのグループ ストアとして使用している。Windows Active Directory のグループを使用している場合、グループの取得にルックアップが実行されます。</li></ul><p id="GUID-2DA972F9-CBC1-4C82-AFEC-60792BFCFBE8"><span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> で Active Directory グループのルックアップを無効化するには、次の手順を実行します。</p>
+<div class="wfsteps" purpose="wfsteps"><h4></h4><div class="steps" id="GUID-BD659D37-7EB3-4840-9690-EB0D96005C8F"><div class="step_title">手順:</div><ol>
+<li purpose="step" id="GUID-8C00F757-0470-4728-A040-5F386AE95775">
+<span purpose="cmd" id="GUID-47393521-0806-465A-884A-D0B0DAFEB936">
+<span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> をホストしているコンピューター上で、WebAdaptor.config ファイルを選択して開きます。デフォルトでは、このファイルは IIS の inetpub フォルダー (<span class="usertext">C:\inetpub\wwwroot\&lt;web adaptor name&gt;\WebAdaptor.config</span> など) にあります。</span>
+</li>
+<li purpose="step" id="ESRI_STEP_9A0ADD87F1A84D1CA12207F623CC4762"><span purpose="cmd" id="GUID-7A77332F-0259-4246-950C-3B6BD18691C5"><span class="usertext">EnableGetRolesForUser</span> プロパティの値を次のように false に変更します。</span><div class="info" purpose="info"><div class="codeblock" purpose="codeblock"><div class="highlight"><pre><code>&lt;EnableGetRolesForUser&gt;false&lt;/EnableGetRolesForUser&gt;
+</code></pre></div>
+</div></div></li><li purpose="step" id="ESRI_STEP_EF37A7669F894EE39A766C1154C20109"><span purpose="cmd" id="GUID-7F464DBF-6EBA-4250-B8F7-00B659CF4919">編集したファイルを保存して閉じます。</span></li><li purpose="step" id="ESRI_STEP_A1F85D74C32747E99A22299978B66BC9"><span purpose="cmd" id="GUID-4185E65C-C7F2-444B-886F-EB6B79D121DF">IIS を再起動します。</span></li><li purpose="step" id="ESRI_STEP_0EC72CC1151341A38A248389E906BD91"><span purpose="cmd" id="GUID-CCDF9213-E46A-4D4B-B73B-49BE4E759401">サイトで構成されている残りの ArcGIS Web Adaptor に対して、上記の手順を繰り返します。</span></li></ol></div></div>
+<div class="wfsummary" id="GUID-39D4CBFF-5E33-43C8-BF2F-FDE73DCFCA23" purpose="wfsummary">
+<p id="GUID-0DD6BD55-72BB-499C-AC15-271D4379EAC3">
+ルックアップは、<span class="usertext">EnableGetRolesForUser</span> プロパティを <span class="usertext">true</span> に変更することで、いつでも有効化できます。</p>
+</div>
+<div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

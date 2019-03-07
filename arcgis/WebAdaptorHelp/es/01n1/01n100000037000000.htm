@@ -1,0 +1,32 @@
+<html lang="es" xml:lang="es"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="Configurar varios ArcGIS Web Adaptors en su portal."><meta name="content-language" content="es"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+Configurar varios ArcGIS Web Adaptors</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-7026982B-45C5-4389-AE86-6F7373C4BF63]--><body><div id="content"><div class="header"><h1>
+Configurar varios ArcGIS Web Adaptors</h1><div id="breadcrumb"></div></div>
+<p id="GUID-62BCF47E-BDC4-4394-BBE1-162FFEBB9A09"> Se requerirán varios <span purpose="ph" translate="no" varid="WebAdaptorforArcGIS">ArcGIS Web Adaptor</span>s cuando se configure un portal de alta disponibilidad que utilice la autenticación de nivel web. Para configurar varios Web Adaptors con <span purpose="ph" translate="no" varid="PortalForArcGIS">Portal for ArcGIS</span>, es necesario utilizar un solo extremo para acceder al portal. Esta dirección URL debe estar definida en la propiedad <span class="usertext">WebContextURL </span>. Así se pueden configurar varios Web Adaptors con el portal siguiendo los pasos que se indican a continuación.</p><div class="wfsteps" purpose="wfsteps"><h4></h4><div class="steps" id="GUID-B2B3F0A1-012E-48DE-A0A7-5AECAFFDCCED"><div class="step_title">Pasos:</div><ol>
+<li purpose="step" id="GUID-2DBEC3A7-A000-432D-9082-D6E09A50C993">
+<span purpose="cmd" id="GUID-39134131-C1C9-4005-9439-0121C845F2EF">
+<span purpose="ph" ishcondition="srv_platform=dotnet"><a class="xref" rel="01n1/01n10000001p000000.htm" href="01n1/01n10000001p000000.htm">Configure el primer ArcGIS Web Adaptor</a> en su portal.</span>  </span>
+</li>
+<li purpose="step" id="ESRI_STEP_4429388B35CB4A9C8EB8148FBF59D4D8"><span purpose="cmd" id="GUID-54EAC279-AD6B-4CBF-B329-43D3CA04878E"><span purpose="ph" ishcondition="srv_platform=dotnet"><a class="xref" rel="01n1/01n100000036000000.htm" href="01n1/01n100000036000000.htm">Agregue Portal for ArcGIS a su servidor proxy inverso.</a></span>   Asegúrese de que establece la propiedad <span class="usertext">WebContextURL</span> de la forma siguiente:</span><div class="substeps" id="ESRI_SUBSTEPS_0BB5983D9BE44FF083C4A4F01D7C224E" purpose="substeps"><ol><li purpose="substep" id="ESRI_SUBSTEP_A546F1E5C1FF4931ACFE45A64A55AE79"><span purpose="cmd" id="GUID-D2B10BDE-4876-4A61-8911-CAE5249D5FD1">Abra un navegador web e inicie sesión en el <a class="xref" target="_blank" rel="http://server.arcgis.com/es/portal/latest/administer/windows/about-the-arcgis-portal-directory.htm" href="http://server.arcgis.com/es/portal/latest/administer/windows/about-the-arcgis-portal-directory.htm">Directorio de Portal for ArcGIS</a> como administrador de la organización.  La dirección URL tiene el formato <span class="usertext">https://portal.domain.com:7443/arcgis/portaladmin</span>.</span></li><li purpose="substep" id="ESRI_SUBSTEP_50B8DC1E15AC4ADD828E66B7CCBC7575"><span purpose="cmd" id="GUID-E8118541-F2E4-48B8-BF30-E62A43C7DCFF">Haga clic en <span class="uicontrol">System <span class="greaterthan">&gt;</span> Properties <span class="greaterthan">&gt;</span> Update Properties</span>. Esto hará que se reinicie el servicio de <span purpose="ph" translate="no" varid="PortalForArcGIS">Portal for ArcGIS</span>. Tendrá que esperar hasta que finalice el reinicio del sistema antes de continuar.</span></li><li purpose="substep" id="ESRI_SUBSTEP_A33524C42ED64DE093B3F98EBEB064B5"><span purpose="cmd" id="GUID-063C0CE8-7348-4DDA-BB7E-7A4032491D28">En el cuadro de diálogo <span class="uicontrol">Update System Properties</span>, inserte el JSON siguiente, sustituyendo la dirección URL de alias DNS o de su propio servidor proxy inverso tal como la ven los usuarios de fuera del firewall de su organización.</span><div class="info" purpose="info"><div class="codeblock" purpose="codeblock"><div class="codeblockdesc" purpose="codeblockdesc"></div><div class="highlight"><pre><code>{
+   &quot;WebContextURL&quot;: &quot;https://reverseproxy.domain.com/myorg&quot;
+}
+</code></pre></div>
+</div></div></li><li purpose="substep" id="ESRI_SUBSTEP_EC38AC71D65C4C799D3B393DFA1E1706"><span purpose="cmd" id="GUID-2D3DBC34-4358-4CC3-97A3-A368FAFB412E">Haga clic en <span class="uicontrol">Update Properties</span>.</span></li></ol></div></li>
+<li purpose="step" id="ESRI_STEP_94653773BB924FDFB442BAFE22C818A3"><span purpose="cmd" id="GUID-7AB344D3-48E9-4BFD-A982-EFC56F5771DD">Configure Web Adaptors adicionales.</span></li></ol></div></div>
+<div class="wfsummary" id="ESRI_WORKFLOWSUMMARY_99CEDEDA0E9F4544B2504602ADA0B2D7" purpose="wfsummary"><p id="GUID-754EB1FD-25B8-4BC7-8615-91644A7E1DA6">Todos los Web Adaptors configurados en el portal se mostrarán en la página de resumen de la configuración. Los usuarios podrán acceder al sitio del portal a través del servidor proxy inverso o de la dirección URL del alias de DNS.</p></div><div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

@@ -1,0 +1,45 @@
+<html lang="de" xml:lang="de"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="Für ArcGIS Web Adaptor ist die Aktivierung von IIS und bestimmten IIS-Komponenten unter Windows Server 2012/2012 R2 erforderlich."><meta name="content-language" content="de"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - Aktivieren von IIS und der erforderlichen IIS-Komponenten unter Windows Server 2012/2012 R2</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-B0BEA9C7-5D93-4E67-B22E-57449AB52F26]--><body><div id="content"><div class="header"><h1>Aktivieren von IIS und der erforderlichen IIS-Komponenten unter Windows Server 2012/2012 R2</h1><div id="breadcrumb"></div></div>
+<p id="GUID-1FD43CF9-5CD5-4AD6-BF52-325FE27FEB51">Für <span purpose="ph" translate="no" varid="WebAdaptorforArcGIS">ArcGIS Web Adaptor</span> ist die Aktivierung von IIS und bestimmten IIS-Komponenten unter Windows Server 2012/2012 R2 erforderlich.  Wenn IIS nicht gefunden wird und bestimmte IIS-Komponenten nicht aktiviert werden, wird die Installation nicht fortgesetzt.</p><p id="GUID-209E9945-5C1A-4968-849E-65FAAD54AAFA">Wenn IIS bereits installiert ist, die erforderlichen IIS-Komponenten jedoch fehlen, wird beim Installieren eine Meldung angezeigt, die darauf hinweist, dass bestimmte IIS-Komponenten fehlen. Sie haben die Möglichkeit, die erforderlichen Komponenten bei der Installation automatisch zu aktivieren. Je nach Sicherheitsrichtlinien Ihrer Organisation müssen die erforderlichen IIS-Komponenten jedoch möglicherweise manuell wie unten beschrieben aktiviert werden.</p><p id="GUID-2DB0CD5F-3D36-4D96-B068-786663B24C2E">Informationen zur Aktivierung von IIS und der erforderlichen IIS-Komponenten unter Windows Server 2012/2012 R2 finden Sie in den folgenden Anweisungen.</p><ol purpose="ol" id="OL_C4E02EA065C64CBAA3F6014605C0C378"><li purpose="li" id="LI_647597BAD9574248B38072995F191E73">Öffnen Sie <span class="uicontrol">Server-Manager</span>, und klicken Sie auf <span class="uicontrol">Verwalten <span class="greaterthan">&gt;</span> Rollen und Features hinzufügen</span>.  Klicken Sie auf <span class="uicontrol">Weiter</span>.</li><li purpose="li" id="LI_26311478E13C44FEBEC9BB764FC55540">Wählen Sie <span class="uicontrol">Rollenbasierte oder featurebasierte Installation</span>, und klicken Sie auf <span class="uicontrol">Weiter</span>.</li><li purpose="li" id="LI_7EB55583428647D1948C9F9A35B0B6F7">Wählen Sie den geeigneten Server aus. Standardmäßig wird der lokale Server ausgewählt. Klicken Sie auf <span class="uicontrol">Weiter</span>.</li><li purpose="li" id="LI_5FB4821D23744BA28C3C0308A3835D64">Aktivieren Sie <span class="uicontrol">Web Server (IIS)</span>, und klicken Sie auf <span class="uicontrol">Weiter</span>.</li><li purpose="li" id="LI_51AAF5DA482741B9BE00BCB92F759FFB">Da zum Installieren des Web Adaptors keine zusätzlichen Funktionen erforderlich sind, klicken Sie auf <span class="uicontrol">Weiter</span>.</li><li purpose="li" id="LI_5233D6E7E49344E79F6CD84D7B7568E9">Klicken Sie im Dialogfeld <span class="uicontrol">Webserver-Rolle (IIS)</span> auf <span class="uicontrol">Weiter</span>.</li><li purpose="li" id="LI_EBF8510F760740B0ACE3928309F2F897">Überprüfen Sie im Dialogfeld <span class="uicontrol">Rollendienste auswählen</span>, ob die unten aufgeführten Webserverkomponenten aktiviert sind.  Klicken Sie auf <span class="uicontrol">Weiter</span>.</li><li purpose="li" id="LI_717C88949B5E4184A9784B068AE5EC12">Überprüfen Sie, ob die Einstellungen korrekt sind, und klicken Sie auf <span class="uicontrol">Installieren</span>.</li><li purpose="li" id="LI_2C86B83341774136B73973CD259BC989">Klicken Sie nach Abschluss der Installation auf <span class="uicontrol">Schließen</span>, um den Assistenten zu beenden.</li></ol>
+<div class="section1" id="GUID-FCE5C4E8-C261-4920-9A26-DF5600164391" purpose="section1"><h2>
+Erforderliche IIS-Komponenten</h2><p id="GUID-DDF58425-8EAB-43A1-9B95-F9A3FE41740A">  Die unten aufgeführten IIS-Komponenten erfüllen die Mindestanforderungen für die Ausführung des Web Adaptors. Wenn andere IIS-Komponenten aktiviert sind, müssen diese nicht entfernt werden.</p><p id="GUID-DAEAD8BA-3833-4842-9A52-A033FEB89C63">
+<ul purpose="ul" id="UL_3C703A282BA2489F8AF61042374592F0">
+<li purpose="li" id="LI_2A43B6F6AD7D4B41BBB53EAC5BF3398D">Webserver<ul purpose="ul" id="UL_9D206995BF2041E8876297A5EDD204BC">
+<li purpose="li" id="LI_A56398DC5DC04E4F95813B49B9618AFB">Allgemeine HTTP-Features<ul purpose="ul" id="UL_8B10A4A65BAF48EEBC9FFE04464662D9">
+<li purpose="li" id="LI_A2D714601D3A45B3BE7C67C13528F521">Standarddokument</li><li purpose="li" id="LI_FE044A187DA94560B6094B0A17DB5C8A">Statischer Inhalt</li>
+</ul></li>
+<li purpose="li" id="LI_43A4466C1BF84F00A7941AC344086961">Sicherheit<ul purpose="ul" id="UL_8B0157B0367A440994E38FBDB0E2CCA0">
+<li purpose="li" id="LI_44EE1C8CD2634756841344CC2427ECD0">Anforderungsfilterung</li><li purpose="li" id="LI_E56A5C47334B4D8F9201D63806E862BB">Standardauthentifizierung</li>
+<li purpose="li" id="LI_EABBBC1DBC0241B29048F7DA540FE3E4">Windows-Authentifizierung</li>
+</ul></li><li purpose="li" id="LI_8ADD02162AB143518ADCCC0F88E23EF5">Anwendungsentwicklung<ul purpose="ul" id="UL_15901D6FC0894F569EC706A0F8A65234">
+<li purpose="li" id="LI_D109DDE558324968911E50909E553250">.NET-Erweiterbarkeit 4.5</li><li purpose="li" id="LI_17DD47991FA042948C30494081B23942">.NET-Erweiterbarkeit</li><li purpose="li" id="LI_86E413DB524F4A388CB8205A6A609C4E">ASP.NET 4.5</li>
+<li purpose="li" id="LI_9DD7FB97D1A4414E888C08E01F17747C">ASP.NET</li><li purpose="li" id="LI_662695746C1D4D9DAC0A44F40AC57E8E">ISAPI-Erweiterungen</li>
+<li purpose="li" id="LI_DE4A67B3B1D442D8B5DF9E67994DC369">ISAPI-Filter</li>
+</ul></li>
+</ul></li>
+<li purpose="li" id="LI_93BEF98BF11341FFA00D2ED13C8294AF">Verwaltungsprogramme<ul purpose="ul" id="UL_C863E59842174E6A885A418C24FC0AA5">
+<li purpose="li" id="LI_4E4954CDDED54B4283CCE5BEF2EF8748">IIS-Verwaltungskonsole</li>
+<li purpose="li" id="LI_89D69391EEF24E49B5CC00932D08965B">IIS 6-Verwaltungskompatibilität<ul purpose="ul" id="UL_BC60FAD14D114928BE4619C970142E12">
+<li purpose="li" id="LI_9B257730E8494BBDA5A114480C227F71">IIS 6-Metabasiskompatibilität</li>
+</ul></li><li purpose="li" id="LI_7184BD2F892048CB9E4F1422D8B48257">IIS-Verwaltungsskripts und -tools</li>
+<li purpose="li" id="LI_E5F0E67EEA5849D891135A73A1B987A8">Verwaltungsdienst</li>
+</ul></li>
+</ul>
+</p></div>
+<div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

@@ -1,0 +1,51 @@
+<html lang="fr" xml:lang="fr"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="ArcGIS Web Adaptor nécessite qu'IIS et que certains composants IIS spécifiques soient activés sous Windows Server 2008/2008 R2."><meta name="content-language" content="fr"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+Activation d'IIS et des composants IIS requis sous Windows Server 2008/2008 R2</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-AB9D17DC-221C-4E28-AD42-D7A3AB277768]--><body><div id="content"><div class="header"><h1>
+Activation d'IIS et des composants IIS requis sous Windows Server 2008/2008 R2</h1><div id="breadcrumb"></div></div>
+
+<p id="GUID-1FD43CF9-5CD5-4AD6-BF52-325FE27FEB51"><span purpose="ph" translate="no" varid="WebAdaptorforArcGIS">ArcGIS Web Adaptor</span> nécessite qu'IIS et que certains composants IIS spécifiques soient activés sous Windows Server 2008/2008 R2. Le programme d'installation ne se poursuit pas si IIS n'est pas détecté et que les composants IIS spécifiques ne sont pas activés.</p><p id="GUID-E63B97D4-1B99-4A75-B1DC-F0567506C77A">Si vous avez déjà activé IIS, mais que les composants IIS requis manquent, l'installation affiche un message indiquant que certains composants IIS sont manquants. Vous avez la possibilité d'autoriser l'installation à activer automatiquement les composants IIS. Cependant, selon les règles de sécurité de votre organisation, il peut s'avérer nécessaire d'activer manuellement les composants IIS requis, comme décrit ci-après.</p><p id="GUID-D87270F5-3E5F-4F64-B889-264512959DC5">Pour savoir comment activer IIS et les composants IIS requis sous Windows Server 2008/2008 R2, consultez les instructions ci-après.</p><ol purpose="ol" id="OL_EBE44709A949499D8E3FE352454E0C37"><li purpose="li" id="LI_C7FAB6D4F3CF4A76AE86E4F4D91639C4"><p id="GUID-A6CE6AA7-C66D-49FF-9BFB-4FA2467646A7">Cliquez sur <span class="uicontrol">Démarrer <span class="greaterthan">&gt;</span> Outils administratifs <span class="greaterthan">&gt;</span> Gestionnaire de serveurs</span>.</p></li><li purpose="li" id="LI_7D35E05B5C064627BF1CDA6FBD77F908">Dans le volet de gauche de la boîte de dialogue <span class="wintitle">Gestionnaire de serveurs</span>, cliquez sur <span class="uicontrol">Rôles</span>.<ul purpose="ul" id="UL_92FDAF8E35384C3DBC73C4B73DA5D790"><li purpose="li" id="LI_2AA5D78C70B043898EB61DD5925C1969">Si IIS n'a pas été activé, cliquez sur <span class="uicontrol">Ajouter des rôles</span> dans le panneau <span class="wintitle">Récapitulatif des rôles</span>. Cliquez sur <span class="uicontrol">Suivant</span> et activez <span class="uicontrol">Serveur Web (IIS)</span> dans la liste. Cliquez ensuite sur <span class="uicontrol">Suivant</span>, puis sélectionnez <span class="uicontrol">Services de rôle</span> dans le panneau gauche.</li><li purpose="li" id="LI_1D1A1D6646074FD08F4EDF92843DDEB1">Si IIS est déjà installé mais que les composants requis ne sont pas tous activés, cliquez sur <span class="uicontrol">Ajouter des services de rôle</span> dans le panneau<span class="wintitle">Serveur Web (IIS)</span> à droite.</li></ul></li><li purpose="li" id="LI_DDFE7E689F6F41C082FF7A8438786EB6"><p id="GUID-992820DC-255A-4468-A081-544E5B75B00D">Dans la boîte de dialogue <span class="wintitle">Sélectionner les services de rôle</span>, vérifiez que les composants de serveur Web ci-dessous sont activés.</p></li><li purpose="li" id="LI_EF331AAFA01A48A683024654AD7F55FE"><p id="GUID-BD2563BA-B539-4359-A20B-A6725E7D388B">Après avoir activé les composants IIS requis, cliquez sur <span class="uicontrol">Suivant <span class="greaterthan">&gt;</span> Installer</span>.</p></li></ol><div class="section1" id="GUID-3AEE4554-CE89-4833-8C99-28ADE890C154" purpose="section1"><h2> Composants IIS requis</h2><p id="GUID-2727E5AC-7F5D-4800-80B8-4E312CFBF1CC">  Les composants IIS répertoriés ci-après correspondent à la configuration minimale requise pour exécuter Web Adaptor. Si d'autres composants IIS sont activés, ils n'ont pas besoin d'être supprimés.</p><p id="GUID-DAEAD8BA-3833-4842-9A52-A033FEB89C63">
+<ul purpose="ul" id="UL_3C703A282BA2489F8AF61042374592F0">
+<li purpose="li" id="LI_2A43B6F6AD7D4B41BBB53EAC5BF3398D">Serveur Web<ul purpose="ul" id="UL_9D206995BF2041E8876297A5EDD204BC">
+<li purpose="li" id="LI_A56398DC5DC04E4F95813B49B9618AFB">Fonctionnalités HTTP communes<ul purpose="ul" id="UL_8B10A4A65BAF48EEBC9FFE04464662D9">
+<li purpose="li" id="LI_FE044A187DA94560B6094B0A17DB5C8A">Contenu statique</li>
+<li purpose="li" id="LI_A2D714601D3A45B3BE7C67C13528F521">Document par défaut</li>
+</ul></li>
+<li purpose="li" id="LI_8ADD02162AB143518ADCCC0F88E23EF5">Développement d'applications<ul purpose="ul" id="UL_15901D6FC0894F569EC706A0F8A65234">
+<li purpose="li" id="LI_86E413DB524F4A388CB8205A6A609C4E">ASP.NET</li>
+<li purpose="li" id="LI_D109DDE558324968911E50909E553250">Extensibilité .NET</li>
+<li purpose="li" id="LI_662695746C1D4D9DAC0A44F40AC57E8E">Extensions ISAPI</li>
+<li purpose="li" id="LI_DE4A67B3B1D442D8B5DF9E67994DC369">Filtres ISAPI</li>
+</ul></li>
+<li purpose="li" id="LI_43A4466C1BF84F00A7941AC344086961">Sécurité<ul purpose="ul" id="UL_8B0157B0367A440994E38FBDB0E2CCA0">
+<li purpose="li" id="LI_E56A5C47334B4D8F9201D63806E862BB">Authentification de base</li>
+<li purpose="li" id="LI_EABBBC1DBC0241B29048F7DA540FE3E4">Authentification Windows</li>
+<li purpose="li" id="LI_44EE1C8CD2634756841344CC2427ECD0">Filtrage des demandes</li>
+</ul></li>
+</ul></li>
+<li purpose="li" id="LI_93BEF98BF11341FFA00D2ED13C8294AF">Outils de gestion<ul purpose="ul" id="UL_C863E59842174E6A885A418C24FC0AA5">
+<li purpose="li" id="LI_4E4954CDDED54B4283CCE5BEF2EF8748">Console de gestion IIS</li>
+<li purpose="li" id="LI_7184BD2F892048CB9E4F1422D8B48257">Scripts et outils de gestion IIS</li>
+<li purpose="li" id="LI_E5F0E67EEA5849D891135A73A1B987A8">Service de gestion</li>
+<li purpose="li" id="LI_89D69391EEF24E49B5CC00932D08965B">Compatibilité avec la gestion IIS 6<ul purpose="ul" id="UL_BC60FAD14D114928BE4619C970142E12">
+<li purpose="li" id="LI_9B257730E8494BBDA5A114480C227F71">Compatibilité avec la métabase IIS 6</li>
+</ul></li>
+</ul></li>
+</ul>
+</p></div>
+<div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>

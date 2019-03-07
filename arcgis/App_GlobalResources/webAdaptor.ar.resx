@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="wa_description1" xml:space="preserve">
+    <value>لتكوين محول الويب، حدد عنوان URL وحساب مسئول الخادم.</value>
+  </data>
+  <data name="wa_sharedKeyLabel" xml:space="preserve">
+    <value>مفتاح مشترك (اختياري):</value>
+  </data>
+  <data name="wa_passwordLabel" xml:space="preserve">
+    <value>كلمة مرور المسؤول:</value>
+  </data>
+  <data name="wa_reconnectLabel" xml:space="preserve">
+    <value>فاصل إعادة الاتصال:</value>
+  </data>
+  <data name="wa_siteUrlLabel" xml:space="preserve">
+    <value>عنوان URL لـ ArcGIS Server:</value>
+  </data>
+  <data name="wa_submitButton" xml:space="preserve">
+    <value>تكوين</value>
+  </data>
+  <data name="wa_timeoutLabel" xml:space="preserve">
+    <value>تحديث الفاصل:</value>
+  </data>
+  <data name="wa_timeUnit" xml:space="preserve">
+    <value>دقائق</value>
+  </data>
+  <data name="wa_userNameLabel" xml:space="preserve">
+    <value>اسم المستخدم المسؤول:</value>
+  </data>
+  <data name="wa_exampleUrl" xml:space="preserve">
+    <value>مثال: https://serverhost.domain.com:6443</value>
+  </data>
+  <data name="wa_httpsPortMissing" xml:space="preserve">
+    <value>الرجاء إدخال رقم المنفذ HTTPS.</value>
+  </data>
+  <data name="wa_passwordMissing" xml:space="preserve">
+    <value>الرجاء إدخال كلمة المرور الإدارية.</value>
+  </data>
+  <data name="wa_reconnectIntervalMissing" xml:space="preserve">
+    <value>الرجاء إدخال قيمة عدد صحيح في "فاصل إعادة الاتصال عند فشل الخادم".</value>
+  </data>
+  <data name="wa_refreshIntervalMissing" xml:space="preserve">
+    <value>الرجاء إدخال قيمة عدد صحيح في "فاصل تحديث قائمة الخوادم".</value>
+  </data>
+  <data name="wa_urlMissing" xml:space="preserve">
+    <value>الرجاء إدخال عنوان URL لخادم GIS.</value>
+  </data>
+  <data name="wa_usernameMissing" xml:space="preserve">
+    <value>الرجاء إدخال اسم المستخدم</value>
+  </data>
+  <data name="wa_validationSum" xml:space="preserve">
+    <value>الرجاء تصحيح الأخطاء التالية:</value>
+  </data>
+  <data name="wa_errorPageTitle" xml:space="preserve">
+    <value>فشل محول الويب</value>
+  </data>
+  <data name="wa_getMachinesFailure" xml:space="preserve">
+    <value>فشل في الحصول على أجهزة من موقع الخادم.</value>
+  </data>
+  <data name="wa_loadConfigFailure" xml:space="preserve">
+    <value>فشل تحميل ملف تكوين محول الويب. الرجاء التأكد من أن WebAdaptor.configصالحًا، أو يمكنك إعادة تكوين محول الويب من خلال الرابط: http://{host}/{instance}/webadaptor</value>
+  </data>
+  <data name="wa_registerWebAdaptorFailure" xml:space="preserve">
+    <value>يتعذر تسجيل ArcGIS Server مع محول الويب. يرجى التأكد من تشغيل جهاز الخادم وأن الحساب المحدد لديه الامتيازات الإدارية للموقع.</value>
+  </data>
+  <data name="wa_help" xml:space="preserve">
+    <value>تعليمات</value>
+  </data>
+  <data name="wa_status_machinesList" xml:space="preserve">
+    <value>يتم تكوين الخوادم التالية مع محول الويب:</value>
+  </data>
+  <data name="wa_status_noMachines" xml:space="preserve">
+    <value>لم يتم تكوين أي خوادم بمحول الويب.</value>
+  </data>
+  <data name="wa_description2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_getAdminTokenFailure" xml:space="preserve">
+    <value>فشل في الحصول على الرمز المميز للمسؤول من الخادم. الرجاء التحقق من أنه يمكن الوصول إلى عنوان URL لـ ArcGIS Server المحدد بنجاح.</value>
+  </data>
+  <data name="wa_enableAdminAccess" xml:space="preserve">
+    <value> تمكين الوصول الإداري للموقع من خلال Web Adaptor.</value>
+  </data>
+  <data name="wa_serviceDirectoryDesc2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_serviceDirectoryDesc1" xml:space="preserve">
+    <value>استخدم عنوان URL التالي للوصول إلى دليل الخدمات:</value>
+  </data>
+  <data name="wa_serviceDirectoryDesc3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_displayRightToLeft" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="wa_webAdaptorAccessedRemotely" xml:space="preserve">
+    <value>يمكن الوصول إلى عنوان URL لتكوين محول الويب من الجهاز الذي يستضيف محول الويب.</value>
+  </data>
+  <data name="wa_webAdaptorAccessDenied" xml:space="preserve">
+    <value>الوصول مرفوض.</value>
+  </data>
+  <data name="wa_configPageAdminPassworkToolTip" xml:space="preserve">
+    <value>أدخل كلمة المرور الخاصة بالحساب مع المزايا الإدارية بموقع ArcGIS for Server.</value>
+  </data>
+  <data name="wa_configPageAdminUserNameToolTip" xml:space="preserve">
+    <value>أدخل اسم المستخدم الخاص بالحساب مع مزايا إدارية بموقع ArcGIS for Server. قد يكون هذا الحساب هو حساب مسئول الموقع الرئيسي الذي تم إدخاله عندما تم إنشاء الموقع أولًا أو أن الحساب الذي تم تعيين له مزايا إدارية داخل الموقع. &lt;br/&gt;&amp;nbsp;&lt;br/&gt; لا تستخدم حساب نظام عملية التشغيل التي قمت بإدخالها عند تشغيل إعداد ArcGIS for Server.</value>
+  </data>
+  <data name="wa_configPageEnableAdminToolTip" xml:space="preserve">
+    <value>يتيح تمكين الوصول الإداري لتطبيقات ArcGIS Server Manager وAdministrator Directory الوصول إليها من خلال محول الويب. وعند عدم التأشير على هذا الخيار، يمكن لهذه التطبيقات الاستمرار في الوصول إليها باستخدام عنوان URL مباشر لأحد الخوادم في الموقع، مثل:&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+ArcGIS Server Manager:&lt;br/&gt; https://serverhost.domain.com:6443&lt;br/&gt;/arcgis/manager&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+
+Administrator Directory:&lt;br/&gt; https://serverhost.domain.com:6443/arcgis/admin</value>
+  </data>
+  <data name="wa_configPageGisServerToolTip" xml:space="preserve">
+    <value>أدخل عنوان URL في أحد الخوادم في موقعك. سيتم استخدام عنوان URL لاكتشاف كل الأجهزة المشاركة في الموقع وتسجيلها في محول الويب.</value>
+  </data>
+  <data name="wa_configPageSharedKeyToolTip" xml:space="preserve">
+    <value>أدخل المفتاح المشترك المستخدم لتشفير الاتصال بين محول الويب وArcGIS for Server. راجع الموضع " تكوين أمان ArcGIS for Server" الموجود في باب تعليمات ArcGIS for Server لمزيد من التعليمات.</value>
+  </data>
+  <data name="wa_status_lastUpdated" xml:space="preserve">
+    <value>أخر تحديث يوم {0}</value>
+  </data>
+  <data name="wa_timeoutError" xml:space="preserve">
+    <value>انتهى وقت صفحة تكوين محول الويب بسبب توقف النشاط، ويرجى إعادة تحميل صفحة تكوين محول الويب، وإعادة تكوينها.</value>
+  </data>
+  <data name="wa_adminaccessdisabled" xml:space="preserve">
+    <value>تم تعطيل الوصول إلى المسئول. الرجاء الاتصال بمسئول النظام للتمكين.</value>
+  </data>
+  <data name="wa_application_error" xml:space="preserve">
+    <value>خطأ في التطبيق</value>
+  </data>
+  <data name="wa_gs_https_req" xml:space="preserve">
+    <value>يتعذر طلب HTTP للبروكسي، فلقد تم تكوين ArcGIS for Server لقبول طلبات HTTPS فقط، الرجاء تكوين خدمة الويب الخاصة بك Web Server لاستخدام SSL/HTTPS.</value>
+  </data>
+  <data name="wa_https_req" xml:space="preserve">
+    <value>لقد تم تكوين ArcGIS Web Adaptor مع SSL/HTTPS. الرجاء تمكين SSL/HTTPS لموقع ArcGIS for Server.</value>
+  </data>
+  <data name="wa_versionmismatch" xml:space="preserve">
+    <value>تعذر تكوين ArcGIS for Server مع محول الويب. يرجى التأكد أن ArcGIS for Server وWebAdapter من نفس الإصدار.</value>
+  </data>
+  <data name="wa_portalSharedKeyLabel" xml:space="preserve">
+    <value>المفتاح المشترك:</value>
+  </data>
+  <data name="wa_portalSharedKeyMissing" xml:space="preserve">
+    <value>الرجال إدخال مفتاح مشترك</value>
+  </data>
+  <data name="wa_portalSharedKeyToolTip" xml:space="preserve">
+    <value>أدخل المفتاح المشترك المستخدم في تشفير الاتصال بين  Web Adaptor والمدخل.</value>
+  </data>
+  <data name="wa_portalstatus_noMachines" xml:space="preserve">
+    <value>لم يتم تكوين المدخل مع Web Adaptor.</value>
+  </data>
+  <data name="wa_portalUpdateStatus" xml:space="preserve">
+    <value>لإكمال تسجيل المدخل مع Web Adaptor، انسخ الملف التالي {Install}/portal/etc/portal-config.properties  في جهاز المدخل ثم أعد تشغيل خدمة Portal for ArcGIS.</value>
+  </data>
+  <data name="wa_portalURLDesc1" xml:space="preserve">
+    <value>استخدم عنوان URL التالي للوصول إلى تطبيق المدخل:</value>
+  </data>
+  <data name="wa_portalURLDesc2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_portalURLDesc3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_portalValidationSum" xml:space="preserve">
+    <value>الرجاء تصحيح الأخطاء التالية:</value>
+  </data>
+  <data name="wa_portal_configPagePortalToolTip" xml:space="preserve">
+    <value>أدخل عنوان URL الخاص بالبوابة الإلكترونية. يتم استخدام هذا العنوان لتسجيل البوابة الإلكترونية باستخدام محول الويب.</value>
+  </data>
+  <data name="wa_portal_description1" xml:space="preserve">
+    <value>لتكوين Web Adaptor، حدد عنوان URL وحساب المسئول للمدخل.</value>
+  </data>
+  <data name="wa_portal_exampleUrl" xml:space="preserve">
+    <value>مثال: https://machine.domain.com:7443</value>
+  </data>
+  <data name="wa_portal_machinesList" xml:space="preserve">
+    <value>تم تكوين المدخل التالي مع Web Adaptor بنجاح:</value>
+  </data>
+  <data name="wa_portal_portalUrlLabel" xml:space="preserve">
+    <value>عنوان URL للمدخل:</value>
+  </data>
+  <data name="wa_portal_urlMissing" xml:space="preserve">
+    <value>الرجاء إدخال عنوان URL للبوابة الإلكترونية</value>
+  </data>
+  <data name="wa_portalnohttps" xml:space="preserve">
+    <value>يتطلب تكوين بوابة الخدمات الإلكترونية تمكين https على خادم الويب. الرجاء استخدام موقع https للوصول إلى هذه الصفحة.</value>
+  </data>
+  <data name="wa_portal_fqdn_reqd" xml:space="preserve">
+    <value>يتطلب تكوين البوابة الإلكترونية اسم مجال مؤهل بالكامل في عنوان URL للبوابة الإلكترونية</value>
+  </data>
+  <data name="wa_adminOperationsNotAllowed" xml:space="preserve">
+    <value>لا تتوفر العملية الإدارية عند الوصول عن طريق محول الويب. يرجى الوصول لهذه العملية باستخدام عنوان URL المباشر إلى واحد من خوادم GIS داخل الموقع.</value>
+  </data>
+  <data name="wa_config_next" xml:space="preserve">
+    <value>التالي &gt;</value>
+  </data>
+  <data name="wa_config_portal" xml:space="preserve">
+    <value>Portal for ArcGIS</value>
+  </data>
+  <data name="wa_config_server" xml:space="preserve">
+    <value>ArcGIS Server</value>
+  </data>
+  <data name="wa_config_server_or_portal" xml:space="preserve">
+    <value>أي من المنتجات التي ترغب في تكوينها مع محول الويب؟</value>
+  </data>
+  <data name="wa_portal_prerequisite" xml:space="preserve">
+    <value>المتطلبات الأساسية للتكوين:</value>
+  </data>
+  <data name="wa_portal_prereq_desc1" xml:space="preserve">
+    <value>يجب تثبيت محول الويب على موقع ويب يقوم بالعمل على منفذ 80 قبل أن يمكن تكوينه مع Portal for ArcGIS. الرجاء إعادة تثبيت محول الويب على موقع ويب يعمل على المنفذ 80.</value>
+  </data>
+  <data name="wa_portal_prereq_desc3" xml:space="preserve">
+    <value>تثبيت ArcGIS Web Adaptor&gt;</value>
+  </data>
+  <data name="wa_portal_prereq_https_desc1" xml:space="preserve">
+    <value>يجب تمكين SSL وربط شهادة الأمان بالمنفذ 443 على موقع الويب قبل القيام بتسجيل محول الويب مع Portal for ArcGIS. لمعرفة المزيد، راجع </value>
+  </data>
+  <data name="wa_portal_prereq_short_msg" xml:space="preserve">
+    <value>يجب تثبيت محول الويب على موقع ويب يعمل على المنفذ 80 قبل تكوينه مع Portal for ArcGIS.</value>
+  </data>
+  <data name="wa_portal_prereq_desc2" xml:space="preserve">
+    <value>للحصول على التعليمات، راجع</value>
+  </data>
+  <data name="wa_portal_prereq_https_desc2" xml:space="preserve">
+    <value>تمكين SSL على خادم الويب.</value>
+  </data>
+  <data name="wa_portal_prerq_https_desc1_443reqd" xml:space="preserve">
+    <value>يجب عليك ربط شهادة الأمان بالمنفذ 443 لـ SSL قبل قيامك بتسجيل محول الويب مع Portal for ArcGIS. لمعرفة المزيد، راجع</value>
+  </data>
+  <data name="wa_config_prev" xml:space="preserve">
+    <value>&lt;الخلف</value>
+  </data>
+  <data name="wa_portal_prerq_https_443reqd" xml:space="preserve">
+    <value>يجب عليك ربط شهادة الأمان بالمنفذ 443 لـ SSL قبل قيامك بتسجيل محول الويب مع Portal for ArcGIS</value>
+  </data>
+  <data name="wa_config_status" xml:space="preserve">
+    <value>الحالة:</value>
+  </data>
+  <data name="wa_portal_configured_status" xml:space="preserve">
+    <value>يتم تسجيل المدخل مع Web Adaptor.</value>
+  </data>
+  <data name="wa_portal_not_configured_status" xml:space="preserve">
+    <value>لم يتم تكوين المدخل مع Web Adaptor.</value>
+  </data>
+  <data name="wa_server_configured_status" xml:space="preserve">
+    <value>يتم تكوين الخادم بمحول الويب.</value>
+  </data>
+  <data name="wa_server_not_configured_status" xml:space="preserve">
+    <value>لم يتم تكوين الخادم بمحول الويب.</value>
+  </data>
+  <data name="wa_about" xml:space="preserve">
+    <value>حول</value>
+  </data>
+  <data name="waConfigServerError1" xml:space="preserve">
+    <value>قبل تكوين ArcGIS Web Adaptor مع ArcGIS Server، يجب عليك تعيين مستوى الثقة .NET من تطبيق محول الويب بالكامل في IIS. بعد التكوين، يمكنك تعيين مستوى الثقة من التطبيق بالرجوع إلى المستوى الأصلي والوصول إلى الخادم من خلال محول الويب كالمعتاد.</value>
+  </data>
+  <data name="waConfigServerError2" xml:space="preserve">
+    <value>قبل تكوين ArcGIS Web Adaptor مع Portal for ArcGIS، يجب عليك تعيين مستوى الثقة .NET من تطبيق محول الويب بالكامل في IIS. بعد التكوين، يمكنك تعيين مستوى الثقة من التطبيق بالرجوع إلى المستوى الأصلي والوصول إلى البوابة الإلكترونية من خلال محول الويب كالمعتاد.</value>
+  </data>
+  <data name="waConfigServerError3" xml:space="preserve">
+    <value>تكوين مستوى الثقة .NET في IIS.</value>
+  </data>
+  <data name="waConfigServerError4" xml:space="preserve">
+    <value>لمعرفة المزيد، راجع</value>
+  </data>
+  <data name="wa_trust_level_not_full" xml:space="preserve">
+    <value>للوصول إلى صفحة تكوين محول الويب، ينبغي تعيين مستوى الثقة بالكامل.</value>
+  </data>
+  <data name="wa_ArcGIS" xml:space="preserve">
+    <value>ArcGIS</value>
+  </data>
+  <data name="wa_build" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="wa_iis" xml:space="preserve">
+    <value>محول الويب (IIS)</value>
+  </data>
+  <data name="wa_version" xml:space="preserve">
+    <value>الإصدار:</value>
+  </data>
+  <data name="wa_portaladminaccessdisabled" xml:space="preserve">
+    <value>تم تعطيل الوصول إلى المسئول. الرجاء الاتصال بمسئول النظام للتمكين.</value>
+  </data>
+  <data name="wa_portalConfigPageAdminPasswordToolTip" xml:space="preserve">
+    <value>أدخل كلمة مرور لأحد الحسابات مع المزايا الإدارية على البوابة الإلكترونية.</value>
+  </data>
+  <data name="wa_portalConfigPageAdminUserNameToolTip" xml:space="preserve">
+    <value>أدخل اسم المستخدم لأحد الحسابات ذات المزايا الإدارية على البوابة الإلكترونية. قد يكون هذا الحساب حساب المسئول الأولي الذي أدخلته عند تكوين البوابة الإلكترونية أولاً أو أحد الحسابات التي تم تعيينها المزايا الإدارية.</value>
+  </data>
+  <data name="wa_portalConfigPageEnableAdminToolTip" xml:space="preserve">
+    <value>سوف يسمح تمكين الوصول الإداري بالوصول إلى تطبيقات دليل مسئول البوابة الإلكترونية من خلال محول الويب. عند ترك هذا الخيار دون التأشير عليه (ويوصى بذلك)، فإن هذه التطبيقات يمكن استمرار الوصول إليها  باستخدام عنوان URL مباشر إلى البوابة الإلكترونية. على سبيل المثال: &lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+مسئول البوابة الإلكترونية:&lt;br/&gt; http://machine.domain.com:7080&lt;br/&gt;/arcgis/portaladmin&lt;br/&gt;</value>
+  </data>
+  <data name="wa_getPortalAdminTokenFailure" xml:space="preserve">
+    <value>فشل الحصول على الرمز المميز للمسئول من البوابة الإلكترونية. الرجاء التحقق من أنه يمكن الوصول إلى عنوان URL المحدد للبوابة الإلكترونية بنجاح.</value>
+  </data>
+  <data name="wa_portalRegisterWebAdaptorFailure" xml:space="preserve">
+    <value>تعذر تكوين البوابة الإلكترونية مع محول الويب. الرجاء التأكد من تشغيل جهاز البوابة الإلكترونية وأن الحساب المحدد لديه الامتيازات الإدارية على البوابة الإلكترونية.</value>
+  </data>
+  <data name="wa_portal_multiplewaerror" xml:space="preserve">
+    <value>تم تكوين محول ويب في Portal for ArcGIS. ولا يمكن تكوين إلا محول ويب واحد في البوابة الإلكترونية، وإذا أردت تحديث البوابة الإلكترونية لاستخدام محول ويب مختلف، سيتعين عليك إلغاء تسجيل محول الويب الحالي، وللحصول على التعليمات الكاملة، راجع</value>
+  </data>
+  <data name="wa_portal_not_configured" xml:space="preserve">
+    <value>لم يتم تكوين المدخل</value>
+  </data>
+  <data name="wa_portal_unregisterwa" xml:space="preserve">
+    <value>إلغاء تسجيل ArcGIS Web Adaptor.</value>
+  </data>
+  <data name="wa_portal_restart_timout_error" xml:space="preserve">
+    <value>تطبيق البوابة الإلكترونية لا يستجيب خلال المدة المتوقعة، الرجاء التحقق من إمكانية الوصول إلى عنوان URL البوابة الإلكترونية المحددة بنجاح.</value>
+  </data>
+  <data name="wa_portal_loading_message" xml:space="preserve">
+    <value>الرجاء الانتظار حتى يتم تكوين المدخل مع Web Adaptor. سيستغرق &gt;لك دقائق قليلة.</value>
+  </data>
+  <data name="wa_portal_loading_message1" xml:space="preserve">
+    <value>مجرد الانتهاء من التكوين، سيظهر عنوان URL المستخدم للوصول إلى المدخل.</value>
+  </data>
+  <data name="wa_logging_add_node" xml:space="preserve">
+    <value>إضافة عقدة {0} مع حالة HealthCheck {1}</value>
+  </data>
+  <data name="wa_logging_admin_access_enabled" xml:space="preserve">
+    <value>تم تمكين وصول المسئول: </value>
+  </data>
+  <data name="wa_logging_config_req_url" xml:space="preserve">
+    <value>عنوان Url لطلب تكوين محول الويب: </value>
+  </data>
+  <data name="wa_logging_config_resp" xml:space="preserve">
+    <value>استجابة تكوين محول الويب: </value>
+  </data>
+  <data name="wa_logging_config_update" xml:space="preserve">
+    <value>تحديث تكوين محول الويب.</value>
+  </data>
+  <data name="wa_logging_getmachines_req" xml:space="preserve">
+    <value>إرسال طلب GetMachines.</value>
+  </data>
+  <data name="wa_logging_getmachines_requrl" xml:space="preserve">
+    <value>عنوان Url لطلب GetMachines:</value>
+  </data>
+  <data name="wa_logging_getmachines_req_fail" xml:space="preserve">
+    <value>فشل طلب GetMachines: </value>
+  </data>
+  <data name="wa_logging_getmachines_resp" xml:space="preserve">
+    <value>استجابة GetMachines: </value>
+  </data>
+  <data name="wa_logging_getwaconfig_fail" xml:space="preserve">
+    <value>تعذر الحصول على معلومات تكوين محول الويب.</value>
+  </data>
+  <data name="wa_logging_getwalist_fail" xml:space="preserve">
+    <value>تعذر الحصول على قائمة webadaptors</value>
+  </data>
+  <data name="wa_logging_getwa_req_fail" xml:space="preserve">
+    <value>فشل طلب تكوين الحصول على محول الويب في الخادم:</value>
+  </data>
+  <data name="wa_logging_health_check" xml:space="preserve">
+    <value>التحقق مما إذا كانت العقدة: {0} صحيحة</value>
+  </data>
+  <data name="wa_logging_https_port" xml:space="preserve">
+    <value>HttpsPort الخادم: </value>
+  </data>
+  <data name="wa_logging_https_url_req" xml:space="preserve">
+    <value>محاولة مع عنوان https Url.</value>
+  </data>
+  <data name="wa_logging_http_port" xml:space="preserve">
+    <value>HttpPort الخادم:</value>
+  </data>
+  <data name="wa_logging_http_url_req" xml:space="preserve">
+    <value>محاولة مع عنوان http Url.</value>
+  </data>
+  <data name="wa_logging_load_config_file_fail" xml:space="preserve">
+    <value>تعذر تحميل ملف التكوين، يرجى التحقق ما إذا كانت صحيحة.</value>
+  </data>
+  <data name="wa_logging_mark_node" xml:space="preserve">
+    <value>ضبط عقدة {0} باعتباره UnHealthy</value>
+  </data>
+  <data name="wa_logging_next_node" xml:space="preserve">
+    <value>محاول العقدة التالية</value>
+  </data>
+  <data name="wa_logging_portal_restart" xml:space="preserve">
+    <value>انتظار إعادة تشغيل خادم الويب</value>
+  </data>
+  <data name="wa_logging_portal_wareg_succ" xml:space="preserve">
+    <value>تم تسجيل محول الويب بنجاح مع البوابة الإلكترونية.</value>
+  </data>
+  <data name="wa_logging_proxy_url" xml:space="preserve">
+    <value>طلب الوكيل لعنوان Url: </value>
+  </data>
+  <data name="wa_logging_regwa_resp" xml:space="preserve">
+    <value>تسجيل استجابة محول الويب:</value>
+  </data>
+  <data name="wa_logging_reg_success" xml:space="preserve">
+    <value>تم تسجيل WebAdaptor بنجاح.</value>
+  </data>
+  <data name="wa_logging_remove_node" xml:space="preserve">
+    <value>قائمة إزالة العقدة:</value>
+  </data>
+  <data name="wa_logging_req_failed" xml:space="preserve">
+    <value>فشل طلب الإرسال للخادم:</value>
+  </data>
+  <data name="wa_logging_req_headers" xml:space="preserve">
+    <value>إرسال طلب الرؤوس للخادم.</value>
+  </data>
+  <data name="wa_logging_req_url" xml:space="preserve">
+    <value>تم طلب عنوان Url: </value>
+  </data>
+  <data name="wa_logging_resp_headers" xml:space="preserve">
+    <value>إرسال استجابة الرؤوس.</value>
+  </data>
+  <data name="wa_logging_svr_protocol" xml:space="preserve">
+    <value>بروتوكول الخادم: </value>
+  </data>
+  <data name="wa_logging_unregwa_fail" xml:space="preserve">
+    <value>فشل إلغاء تسجيل webadaptor.</value>
+  </data>
+  <data name="wa_logging_unregwa_succ" xml:space="preserve">
+    <value>إلغاء تسجيل محول الويب بنجاح.</value>
+  </data>
+  <data name="wa_logging_unreg_wa_url" xml:space="preserve">
+    <value>إلغاء تسجيل محول الويب مع طلب عنوان Url: </value>
+  </data>
+  <data name="wa_logging_updated_nodelist" xml:space="preserve">
+    <value>تم تحديث قائمة العقدة.</value>
+  </data>
+  <data name="wa_logging_update_nodelist" xml:space="preserve">
+    <value>تحديث قائمة العقدة من طلب GetMachines</value>
+  </data>
+  <data name="wa_logging_waconfig_404_resp" xml:space="preserve">
+    <value>تم استلام استجابة 404. إعادة تعيين التكوين.</value>
+  </data>
+  <data name="wa_logging_wa_id" xml:space="preserve">
+    <value>مُعرف محول الويب: </value>
+  </data>
+  <data name="wa_logging_webexception" xml:space="preserve">
+    <value>تم استرجاع WebException بواسطة الخادم</value>
+  </data>
+  <data name="wa_logging_healthcheck_status" xml:space="preserve">
+    <value>حالة التحقق من صحة الخادم {0} : {1}</value>
+  </data>
+  <data name="wa_logging_gemachines_reqfail" xml:space="preserve">
+    <value>تعذر إرسال طلب GetMachines للخادم {0}:</value>
+  </data>
+  <data name="wa_logging_folder_invalid" xml:space="preserve">
+    <value>مجلد تسجيل محول الويب غير صحيح أو غير قابل للوصول.</value>
+  </data>
+  <data name="wa_no_server_nodes" xml:space="preserve">
+    <value>يتعذر الوصول إلى أي أجهزة خادم. يرجى الاتصال بمسئول النظام.</value>
+  </data>
+  <data name="wa_portalversionmismatch" xml:space="preserve">
+    <value>تعذر تكوين البوابة الإلكترونية مع Web Adaptor. الرجاء التأكد من أن البوابة الإلكترونية و WebAdaptor من نفس الإصدار.</value>
+  </data>
+  <data name="wa_logging_portal_gemachines_reqfail" xml:space="preserve">
+    <value>تعذر إرسال طلب GetMachines لعقدة البوابة الإلكترونية {0}:</value>
+  </data>
+  <data name="wa_logging_portal_healthcheck_status" xml:space="preserve">
+    <value>حالة التحقق من صحة عقدة البوابة الإلكترونية {0} : {1}</value>
+  </data>
+  <data name="wa_no_portalnodes" xml:space="preserve">
+    <value>تعذر الوصول إلى أجهزة البوابة الإلكترونية. الرجاء الاتصال بمسئول النظام.</value>
+  </data>
+  <data name="wa_portal_not_configured_wacontexturl" xml:space="preserve">
+    <value>تم بالفعل تكوين محول الويب مع Portal for ArcGIS. لتكوين العديد من محولات الويب، قم بتعيين الخاصية WebContextURL في دليل Portal for ArcGIS. للحصول على تفاصيل، راجع </value>
+  </data>
+  <data name="wa_portaladminOperationsNotAllowed" xml:space="preserve">
+    <value>لم تتوافر هذه العملية الإدارية عند الوصول من خلال محول الويب. الرجاء الوصول إلى هذه العملية باستخدام عنوان URL مباشر إلى إحدى أجهزة البوابة الإلكترونية في الموقع.</value>
+  </data>
+  <data name="waRegMultipleWAwithPortal" xml:space="preserve">
+    <value>تسجيل العديد من محولات الويب مع البوابة الإلكترونية</value>
+  </data>
+  <data name="wa_config_warning" xml:space="preserve">
+    <value>تم تكوين محول الويب بالفعل. يرجى تكوين محولات ويب منفصلة للخادم والبوابة الإلكترونية.</value>
+  </data>
+</root>

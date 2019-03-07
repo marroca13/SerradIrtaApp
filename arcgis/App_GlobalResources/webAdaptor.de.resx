@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="wa_description1" xml:space="preserve">
+    <value>Zur Konfiguration von Web Adaptor geben Sie die URL und ein Administratorkonto für Ihren Server an.</value>
+  </data>
+  <data name="wa_sharedKeyLabel" xml:space="preserve">
+    <value>Freigegebener Schlüssel (optional):</value>
+  </data>
+  <data name="wa_passwordLabel" xml:space="preserve">
+    <value>Administratorkennwort:</value>
+  </data>
+  <data name="wa_reconnectLabel" xml:space="preserve">
+    <value>Wiederverbindungsintervall:</value>
+  </data>
+  <data name="wa_siteUrlLabel" xml:space="preserve">
+    <value>ArcGIS-Server-URL:</value>
+  </data>
+  <data name="wa_submitButton" xml:space="preserve">
+    <value>Konfigurieren</value>
+  </data>
+  <data name="wa_timeoutLabel" xml:space="preserve">
+    <value>Aktualisierungsintervall:</value>
+  </data>
+  <data name="wa_timeUnit" xml:space="preserve">
+    <value>Minuten</value>
+  </data>
+  <data name="wa_userNameLabel" xml:space="preserve">
+    <value>Benutzername des Administrators:</value>
+  </data>
+  <data name="wa_exampleUrl" xml:space="preserve">
+    <value>Beispiel: https://serverhost.domain.com:6443</value>
+  </data>
+  <data name="wa_httpsPortMissing" xml:space="preserve">
+    <value>Geben Sie eine HTTPS-Portnummer ein.</value>
+  </data>
+  <data name="wa_passwordMissing" xml:space="preserve">
+    <value>Geben Sie ein Administratorkennwort ein.</value>
+  </data>
+  <data name="wa_reconnectIntervalMissing" xml:space="preserve">
+    <value>Geben Sie einen ganzzahligen Wert für das Wiederverbindungsintervall bei Serverausfall ein.</value>
+  </data>
+  <data name="wa_refreshIntervalMissing" xml:space="preserve">
+    <value>Geben Sie einen ganzzahligen Wert für das Intervall für Serverlistenaktualisierung ein.</value>
+  </data>
+  <data name="wa_urlMissing" xml:space="preserve">
+    <value>Geben Sie eine GIS-Server-URL ein</value>
+  </data>
+  <data name="wa_usernameMissing" xml:space="preserve">
+    <value>Geben Sie einen Benutzernamen ein</value>
+  </data>
+  <data name="wa_validationSum" xml:space="preserve">
+    <value>Beheben Sie folgende Fehler:</value>
+  </data>
+  <data name="wa_errorPageTitle" xml:space="preserve">
+    <value>Web Adaptor-Fehler</value>
+  </data>
+  <data name="wa_getMachinesFailure" xml:space="preserve">
+    <value>Fehler beim Abrufen von Computern von Server-Standort.</value>
+  </data>
+  <data name="wa_loadConfigFailure" xml:space="preserve">
+    <value>Fehler beim Laden der Konfigurationsdatei von Web Adaptor. Stellen Sie sicher, dass die Datei 'WebAdaptor.config' gültig ist, oder konfigurieren Sie Web Adaptor unter folgender Adresse neu: http://{host}/{instance}/webadaptor</value>
+  </data>
+  <data name="wa_registerWebAdaptorFailure" xml:space="preserve">
+    <value>Fehler beim Registrieren von Web Adaptor beim ArcGIS-Server. Stellen Sie sicher, dass der Servercomputer ausgeführt wird und das angegebene Konto über Administratorberechtigungen für die Site verfügt.</value>
+  </data>
+  <data name="wa_help" xml:space="preserve">
+    <value>Hilfe</value>
+  </data>
+  <data name="wa_status_machinesList" xml:space="preserve">
+    <value>Folgende Server wurden mit Web Adaptor konfiguriert</value>
+  </data>
+  <data name="wa_status_noMachines" xml:space="preserve">
+    <value>Es wurden keine Server mit Web Adaptor konfiguriert.</value>
+  </data>
+  <data name="wa_description2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_getAdminTokenFailure" xml:space="preserve">
+    <value>Fehler beim Abrufen des Administrator-Tokens vom Server. Überprüfen Sie, ob erfolgreich auf die angegebene ArcGIS-Server-URL zugegriffen werden kann.</value>
+  </data>
+  <data name="wa_enableAdminAccess" xml:space="preserve">
+    <value> Administrativen Zugriff auf Ihre Site durch Web Adaptor aktivieren.</value>
+  </data>
+  <data name="wa_serviceDirectoryDesc2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_serviceDirectoryDesc1" xml:space="preserve">
+    <value>Verwenden Sie die folgende URL, um auf das Services-Verzeichnis zuzugreifen:</value>
+  </data>
+  <data name="wa_serviceDirectoryDesc3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_displayRightToLeft" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="wa_webAdaptorAccessedRemotely" xml:space="preserve">
+    <value>Der Zugriff auf die Web Adaptor-Konfigurations-URL muss über den Computer erfolgen, der Web Adaptor hostet.</value>
+  </data>
+  <data name="wa_webAdaptorAccessDenied" xml:space="preserve">
+    <value>Zugriff verweigert</value>
+  </data>
+  <data name="wa_configPageAdminPassworkToolTip" xml:space="preserve">
+    <value>Geben Sie das Kennwort für ein Konto mit Administratorberechtigungen für die ArcGIS Server-Site ein.</value>
+  </data>
+  <data name="wa_configPageAdminUserNameToolTip" xml:space="preserve">
+    <value>Geben Sie das Kennwort für ein Konto mit Administratorberechtigungen für die ArcGIS Server-Site ein. Bei diesem Konto kann es sich um das primäre Site-Administratorkonto handeln, das bei der ersten Erstellung der Site eingegeben wurde, oder um ein Konto, dem Administratorberechtigungen für die Site zugewiesen wurden. &lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+Verwenden Sie nicht das Betriebssystemkonto, das Sie bei der Ausführung des ArcGIS Server-Setups eingegeben haben.</value>
+  </data>
+  <data name="wa_configPageEnableAdminToolTip" xml:space="preserve">
+    <value>Durch die Aktivierung des administrativen Zugriffs wird der Zugriff auf die Anwendungen ArcGIS Server Manager und Administrator Directory durch Web Adaptor ermöglicht. Wenn diese Option deaktiviert ist, kann der Zugriff auf diese Anwendungen weiterhin über eine direkte URL zu einem der Server der Site erfolgen. Zum Beispiel:&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+ArcGIS Server Manager:&lt;br/&gt; https://serverhost.domain.com:6443&lt;br/&gt;/arcgis/manager&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+
+Administrator Directory:&lt;br/&gt; https://serverhost.domain.com:6443/arcgis/admin</value>
+  </data>
+  <data name="wa_configPageGisServerToolTip" xml:space="preserve">
+    <value>Geben Sie die URL zu einem der Server Ihrer Site ein. Diese URL wird verwendet, um alle an der Site beteiligten Computer zu erkennen und sie bei Web Adaptor zu registrieren.</value>
+  </data>
+  <data name="wa_configPageSharedKeyToolTip" xml:space="preserve">
+    <value>Geben Sie den freigegebenen Schlüssel ein, der zum Verschlüsseln der Kommunikation zwischen dem Web Adaptor und dem ArcGIS-Server verwendet wird. Weitere Informationen erhalten Sie im Hilfethema "Konfigurieren der ArcGIS-Server-Sicherheit" in der ArcGIS-Server-Hilfe.</value>
+  </data>
+  <data name="wa_status_lastUpdated" xml:space="preserve">
+    <value>Letzt Aktualisierung am {0}</value>
+  </data>
+  <data name="wa_timeoutError" xml:space="preserve">
+    <value>Bei der Web Adaptor-Konfigurationsseite ist es aufgrund von Inaktivität zu einer Zeitüberschreitung gekommen. Laden Sie die Web Adaptor-Konfigurationsseite erneut, und führen Sie die Konfiguration erneut aus.</value>
+  </data>
+  <data name="wa_adminaccessdisabled" xml:space="preserve">
+    <value>Der administrative Zugriff ist deaktiviert. Wenden Sie sich an Ihren Systemadministrator, um ihn zu aktivieren.</value>
+  </data>
+  <data name="wa_application_error" xml:space="preserve">
+    <value>Anwendungsfehler</value>
+  </data>
+  <data name="wa_gs_https_req" xml:space="preserve">
+    <value>HTTP-Anforderung kann nicht per Proxy übermittelt werden. Der ArcGIS-Server wurde ausschließlich für die Annahme von HTTPS-Anforderungen konfiguriert. Konfigurieren Sie Ihren Webserver für die Verwendung von SSL/HTTPS.</value>
+  </data>
+  <data name="wa_https_req" xml:space="preserve">
+    <value>ArcGIS Web Adaptor wurde mit SSL/HTTPS konfiguriert. Aktivieren Sie SSL/HTTPS für die ArcGIS-Server-Site.</value>
+  </data>
+  <data name="wa_versionmismatch" xml:space="preserve">
+    <value>Der ArcGIS-Server kann nicht mit Web Adaptor konfiguriert werden. Stellen Sie sicher, dass der ArcGIS-Server und Web Adaptor dieselbe Version haben.</value>
+  </data>
+  <data name="wa_portalSharedKeyLabel" xml:space="preserve">
+    <value>Freigegebener Schlüssel:</value>
+  </data>
+  <data name="wa_portalSharedKeyMissing" xml:space="preserve">
+    <value>Geben Sie den freigegebenen Schlüssel ein</value>
+  </data>
+  <data name="wa_portalSharedKeyToolTip" xml:space="preserve">
+    <value>Geben Sie den freigegebenen Schlüssel ein, der zum Verschlüsseln der Kommunikation zwischen Web Adaptor und Portal verwendet wird.</value>
+  </data>
+  <data name="wa_portalstatus_noMachines" xml:space="preserve">
+    <value>Ein Portal wurde nicht mit Web Adaptor konfiguriert.</value>
+  </data>
+  <data name="wa_portalUpdateStatus" xml:space="preserve">
+    <value>Um das Portal bei Web Adaptor zu registrieren, kopieren Sie Folgendes in die Datei "{Install}/portal/etc/portal-config.properties" auf dem Portal-Computer, und starten Sie den Portal for ArcGIS-Dienst neu.</value>
+  </data>
+  <data name="wa_portalURLDesc1" xml:space="preserve">
+    <value>Verwenden Sie die folgende URL, um auf die Portal-Anwendung zuzugreifen:</value>
+  </data>
+  <data name="wa_portalURLDesc2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_portalURLDesc3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="wa_portalValidationSum" xml:space="preserve">
+    <value>Beheben Sie folgende Fehler:</value>
+  </data>
+  <data name="wa_portal_configPagePortalToolTip" xml:space="preserve">
+    <value>Geben Sie die URL des Portals ein. Mit dieser URL wird das Portal bei Web Adaptor registriert.</value>
+  </data>
+  <data name="wa_portal_description1" xml:space="preserve">
+    <value>Um Web Adaptor zu konfigurieren, geben Sie die URL und ein Administratorkonto für das Portal an.</value>
+  </data>
+  <data name="wa_portal_exampleUrl" xml:space="preserve">
+    <value>Beispiel: https://machine.domain.com:7443</value>
+  </data>
+  <data name="wa_portal_machinesList" xml:space="preserve">
+    <value>Das folgende Portal wurde erfolgreich mit Web Adaptor konfiguriert:</value>
+  </data>
+  <data name="wa_portal_portalUrlLabel" xml:space="preserve">
+    <value>Portal-URL:</value>
+  </data>
+  <data name="wa_portal_urlMissing" xml:space="preserve">
+    <value>Geben Sie eine Portal-URL ein</value>
+  </data>
+  <data name="wa_portalnohttps" xml:space="preserve">
+    <value>Für die Portal-Konfiguration muss HTTPS auf dem Webserver aktiviert sein. Verwenden Sie die HTTPS-URL, um diese Seite aufzurufen.</value>
+  </data>
+  <data name="wa_portal_fqdn_reqd" xml:space="preserve">
+    <value>Portal-Konfiguration erfordert vollständig qualifizierten Domänennamen in der Portal-URL.</value>
+  </data>
+  <data name="wa_adminOperationsNotAllowed" xml:space="preserve">
+    <value>Dieser Verwaltungsvorgang ist bei Zugriff über einen Web Adaptor nicht verfügbar. Bitte greifen Sie auf diesen Vorgang über eine direkte URL zu einem der GIS-Server in der Site zu.</value>
+  </data>
+  <data name="wa_config_next" xml:space="preserve">
+    <value>Weiter &gt;</value>
+  </data>
+  <data name="wa_config_portal" xml:space="preserve">
+    <value>Portal for ArcGIS</value>
+  </data>
+  <data name="wa_config_server" xml:space="preserve">
+    <value>ArcGIS Server</value>
+  </data>
+  <data name="wa_config_server_or_portal" xml:space="preserve">
+    <value>Welches Produkt möchten Sie mit Ihrem Web Adaptor konfigurieren?</value>
+  </data>
+  <data name="wa_portal_prerequisite" xml:space="preserve">
+    <value>Konfigurationsvoraussetzung:</value>
+  </data>
+  <data name="wa_portal_prereq_desc1" xml:space="preserve">
+    <value>Der Web Adaptor muss auf einer Website installiert sein, die auf Port 80 ausgeführt wird, bevor er mit Portal for ArcGIS konfiguriert werden kann.  Installieren Sie den Web Adaptor erneut auf einer Website, die auf Port 80 läuft.</value>
+  </data>
+  <data name="wa_portal_prereq_desc3" xml:space="preserve">
+    <value>Installation von ArcGIS Web Adaptor.</value>
+  </data>
+  <data name="wa_portal_prereq_https_desc1" xml:space="preserve">
+    <value>Bevor Sie den Web Adaptor bei Portal for ArcGIS registrieren können, müssen Sie SSL aktivieren und Ihr Sicherheitszertifikat an Port 443 Ihrer Website binden. Näheres erfahren Sie unter </value>
+  </data>
+  <data name="wa_portal_prereq_short_msg" xml:space="preserve">
+    <value>Der Web Adaptor muss auf einer Website installiert sein, die auf Port 80 ausgeführt wird, bevor er mit Portal for ArcGIS konfiguriert werden kann.</value>
+  </data>
+  <data name="wa_portal_prereq_desc2" xml:space="preserve">
+    <value>Anweisungen finden Sie unter</value>
+  </data>
+  <data name="wa_portal_prereq_https_desc2" xml:space="preserve">
+    <value>SSL auf Ihrem Webserver aktivieren.</value>
+  </data>
+  <data name="wa_portal_prerq_https_desc1_443reqd" xml:space="preserve">
+    <value>Bevor Sie den Web Adaptor bei Portal for ArcGIS registrieren können, müssen Sie Ihr Sicherheitszertifikat an den SSL-Port 443 binden. Näheres erfahren Sie unter</value>
+  </data>
+  <data name="wa_config_prev" xml:space="preserve">
+    <value>&lt; Zurück</value>
+  </data>
+  <data name="wa_portal_prerq_https_443reqd" xml:space="preserve">
+    <value>Bevor Sie den Web Adaptor bei Portal for ArcGIS registrieren können, müssen Sie Ihr Sicherheitszertifikat an den SSL-Port 443 binden.</value>
+  </data>
+  <data name="wa_config_status" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="wa_portal_configured_status" xml:space="preserve">
+    <value>Ein Portal wurde mit Web Adaptor konfiguriert.</value>
+  </data>
+  <data name="wa_portal_not_configured_status" xml:space="preserve">
+    <value>Ein Portal wurde nicht mit Web Adaptor konfiguriert.</value>
+  </data>
+  <data name="wa_server_configured_status" xml:space="preserve">
+    <value>Ein Server wurde mit Web Adaptor konfiguriert.</value>
+  </data>
+  <data name="wa_server_not_configured_status" xml:space="preserve">
+    <value>Ein Server wurde nicht mit Web Adaptor konfiguriert.</value>
+  </data>
+  <data name="wa_about" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="waConfigServerError1" xml:space="preserve">
+    <value>Bevor Sie ArcGIS Web Adaptor mit ArcGIS-Server konfigurieren können, müssen Sie die .NET-Vertrauensebene der Web Adaptor-Anwendung in IIS auf "Voll vertrauenswürdig" einstellen. Nach Abschluss der Konfiguration können Sie die Vertrauensebene wieder auf die ursprüngliche Ebene zurücksetzen und wie gewohnt über Web Adaptor auf den Server zugreifen.</value>
+  </data>
+  <data name="waConfigServerError2" xml:space="preserve">
+    <value>Bevor Sie ArcGIS Web Adaptor mit Portal for ArcGIS konfigurieren können, müssen Sie die .NET-Vertrauensebene der Web Adaptor-Anwendung in IIS auf "Voll vertrauenswürdig" einstellen. Nach Abschluss der Konfiguration können Sie die Vertrauensebene wieder auf die ursprüngliche Ebene zurücksetzen und wie gewohnt über Web Adaptor auf das Portal zugreifen.</value>
+  </data>
+  <data name="waConfigServerError3" xml:space="preserve">
+    <value>Konfigurieren der .NET-Vertrauensebene in IIS.</value>
+  </data>
+  <data name="waConfigServerError4" xml:space="preserve">
+    <value>Weitere Informationen finden Sie unter</value>
+  </data>
+  <data name="wa_trust_level_not_full" xml:space="preserve">
+    <value>Um auf die Konfigurationsseite von Web Adaptor zugreifen zu können, muss die Vertrauensebene auf "Voll vertrauenswürdig" eingestellt sein.</value>
+  </data>
+  <data name="wa_ArcGIS" xml:space="preserve">
+    <value>ArcGIS</value>
+  </data>
+  <data name="wa_build" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="wa_iis" xml:space="preserve">
+    <value>Web Adaptor (IIS)</value>
+  </data>
+  <data name="wa_version" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="wa_portaladminaccessdisabled" xml:space="preserve">
+    <value>Der administrative Zugriff ist deaktiviert. Wenden Sie sich an Ihren Systemadministrator, um ihn zu aktivieren.</value>
+  </data>
+  <data name="wa_portalConfigPageAdminPasswordToolTip" xml:space="preserve">
+    <value>Geben Sie das Kennwort für ein Konto mit Administratorberechtigungen für das Portal ein.</value>
+  </data>
+  <data name="wa_portalConfigPageAdminUserNameToolTip" xml:space="preserve">
+    <value>Geben Sie den Benutzernamen für ein Konto mit Administratorberechtigungen für das Portal ein. Dieses Konto kann das initiale Administratorkonto, das bei der Erstkonfiguration Ihres Portals eingegeben wurde, oder ein Konto mit Administratorberechtigungen sein.</value>
+  </data>
+  <data name="wa_portalConfigPageEnableAdminToolTip" xml:space="preserve">
+    <value>Durch die Aktivierung des Administratorzugriffs können die Anwendungen des Administratorverzeichnisses des Portals über Web Adaptor aufgerufen werden. Wenn diese Option deaktiviert bleibt (empfohlen), kann der Zugriff auf diese Anwendungen weiterhin über eine direkte URL zum Portal erfolgen. Beispiel:&lt;br/&gt;&amp;nbsp;&lt;br/&gt;
+Portal Adminr:&lt;br/&gt; http://machine.domain.com:7080&lt;br/&gt;/arcgis/portaladmin&lt;br/&gt;</value>
+  </data>
+  <data name="wa_getPortalAdminTokenFailure" xml:space="preserve">
+    <value>Administrator-Token konnte nicht vom Portal abgerufen werden. Stellen Sie sicher, dass die angegebene Portal-URL erfolgreich aufgerufen werden kann.</value>
+  </data>
+  <data name="wa_portalRegisterWebAdaptorFailure" xml:space="preserve">
+    <value>Das Portal kann nicht mit Web Adaptor konfiguriert werden. Stellen Sie sicher, dass der Portal-Computer ausgeführt wird und das angegebene Konto über Administratorberechtigungen für das Portal verfügt.</value>
+  </data>
+  <data name="wa_portal_multiplewaerror" xml:space="preserve">
+    <value>Ein Web Adaptor wurde bereits mit Portal for ArcGIS konfiguriert.  Es kann nur ein Web Adaptor mit dem Portal konfiguriert werden.  Wenn Sie das Portal für die Verwendung eines anderen Web Adaptor aktualisieren möchten, müssen Sie die Registrierung des aktuellen Web Adaptor aufheben.  Vollständige Anweisungen finden Sie unter</value>
+  </data>
+  <data name="wa_portal_not_configured" xml:space="preserve">
+    <value>Kein Portal konfiguriert</value>
+  </data>
+  <data name="wa_portal_unregisterwa" xml:space="preserve">
+    <value>Die Registrierung von ArcGIS Web Adaptor wird aufgehoben.</value>
+  </data>
+  <data name="wa_portal_restart_timout_error" xml:space="preserve">
+    <value>Die Portalanwendung hat nicht innerhalb des erwarteten Zeitraums reagiert. Überprüfen Sie, ob auf die angegebene Portal-URL erfolgreich zugegriffen werden kann.</value>
+  </data>
+  <data name="wa_portal_loading_message" xml:space="preserve">
+    <value>Bitte warten. Das Portal wird mit Web Adaptor konfiguriert. Dieser Vorgang kann einige Minuten dauern.</value>
+  </data>
+  <data name="wa_portal_loading_message1" xml:space="preserve">
+    <value>Nach Abschluss der Konfiguration wird die neue URL angezeigt, über die Sie auf das Portal zugreifen.</value>
+  </data>
+  <data name="wa_logging_add_node" xml:space="preserve">
+    <value>Knoten {0} mit HealthCheck-Status {1} wird hinzugefügt</value>
+  </data>
+  <data name="wa_logging_admin_access_enabled" xml:space="preserve">
+    <value>Admin-Zugriff aktiviert: </value>
+  </data>
+  <data name="wa_logging_config_req_url" xml:space="preserve">
+    <value>Anforderungs-URL für Web Adaptor-Konfiguration: </value>
+  </data>
+  <data name="wa_logging_config_resp" xml:space="preserve">
+    <value>Antwort auf Web Adaptor-Konfiguration: </value>
+  </data>
+  <data name="wa_logging_config_update" xml:space="preserve">
+    <value>Web Adaptor-Konfiguration wird aktualisiert.</value>
+  </data>
+  <data name="wa_logging_getmachines_req" xml:space="preserve">
+    <value>GetMachines-Anforderung wird gesendet.</value>
+  </data>
+  <data name="wa_logging_getmachines_requrl" xml:space="preserve">
+    <value>Anforderungs-URL für GetMachines:</value>
+  </data>
+  <data name="wa_logging_getmachines_req_fail" xml:space="preserve">
+    <value>GetMachines-Anforderung fehlgeschlagen: </value>
+  </data>
+  <data name="wa_logging_getmachines_resp" xml:space="preserve">
+    <value>Antwort auf GetMachines: </value>
+  </data>
+  <data name="wa_logging_getwaconfig_fail" xml:space="preserve">
+    <value>Web Adaptor-Konfigurationsinformationen können nicht abgerufen werden.</value>
+  </data>
+  <data name="wa_logging_getwalist_fail" xml:space="preserve">
+    <value>Liste der Web Adaptor kann nicht abgerufen werden</value>
+  </data>
+  <data name="wa_logging_getwa_req_fail" xml:space="preserve">
+    <value>GET-Anforderung für Web Adaptor-Konfiguration ist auf dem Server fehlgeschlagen:</value>
+  </data>
+  <data name="wa_logging_health_check" xml:space="preserve">
+    <value>Es wird überprüft, ob der Knoten {0} funktionsfähig ist</value>
+  </data>
+  <data name="wa_logging_https_port" xml:space="preserve">
+    <value>Server-HttpsPort: </value>
+  </data>
+  <data name="wa_logging_https_url_req" xml:space="preserve">
+    <value>Vorgang wird mit HTTPS-URL versucht.</value>
+  </data>
+  <data name="wa_logging_http_port" xml:space="preserve">
+    <value>Server-HttpPort:</value>
+  </data>
+  <data name="wa_logging_http_url_req" xml:space="preserve">
+    <value>Vorgang wird mit HTTP-URL versucht.</value>
+  </data>
+  <data name="wa_logging_load_config_file_fail" xml:space="preserve">
+    <value>Fehler beim Laden der Konfigurationsdatei. Überprüfen Sie, ob sie gültig ist.</value>
+  </data>
+  <data name="wa_logging_mark_node" xml:space="preserve">
+    <value>Knoten {0} wird als UnHealthy markiert</value>
+  </data>
+  <data name="wa_logging_next_node" xml:space="preserve">
+    <value>Vorgang wird mit nächstem Knoten versucht</value>
+  </data>
+  <data name="wa_logging_portal_restart" xml:space="preserve">
+    <value>Warten auf Neustart des Webservers</value>
+  </data>
+  <data name="wa_logging_portal_wareg_succ" xml:space="preserve">
+    <value>Web Adaptor wurde erfolgreich beim Portal registriert.</value>
+  </data>
+  <data name="wa_logging_proxy_url" xml:space="preserve">
+    <value>Proxyfunktionsanforderung an URL: </value>
+  </data>
+  <data name="wa_logging_regwa_resp" xml:space="preserve">
+    <value>Antwort auf Registrierung von Web Adaptor:</value>
+  </data>
+  <data name="wa_logging_reg_success" xml:space="preserve">
+    <value>WebAdaptor wurde erfolgreich registriert.</value>
+  </data>
+  <data name="wa_logging_remove_node" xml:space="preserve">
+    <value>Knoten wird aus der Liste entfernt:</value>
+  </data>
+  <data name="wa_logging_req_failed" xml:space="preserve">
+    <value>Anforderung konnte nicht an den Server gesendet werden:</value>
+  </data>
+  <data name="wa_logging_req_headers" xml:space="preserve">
+    <value>Anforderungsheader werden an den Server gesendet.</value>
+  </data>
+  <data name="wa_logging_req_url" xml:space="preserve">
+    <value>Anforderungs-URL: </value>
+  </data>
+  <data name="wa_logging_resp_headers" xml:space="preserve">
+    <value>Antwortheader werden gesendet.</value>
+  </data>
+  <data name="wa_logging_svr_protocol" xml:space="preserve">
+    <value>Serverprotokoll: </value>
+  </data>
+  <data name="wa_logging_unregwa_fail" xml:space="preserve">
+    <value>Die Registrierung von webadaptor konnte nicht aufgehoben werden.</value>
+  </data>
+  <data name="wa_logging_unregwa_succ" xml:space="preserve">
+    <value>Die Registrierung von Web Adaptor wurde erfolgreich aufgehoben.</value>
+  </data>
+  <data name="wa_logging_unreg_wa_url" xml:space="preserve">
+    <value>Die Registrierung von Web Adaptor wird mit der Anforderungs-URL aufgehoben: </value>
+  </data>
+  <data name="wa_logging_updated_nodelist" xml:space="preserve">
+    <value>Knotenliste wird aktualisiert.</value>
+  </data>
+  <data name="wa_logging_update_nodelist" xml:space="preserve">
+    <value>Knotenliste aus GetMachines-Aufruf wird aktualisiert</value>
+  </data>
+  <data name="wa_logging_waconfig_404_resp" xml:space="preserve">
+    <value>Antwort 404 wurde empfangen. Konfiguration wird zurückgesetzt.</value>
+  </data>
+  <data name="wa_logging_wa_id" xml:space="preserve">
+    <value>Web Adaptor-ID: </value>
+  </data>
+  <data name="wa_logging_webexception" xml:space="preserve">
+    <value>WebException wurde vom Server zurückgegeben</value>
+  </data>
+  <data name="wa_logging_healthcheck_status" xml:space="preserve">
+    <value>Systemdiagnosestatus des Servers {0}: {1}</value>
+  </data>
+  <data name="wa_logging_gemachines_reqfail" xml:space="preserve">
+    <value>GetMachines-Anforderung konnte nicht an den Server {0} gesendet werden:</value>
+  </data>
+  <data name="wa_logging_folder_invalid" xml:space="preserve">
+    <value>Der Web Adaptor-Protokollordner ist ungültig oder es kann nicht darauf zugegriffen werden.</value>
+  </data>
+  <data name="wa_no_server_nodes" xml:space="preserve">
+    <value>Es konnte auf keinen Servercomputer zugegriffen werden. Wenden Sie sich an Ihren Systemadministrator.</value>
+  </data>
+  <data name="wa_portalversionmismatch" xml:space="preserve">
+    <value>Das Portal kann nicht mit Web Adaptor konfiguriert werden. Stellen Sie sicher, dass das Portal und Web Adaptor dieselbe Version aufweisen.</value>
+  </data>
+  <data name="wa_logging_portal_gemachines_reqfail" xml:space="preserve">
+    <value>GetMachines-Anforderung konnte nicht an den Portal-Knoten {0} gesendet werden:</value>
+  </data>
+  <data name="wa_logging_portal_healthcheck_status" xml:space="preserve">
+    <value>Systemdiagnosestatus des Portal-Knotens {0}: {1}</value>
+  </data>
+  <data name="wa_no_portalnodes" xml:space="preserve">
+    <value>Es konnte auf keinen Portal-Computer zugegriffen werden. Wenden Sie sich an Ihren Systemadministrator.</value>
+  </data>
+  <data name="wa_portal_not_configured_wacontexturl" xml:space="preserve">
+    <value>Es wurde bereits ein Web Adaptor mit Portal for ArcGIS konfiguriert. Um mehrere Web Adaptor-Instanzen zu konfigurieren, legen Sie die Eigenschaft "WebContextURL" im ArcGIS Portal Directory fest. Weitere Informationen finden Sie unter </value>
+  </data>
+  <data name="wa_portaladminOperationsNotAllowed" xml:space="preserve">
+    <value>Dieser Verwaltungsvorgang ist beim Zugriff über einen Web Adaptor nicht verfügbar. Rufen Sie diesen Vorgang über eine direkte URL zu einem der Portal-Computer der Site auf.</value>
+  </data>
+  <data name="waRegMultipleWAwithPortal" xml:space="preserve">
+    <value>Es werden mehrere Web Adaptor beim Portal registriert</value>
+  </data>
+  <data name="wa_config_warning" xml:space="preserve">
+    <value>Dieser Web Adaptor wurde bereits konfiguriert. Konfigurieren Sie separate Web Adaptors für Server und Portal.</value>
+  </data>
+</root>

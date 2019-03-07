@@ -1,0 +1,31 @@
+<html lang="fr" xml:lang="fr"><head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><META name="description" content="Configurez les options du cache mémoire système ArcGIS Web Adaptor lorsque vous utilisez l'authentification au niveau du Web."><meta name="content-language" content="fr"><link href="rsrc/htmlhelp.css" rel="stylesheet" type="text/css"><title>ArcGIS - 
+Configurer les options du cache mémoire ArcGIS Web Adaptor
+</title>
+                <script type="text/javascript" language="JavaScript">
+                    var pathL  = self.location.pathname.split ("/");
+                    var fname = pathL[pathL.length-1];
+                    var i = fname.lastIndexOf (".htm");
+                    if (i>=0) {
+                    fname = fname.substring (0, i)
+                    } else {
+                    //??
+                    }
+                    if (self.location.hash) {
+				    		      fname = fname + self.location.hash;
+						        }
+                    self.location.replace ("../index.html#//" + fname);
+                </script>
+                </head><!--Publication GUID: [GUID-FB5257BE-DC53-48C6-82F8-1DA075B0A617]--><!--Topic GUID: [GUID-070AFEC5-DE9F-49D1-9019-C5350B73D24F]--><body><div id="content"><div class="header"><h1>
+Configurer les options du cache mémoire ArcGIS Web Adaptor
+</h1><div id="breadcrumb"></div></div>
+<p id="GUID-B6D4217C-6336-442A-B229-7FA63AE8931E"> Lorsqu'un utilisateur authentifié accède à une ressource ArcGIS Server et que l'authentification au niveau du Web a été activée avec <span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span>, Web Adaptor extrait la liste des appartenances à un rôle de l'utilisateur depuis Active Directory. Les appels répétés à Active Directory visant à obtenir la liste des rôles d'un utilisateur ont un impact négatif sur les performances d'Active Directory et d'ArcGIS Server. Pour optimiser les performances, Web Adaptor met en cache la liste des rôles dont fait partie un utilisateur.</p><p id="GUID-1CDC5BEE-8AAD-41B2-94FD-49D5E74EBF3E">  Dans une installation prête à l'emploi d'<span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span>, les rôles d'un utilisateur sont mis en cache dans un cookie géré par le navigateur Web ou dans la mémoire système principale (RAM) du serveur Web hébergeant Web Adaptor. Si la taille de la liste des rôles d'un utilisateur est inférieure à 4 Ko, elle est stockée sous forme de cookie par le navigateur Web. Si la taille de la liste est égale ou supérieure à 4 Ko, elle est gérée par la mémoire système.</p><p id="GUID-EA9D29F6-6927-4812-814E-C85A6257BE3A"> Si la liste des rôles d'un utilisateur est stockée dans le cache des cookies du navigateur Web, elle expire en une minute. Le cache mémoire système d'<span purpose="ph" translate="no" varid="WebAdaptforArcGISIIS">ArcGIS Web Adaptor (IIS)</span> pour la liste des rôles d'un utilisateur est configurable et ses propriétés sont gérées dans l'élément <span class="usertext">RoleCache</span> défini dans le fichier <span class="usertext">C:\inetpub\wwwroot\{Web Adaptor name}\WebAdaptor.config</span>. La section suivante décrit l'élément <span class="usertext">RoleCache</span> et ses propriétés.</p><div class="codeblock" purpose="codeblock"><div class="codeblockdesc" purpose="codeblockdesc"></div><div class="highlight"><pre><code>&lt;RoleCache&gt;
+    &lt;NumberOfUsers&gt;100&lt;/NumberOfUsers&gt;
+    &lt;Expiration&gt;5&lt;/Expiration&gt;
+    &lt;Enabled&gt;true&lt;/Enabled&gt;
+    &lt;CacheAllRolesInMemory&gt;false&lt;/CacheAllRolesInMemory&gt;
+&lt;/RoleCache&gt;
+</code></pre></div>
+</div>
+<div class="block_table" id="TABLE_EF8BAAF0FDF64239B08FED5D5B915E86" purpose="block_table"><span class="table_title"></span><table class="table"><colgroup width="*"></colgroup><colgroup width="*"></colgroup><tbody><tr><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-D8F520D0-4B12-441C-8F71-C596237D681B"><b>Propriété</b></p></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-DC30A72B-4E44-4F87-9C2B-1216823822B9"><b>Description</b></p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">NumberOfUsers</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-2BC513E0-7140-441A-B05A-31195274C561">Cette propriété limite le nombre des utilisateurs dont la liste des appartenances à un rôle peut être stockée dans la mémoire système.</p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">Expiration</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-E5179A5F-CBC2-4246-B7F7-185B07C05539">Cette propriété définit la durée, en minutes, pendant laquelle la liste d'un utilisateur est stockée dans la mémoire système. La valeur maximale recommandée pour cette propriété est d'un jour (ou 1 440 minutes).</p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">Enabled</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-F8500AB5-C7AE-427A-973C-ABEF5F309003">Cette propriété permet de désactiver le cache mémoire système. La désactivation du cache système n'est pas recommandée.</p></td></tr><tr><td purpose="entry" rowspan="1" colspan="1"><span class="usertext">CacheAllRolesInMemory</span></td><td purpose="entry" rowspan="1" colspan="1"><p id="GUID-C237AC7D-3C6E-4E28-9B4E-A8B76EA87F42">Si cette propriété est définie sur <span class="usertext">true</span>, le cache des cookies est désactivé et seule la mémoire système est utilisée pour mettre en cache la liste des appartenances à un rôle de tous les utilisateurs.</p></td></tr></tbody><caption class="table_desc"></caption></table></div><div class="footer"> Copyright © 1995-2017 Esri. All rights reserved. </div></div></body></html>
